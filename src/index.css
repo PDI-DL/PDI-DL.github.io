@@ -1,0 +1,127 @@
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1500px;
+}
+
+
+/* Header Section */
+
+header{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(78, 1, 27);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo a img{
+    width: 50px;
+}
+
+#logo a{
+    text-decoration: none;
+}
+
+#logo a span{
+    font-size: 1.4rem;
+    color: white;
+    margin-left: 10px;
+}
+
+
+#internal_links > li{
+    display: inline-block;
+}
+
+#internal_links li > a{
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .2s
+}
+
+#internal_links > li > a:hover{
+    color: #ff9999;
+}
+
+#internal_links li:not(:first-child){
+    margin-left: 1.5rem;
+}
+
+#external_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#external_links img{
+    width: 30px;
+}
+
+#external_links a:not(:first-child){
+    margin-left: 20px;
+}
+
+#external_links a{
+    transition: .2s;
+}
+
+#external_links a:hover{
+    transform: scale(1.2)
+}
+
+
+/* Footer Section */
+
+footer{
+    padding: 50px;
+    min-height: 100px;
+    background-color: black;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
