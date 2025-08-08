@@ -1,4 +1,8 @@
-
+import pdiLogo from "./assets/logo_pdi.png"
+import githubLogo from "./assets/github.png"
+import linkedinLogo from "./assets/linkedin.png"
+import c3Logo from "./assets/logo_c3.png"
+import furgLogo from "./assets/logo_furg.png"
 
 function Header(){
     return(
@@ -6,7 +10,7 @@ function Header(){
             <nav className="container">
                 <div id="logo">
                     <a href="#">
-                        <img src="./logo_pdi.png" alt="the laboratory's logo" />
+                        <img src= {pdiLogo} alt="the laboratory's logo" />
                         <span>PDI</span>
                     </a>
                     
@@ -19,10 +23,10 @@ function Header(){
                     <li><a href="#">Calendar</a></li>
                 </ul>
                 <div id="external_links">
-                    <a href="#"><img src="./github.png" alt="Github logo" /></a>
-                    <a href="#"><img src="./linkedin.png" alt="Linkedin logo" /></a>
-                    <a href="#"><img src="./logo_c3.png" alt="computation sciences center logo" /></a>
-                    <a href="#"><img src="./logo_furg.png" alt="Federal university of Rio Grande logo" /></a>
+                    <a href="#"><img src= {githubLogo} alt="Github logo" /></a>
+                    <a href="#"><img src= {linkedinLogo} alt="Linkedin logo" /></a>
+                    <a href="#"><img src= {c3Logo} alt="computation sciences center logo" /></a>
+                    <a href="#"><img src= {furgLogo} alt="Federal university of Rio Grande logo" /></a>
                 </div>
             </nav>
         
