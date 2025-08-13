@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# App files
+skeleton.sql
+backEnd.js
+.env
