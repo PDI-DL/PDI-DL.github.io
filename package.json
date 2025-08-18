@@ -1,6 +1,6 @@
 {
   "name": "site-pdi",
-  "homepage": "https://breno-xp.gihow to rename a remote repository in gitthub.io/Site_PDI/",
+  "homepage": "https://breno-xp.github.io/Site_PDI/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,6 +15,7 @@
   "dependencies": {
     "gh-pages": "^6.3.0",
     "mysql2": "^3.14.3",
+    "nodejs": "^0.0.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.8.0"

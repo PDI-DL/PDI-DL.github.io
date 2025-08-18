@@ -1,9 +1,9 @@
 
 export function Research(){
-    return (
-        <>
-            <h1>Research</h1>
-        </>
+  return (
+    <>
+      <h1>Research</h1>
+    </>
   );
 }
 

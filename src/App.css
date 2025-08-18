@@ -16,7 +16,6 @@
   max-width: 1500px;
 }
 
-
 /* Header Section */
 
 header{
@@ -59,7 +58,6 @@ nav{
     margin-left: 10px;
 }
 
-
 #internal_links > li{
     display: inline-block;
 }
@@ -91,27 +89,26 @@ nav{
 }
 
 #external_links a:not(:first-child){
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 #external_links a{
-    transition: .2s;
+  transition: .2s;
 }
 
 #external_links a:hover{
-    transform: scale(1.2)
+  transform: scale(1.2)
 }
-
 
 /* Footer Section */
 
 footer{
-    padding: 50px;
-    min-height: 100px;
-    background-color: black;
+  padding: 50px;
+  min-height: 100px;
+  background-color: black;
 }
 
-
+/* Media Section */
 
 @media (prefers-color-scheme: light) {
   :root {
