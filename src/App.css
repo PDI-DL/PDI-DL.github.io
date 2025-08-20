@@ -1,8 +1,8 @@
 :root {
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    --header_footer_spacing: 50px;
 }
 
 *{
@@ -23,7 +23,8 @@ header{
     display: flex;
     align-items: center;
     height: 60px;
-    background-color: rgb(78, 1, 27);
+    background-color: rgb(105, 7, 40);
+    margin-bottom: var(--header_footer_spacing);
 }
 
 nav{
@@ -109,6 +110,7 @@ footer{
     padding: 50px;
     min-height: 100px;
     background-color: black;
+    margin-top: var(--header_footer_spacing);
 }
 
 
