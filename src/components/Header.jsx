@@ -21,8 +21,8 @@ function Header(){
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/publications">Publications</Link></li>
                     <li><Link to="/team">Team</Link></li>
-                    <li><Link to="/Research">Research</Link></li>
-                    <li><Link to="/Calendar">Calendar</Link></li>
+                    <li><Link to="/research">Research</Link></li>
+                    <li><Link to="/calendar">Calendar</Link></li>
                 </ul>
                 <div id="external_links">
                     <Link to="#"><img src= {githubLogo} alt="Github logo" /></Link>
@@ -36,4 +36,3 @@ function Header(){
 }
 
 export default Header
-
