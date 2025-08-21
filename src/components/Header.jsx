@@ -15,7 +15,6 @@ function Header(){
                         <img src= {pdiLogo} alt="the laboratory's logo" />
                         <span>PDI</span>
                     </Link>
-                    
                 </div>
                 <ul id="internal_links">
                     <li><Link to="/">Home</Link></li>
@@ -25,10 +24,10 @@ function Header(){
                     <li><Link to="/calendar">Calendar</Link></li>
                 </ul>
                 <div id="external_links">
-                    <Link to="#"><img src= {githubLogo} alt="Github logo" /></Link>
-                    <Link to="#"><img src= {linkedinLogo} alt="Linkedin logo" /></Link>
-                    <Link to="#"><img src= {c3Logo} alt="computation sciences center logo" /></Link>
-                    <Link to="#"><img src= {furgLogo} alt="Federal university of Rio Grande logo" /></Link>
+                    <Link to="#"><img src= {githubLogo} alt="GitHub logo" /></Link>
+                    <Link to="#"><img src= {linkedinLogo} alt="LinkedIn logo" /></Link>
+                    <Link to="#"><img src= {c3Logo} alt="Computation Sciences Center logo" /></Link>
+                    <Link to="#"><img src= {furgLogo} alt="Federal University of Rio Grande logo" /></Link>
                 </div>
             </nav>
         </header>

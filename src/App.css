@@ -6,8 +6,8 @@
 }
 
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .container{
@@ -99,6 +99,12 @@ nav{
 
 #external_links a:hover{
   transform: scale(1.2)
+}
+
+/* Main Section */
+main {
+    padding: 0 50px;
+    min-height: calc(75vh - var(--header_footer_spacing) - 60px);
 }
 
 /* Footer Section */

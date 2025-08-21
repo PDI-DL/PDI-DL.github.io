@@ -1,8 +1,14 @@
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
 
 export function Research(){
   return (
     <>
-      <h1>Research</h1>
+      <Header/>
+      <main>
+        <h1>Research</h1>
+      </main>
+      <Footer/>
     </>
   );
 }
