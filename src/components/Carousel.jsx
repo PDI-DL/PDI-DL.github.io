@@ -19,13 +19,13 @@ function Carousel() {
   return (
       <Slider {...settings} className="carousel-container">
         <div>
-          <img src={carouselPlaceholder} alt="1" />
+          <img src={carouselPlaceholder} alt="carousel placeholder" />
         </div>
         <div>
-          <img src={carouselPlaceholder} alt="2" />
+          <img src={carouselPlaceholder} alt="carousel placeholder" />
         </div>
         <div>
-          <img src={carouselPlaceholder} alt="3" />
+          <img src={carouselPlaceholder} alt="carousel placeholder" />
         </div>
       </Slider>
   );

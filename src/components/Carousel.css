@@ -1,4 +1,26 @@
-.carousel-container{
+.carousel-container {
   width: 640px;
   margin: 0px auto;
+}
+
+.carousel-container img {
+    margin: 0px auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    opacity: 0.5;
+}
+
+.slick-dots li button {
+  color: #ffffff;
+}
+
+.slick-dots li button:before {
+  color: #ffffff;
+    font-size: 0.5rem;
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgb(30, 60, 80);
 }
