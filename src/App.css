@@ -22,10 +22,14 @@
 /* Header Section */
 
 header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     align-items: center;
     height: 60px;
-    background-color: rgb(105, 7, 40);
+    background-color: rgb(44, 44, 44);
+    opacity: 0.9;
     margin-bottom: var(--header_footer_spacing);
 }
 
@@ -141,6 +145,25 @@ footer{
 
 @media (max-width: 930px){
     #internal_links{
-      display: none;
+      /* display: none; */
+      position: absolute;
+      right: 0;
+      top: 100%;  
+      display: flex;
+      flex-flow: column wrap;
+      background-color: rgb(44, 44, 44);
     }
+
+    #internal_links li{
+      margin: 0 !important;
+    }
+
+    #internal_links li a{
+      display: block;
+      text-align: center;
+      /* width: 100%; */
+      padding: 0.5rem 1rem;
+    }
+
+
 }
