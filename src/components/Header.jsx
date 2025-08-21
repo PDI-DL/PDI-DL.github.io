@@ -1,10 +1,10 @@
-import pdiLogo from "../assets/logo_pdi.png"
-import githubLogo from "../assets/github.png"
-import linkedinLogo from "../assets/linkedin.png"
-import c3Logo from "../assets/logo_c3.png"
-import furgLogo from "../assets/logo_furg.png"
+import { Link } from "react-router-dom";
 
-import { Link } from 'react-router-dom'
+import pdiLogo from "../assets/logo_pdi.png";
+import githubLogo from "../assets/github.png";
+import linkedinLogo from "../assets/linkedin.png";
+import c3Logo from "../assets/logo_c3.png";
+import furgLogo from "../assets/logo_furg.png";
 
 function Header(){
     return(
@@ -12,7 +12,7 @@ function Header(){
             <nav className="container">
                 <div id="logo">
                     <Link to="#">
-                        <img src= {pdiLogo} alt="the laboratory's logo" />
+                        <img src={pdiLogo} alt="the laboratory's logo" />
                         <span>PDI</span>
                     </Link>
                 </div>
@@ -24,10 +24,10 @@ function Header(){
                     <li><Link to="/calendar">Calendar</Link></li>
                 </ul>
                 <div id="external_links">
-                    <Link to="#"><img src= {githubLogo} alt="GitHub logo" /></Link>
-                    <Link to="#"><img src= {linkedinLogo} alt="LinkedIn logo" /></Link>
-                    <Link to="#"><img src= {c3Logo} alt="Computation Sciences Center logo" /></Link>
-                    <Link to="#"><img src= {furgLogo} alt="Federal University of Rio Grande logo" /></Link>
+                    <Link to="#"><img src={githubLogo} alt="GitHub logo" /></Link>
+                    <Link to="#"><img src={linkedinLogo} alt="LinkedIn logo" /></Link>
+                    <Link to="#"><img src={c3Logo} alt="Computation Sciences Center logo" /></Link>
+                    <Link to="#"><img src={furgLogo} alt="Federal University of Rio Grande logo" /></Link>
                 </div>
             </nav>
         </header>

@@ -1,3 +1,5 @@
+/* Universal Section */
+
 :root {
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
@@ -102,9 +104,15 @@ nav{
 }
 
 /* Main Section */
+
 main {
-    padding: 0 50px;
-    min-height: calc(75vh - var(--header_footer_spacing) - 60px);
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 25px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 50px;
+  min-height: calc(75vh - var(--header_footer_spacing) - 60px);
 }
 
 /* Footer Section */

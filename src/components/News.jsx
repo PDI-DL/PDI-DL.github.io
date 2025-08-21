@@ -1,5 +1,6 @@
-import './News.css';
 import { useState } from 'react';
+
+import './News.css';
 
 function News(){
     const [hasMaxHeight, setHasMaxHeight] = useState(true);
@@ -34,4 +35,4 @@ function News(){
     // {hasMaxHeight ? 'v' : '^'}
 }
 
-export default News
+export default News;

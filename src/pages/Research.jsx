@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
+
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 
 export function Research(){
+  useEffect(() => {
+    document.title = 'Research | PDI';
+  }, []);
   return (
     <>
       <Header/>
