@@ -32,7 +32,7 @@
     flex-flow: row wrap;
     gap: 15px;
     justify-content: space-between;
-    align-items: center;
+
 }
 
 .card{
@@ -47,13 +47,7 @@
 
 .card h2{
     font-size: 1.3rem;
-    /* text-decoration: underline; */
     margin-bottom: 0.8rem;
-}
-
-.card hr{
-    margin-bottom: 0.8rem;
-    color: lightcoral;
 }
 
 .card span{
@@ -65,7 +59,7 @@
 }
 
 .off_maxHeight{
-    max-height: fit-content !important;
+    max-height: 1000px !important;
 }
 
 @media  (max-width: 1040px){
