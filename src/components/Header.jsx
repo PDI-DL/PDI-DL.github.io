@@ -13,7 +13,7 @@ function Header(){
                 <div id="logo">
                     <Link to="#">
                         <img src={pdiLogo} alt="the laboratory's logo" />
-                        <span>PDI</span>
+                        <span>PDI+DL</span>
                     </Link>
                 </div>
                 <ul id="internal_links">
