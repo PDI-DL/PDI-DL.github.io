@@ -37,9 +37,8 @@
 
 .card{
     box-sizing: border-box;
-    min-width: 320px;
-    max-width: 32%;
-    padding: 0.5rem 1rem;
+    max-width: 100%;
+    padding: 1rem 2rem;
     background-color: rgb(29, 61, 83);
     border: 1px solid white;
     border-radius: 10px;
