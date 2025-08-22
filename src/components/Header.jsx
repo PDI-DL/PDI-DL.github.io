@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 import pdiLogo from "../assets/logos/logo_pdi.png";
-import githubLogo from "../assets/logos/github.png";
-import linkedinLogo from "../assets/logos/linkedin.png";
+import githubLogo from "../assets/logos/logo_github.png";
+import linkedinLogo from "../assets/logos/logo_linkedin.png";
 import c3Logo from "../assets/logos/logo_c3.png";
 import furgLogo from "../assets/logos/logo_furg.png";
 

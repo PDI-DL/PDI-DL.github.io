@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import "./News.css";
+import "../style/components/News.css";
 
 function News(){
   const [hasMaxHeight, setHasMaxHeight] = useState(true);
