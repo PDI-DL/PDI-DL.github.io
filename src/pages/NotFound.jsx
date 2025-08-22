@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 
+import "../style/pages/NotFound.css";
+
 export function NotFound(){
   useEffect(() => {
     document.title = "Page Not Found | PDI";

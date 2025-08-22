@@ -13,14 +13,14 @@
 }
 
 .slick-dots li button {
-  color: #ffffff;
+  color: white;
 }
 
 .slick-dots li button:before {
-  color: #ffffff;
+  color: white;
     font-size: 0.5rem;
 }
 
 .slick-dots li.slick-active button:before {
-  color: rgb(30, 60, 80);
+  color: var(--dark-blue);
 }

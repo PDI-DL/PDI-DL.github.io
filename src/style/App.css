@@ -1,10 +1,27 @@
 /* Universal Section */
 
-:root {
+:root{
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    background-color: var(--bg-root);
+
+    /* Spacing */
     --header_footer_spacing: 50px;
+
+    /* Colors */
+    --bg-root: rgb(36, 36, 36);
+    --bg-root-light: rgb(255, 255, 255);
+    --color-root-light: rgb(33, 53, 71);
+
+    --header: rgb(44, 44, 44);
+    --footer: rgb(0, 0, 0);
+    --button: rgb(24, 24, 24);
+    --button-light: rgb(249, 249, 249);
+
+    --light-blue: rgb(0, 123, 255);
+    --dark-blue: rgb(29, 61, 83);
+    --yellow: rgb(196, 173, 73);
+    --red-hover: rgb(255, 153, 153);
 }
 
 *{
@@ -28,7 +45,7 @@ header{
     display: flex;
     align-items: center;
     height: 60px;
-    background-color: rgb(44, 44, 44);
+    background-color: var(--header);
     opacity: 0.9;
     margin-bottom: var(--header_footer_spacing);
 }
@@ -73,12 +90,12 @@ nav{
 #internal_links li > a{
     padding: 5px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: white;
     transition: .2s
 }
 
 #internal_links > li > a:hover{
-    color: #ff9999;
+    color: var(--red-hover);
 }
 
 #internal_links li:not(:first-child){
@@ -125,46 +142,52 @@ main {
 footer{
   padding: 50px;
   min-height: 100px;
-  background-color: black;
+  background-color: var(--footer);
 }
 
 /* Media Section */
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: var(--color-root-light);
+    background-color: var(--bg-root-light);
   }
   a:hover {
-    color: #747bff;
+    color: var(--light-blue);
   }
   button {
-    background-color: #f9f9f9;
+    background-color: var(--button-light);
   }
 }
 
 @media (max-width: 930px){
-    #internal_links{
-      /* display: none; */
-      position: absolute;
-      right: 0;
-      top: 100%;  
-      display: flex;
-      flex-flow: column wrap;
-      background-color: rgb(44, 44, 44);
-    }
+  #logo{
+    margin-left: 15px;
+  }
 
-    #internal_links li{
-      margin: 0 !important;
-    }
+  #internal_links{
+    /* display: none; */
+    position: absolute;
+    right: 0;
+    top: 100%;  
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgb(44, 44, 44);
+  }
 
-    #internal_links li a{
-      display: block;
-      text-align: center;
-      /* width: 100%; */
-      padding: 0.5rem 1rem;
-      width: 30vw;
-    }
+  #internal_links li{
+    margin: 0 !important;
+  }
 
+  #internal_links li a{
+    display: block;
+    text-align: center;
+    /* width: 100%; */
+    padding: 0.5rem 1rem;
+    width: 30vw;
+  }
 
+  #external_links{
+    margin-right: 15px;
+}
 }
