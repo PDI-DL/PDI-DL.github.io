@@ -2,7 +2,7 @@
 function Footer(){
   return(
     <footer>
-      <div className='container'>
+      <div className="container">
         <span>&copy; Digital Image Processing and Machine Learning | {new Date().getFullYear()}</span>
         <br />
         <br />
