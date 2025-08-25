@@ -3,10 +3,16 @@ import { Link } from "react-router-dom";
 import pdiLogo from "../assets/logos/logo_pdi.png";
 import githubLogo from "../assets/logos/logo_github.png";
 import linkedinLogo from "../assets/logos/logo_linkedin.png";
-import c3Logo from "../assets/logos/logo_c3.png";
-import furgLogo from "../assets/logos/logo_furg.png";
+
+import { useState } from "react";
 
 function Header(){
+  const [hamburgerActive, setHamburgerActive] = useState(false);
+  
+  const toggleHamburger = () => {
+      setHamburgerActive(!hamburgerActive);
+  };
+
   return(
     <header>
       <nav className="container">
@@ -16,7 +22,7 @@ function Header(){
             <span>PDI+DL</span>
           </Link>
         </div>
-        <ul id="internal_links">
+        <ul className = {hamburgerActive ? "internal_links show" : "internal_links"}>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/publications">Publications</Link></li>
           <li><Link to="/team">Team</Link></li>
@@ -26,8 +32,11 @@ function Header(){
         <div id="external_links">
           <Link to="#"><img src={githubLogo} alt="GitHub logo" /></Link>
           <Link to="#"><img src={linkedinLogo} alt="LinkedIn logo" /></Link>
-          <Link to="#"><img src={c3Logo} alt="Computation Sciences Center logo" /></Link>
-          <Link to="#"><img src={furgLogo} alt="Federal University of Rio Grande logo" /></Link>
+        </div>
+        <div id = "hamburger" onClick={toggleHamburger}>
+          <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
+          <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
+          <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
         </div>
       </nav>
     </header>

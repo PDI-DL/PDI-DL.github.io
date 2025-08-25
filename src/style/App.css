@@ -1,6 +1,7 @@
 /* Universal Section */
 
 :root{
+    overflow-x: hidden;
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     background-color: var(--bg-root);
@@ -83,22 +84,22 @@ nav{
     margin-left: 10px;
 }
 
-#internal_links > li{
+.internal_links > li{
     display: inline-block;
 }
 
-#internal_links li > a{
+.internal_links li > a{
     padding: 5px;
     text-decoration: none;
     color: white;
     transition: .2s
 }
 
-#internal_links > li > a:hover{
+.internal_links > li > a:hover{
     color: var(--red-hover);
 }
 
-#internal_links li:not(:first-child){
+.internal_links li:not(:first-child){
     margin-left: 1.5rem;
 }
 
@@ -125,6 +126,10 @@ nav{
   transform: scale(1.2)
 }
 
+#hamburger{
+  display: none;
+}
+
 /* Main Section */
 
 main {
@@ -143,6 +148,31 @@ footer{
   padding: 50px;
   min-height: 100px;
   background-color: var(--footer);
+}
+
+.footerLogos{
+  margin-top: 20px;
+
+}
+
+.footerLogos img{
+  width: clamp(25px, 100px, 150px);
+}
+
+.headInstitutions, .otherInstitutions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(5px, 40px, 50px);
+}
+
+.headInstitutions h1{
+  width: 100%;
+}
+
+.otherInstitutions h1{
+  width: 100%;
 }
 
 /* Media Section */
@@ -165,21 +195,32 @@ footer{
     margin-left: 15px;
   }
 
-  #internal_links{
-    /* display: none; */
-    position: absolute;
+  #logo:hover + .internal_links{
     right: 0;
+  }
+
+  .internal_links{
+    /* height: 100vh; */
+    position: absolute;
+    right: -40vw;
     top: 100%;  
     display: flex;
     flex-flow: column wrap;
     background-color: rgb(44, 44, 44);
+    transition: 0.3s ease-out;
   }
 
-  #internal_links li{
+  .internal_links li{
     margin: 0 !important;
+    padding-block: 10px;
+    border-top: 1px solid white;
   }
 
-  #internal_links li a{
+  .internal_links li:first-child{
+    border-top: none;
+  }
+
+  .internal_links li a{
     display: block;
     text-align: center;
     /* width: 100%; */
@@ -187,7 +228,45 @@ footer{
     width: 30vw;
   }
 
+  .show{
+    right: 0;
+  }
+
   #external_links{
     margin-right: 15px;
-}
+  }
+
+  #hamburger{
+    display: block;
+    margin-right: 15px;
+    height: 100%;
+    width: 35px;
+    cursor: pointer;
+  }
+
+  .hamburgerLine{
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    margin-bottom: 8px;
+    transition: 0.3s, opacity 0.15s;
+  }
+
+  .hamburgerLine:last-of-type{
+    margin-bottom: 0;
+  }
+
+  .activate:first-child{
+    transform: translate(0, 11px) rotate(45deg);
+  }
+
+  .activate:last-child{
+    transform: translate(0, -11px) rotate(-45deg);
+  }
+
+  .activate:nth-child(2){
+    opacity: 0;
+  }
+
+
 }

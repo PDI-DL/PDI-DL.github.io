@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
+import News from "../components/News.jsx";
 
 export function Publications(){
   useEffect(() => {
@@ -11,7 +12,7 @@ export function Publications(){
     <>
       <Header/>
       <main>
-        <h1>Publications</h1>
+        <News/>
       </main>
       <Footer/>
     </>
