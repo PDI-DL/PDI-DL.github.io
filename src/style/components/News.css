@@ -49,8 +49,9 @@
 
 .card span{
   text-indent: 1.5rem;
+  line-height: 1.5;
   display: block;
-  max-height: 3.6rem;
+  max-height: 4rem;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
 }
@@ -80,6 +81,6 @@
 
   .card span{
     text-indent: 2rem;
-    text-align: justify;
+    /* text-align: center; */
   }
 }

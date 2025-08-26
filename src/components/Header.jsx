@@ -7,14 +7,37 @@ import linkedinLogo from "../assets/logos/logo_linkedin.png";
 import { useState } from "react";
 
 function Header(){
+
+  // Hamburger 
   const [hamburgerActive, setHamburgerActive] = useState(false);
   
   const toggleHamburger = () => {
       setHamburgerActive(!hamburgerActive);
   };
 
+  // Scroll on mobile
+    const [scrollDirection, setScrollDirection] = useState('show');
+
+    var prevScroll = window.pageYOffset;
+    
+    window.onscroll = () => {
+      var currentScroll = window.pageYOffset;
+      if (currentScroll > prevScroll){
+        setScrollDirection('dontShow')
+        console.log("Descendo")
+      }
+      else{
+        setScrollDirection('show')
+        console.log("Subindo")
+      }
+      prevScroll = currentScroll;
+    }
+
+
+
+
   return(
-    <header>
+    <header className={scrollDirection === "show" ? "show" : "dontShow"}>
       <nav className="container">
         <div id="logo">
           <Link to="#">
@@ -44,3 +67,20 @@ function Header(){
 }
 
 export default Header
+
+
+  // var prevScroll = window.pageYOffset; // Gets how many pixels from top of the page
+
+  // window.onscroll = () => {
+  //   var currentScroll = window.pageYOffset;
+
+  //   if (currentScroll < prevScroll) {
+  //     document.getElementsByTagName('header').style.top = "0"; // Show the navbar
+  //   } else {
+  //     rootElement = document.documentElement;
+  //     headerHeight = getComputedStyle(rootElement).getPropertyValue('--header-height');
+  //     document.getElementsByTagName('header').style.top = headerHeight; // Hide the navbar
+  //   }
+  //   console.log("Scroll ! ! ! ! !")
+  //   prevScroll = currentScroll; // Update the previous scroll position for the next scroll event
+  // }

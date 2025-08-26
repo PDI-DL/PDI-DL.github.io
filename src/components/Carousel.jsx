@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 import "../style/components/Carousel.css";
-import carouselPlaceholder from "../assets/other/placeholder-600x400.png";
+import carouselPlaceholder from "../assets/other/fotasso.jpeg";
 
 function Carousel() {
   const settings = {
