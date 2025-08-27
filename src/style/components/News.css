@@ -30,16 +30,17 @@
   display: flex;
   flex-flow: row wrap;
   gap: 15px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card{
   box-sizing: border-box;
-  max-width: 100%;
+  max-width: 30%;
   padding: 1rem 2rem;
   background-color: var(--dark-blue);
   border: 1px solid white;
   border-radius: 10px;
+  /* transition: 10s ease-out; */
 }
 
 .card h2{
@@ -53,7 +54,12 @@
   display: block;
   max-height: 4rem;
   overflow: hidden;
-  transition: max-height 0.4s ease-out;
+  transition: max-height 1.2s ease-out;
+}
+
+.openNews{
+  max-height: 100% !important;
+  max-width: 100% !important;
 }
 
 .off_maxHeight{
@@ -70,7 +76,7 @@
   }
 
   .card{
-    max-width: 100%;
+    max-width: 30%;
     padding: 1rem 2rem;
 }
 

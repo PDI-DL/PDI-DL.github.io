@@ -24,11 +24,9 @@ function Header(){
       var currentScroll = window.pageYOffset;
       if (currentScroll > prevScroll){
         setScrollDirection('dontShow')
-        console.log("Descendo")
       }
       else{
         setScrollDirection('show')
-        console.log("Subindo")
       }
       prevScroll = currentScroll;
     }
