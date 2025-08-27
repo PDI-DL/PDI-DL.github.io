@@ -39,6 +39,7 @@
 
 body{
   padding-top: calc(var(--header-height) + 20px);
+  overflow-x: hidden;
 }
 
 /* Header Section */
@@ -162,30 +163,37 @@ footer{
   background-color: var(--footer);
 }
 
-.footerLogos{
-  margin-top: 20px;
+.wrap{
+  display: flex;
+  justify-content: center;
+  align-items:baseline;
+  flex-flow: row wrap;
+  gap: 50px;
+}
 
+.footerLogos{
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-inline: 1px solid white;
+}
+
+.footerLogos h1{
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .footerLogos img{
-  width: clamp(25px, 100px, 150px);
+  width: clamp(25px, 50px, 150px);
 }
 
-.headInstitutions, .otherInstitutions{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: clamp(5px, 40px, 50px);
+#nautec{
+  width: clamp(50px, 75px, 175px);
 }
 
-.headInstitutions h1{
-  width: 100%;
-}
 
-.otherInstitutions h1{
-  width: 100%;
-}
 
 /* Media Section */
 
