@@ -7,14 +7,8 @@ import "../../style/pages/Snake.css";
 export function Snake(){
     useEffect(() => {
         document.title = "Jogo da Cobrinha 🐍 | PDI";
+        document.documentElement.classList.add("snake"); // <html>
 
-        // disable header scroll
-        const prev = window.onscroll;
-        window.onscroll = null;
-        document.body.classList.add("no-scroll-hide");
-
-
-        // SNAKE
         var canvas = document.getElementById('game');
         var context = canvas.getContext('2d');
 
@@ -160,17 +154,15 @@ export function Snake(){
         // start the game
         requestAnimationFrame(loop);
 
-        // disable header scroll
-        return () => {
-          window.onscroll = prev;
-          document.body.classList.remove("no-scroll-hide");
-        };
+        return() => {
+            document.documentElement.classList.remove("snake");
+        }
     }, []);
 
     return (
         <>
             <Header />
-            <div className="snake">
+            <div className="snake-container">
                 <canvas width="400" height="400" id="game"></canvas>
             </div>
         </>

@@ -38,7 +38,7 @@
   width: 32%;
   min-width: 320px;
   padding: 1rem 2rem;
-  background-color: var(--dark-blue);
+  background-color: var(--blue-dark);
   border: 1px solid white;
   border-radius: 10px;
   transition: max-height 10s ease-out;
