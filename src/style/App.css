@@ -216,10 +216,6 @@ footer{
     margin-left: 15px;
   }
 
-  #logo:hover + .internal_links{
-    right: 0;
-  }
-
   .internal_links{
     /* height: 100vh; */
     position: absolute;
