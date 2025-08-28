@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
 import c3Logo from "../assets/logos/logo_c3.png";
 import nautecLogo from "../assets/logos/logo_nautec-dark.png";

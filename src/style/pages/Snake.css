@@ -1,0 +1,15 @@
+.snake {
+    display: flex;
+}
+
+.snake canvas {
+    margin: 0px auto;
+    border: 1px solid white;
+}
+
+
+@media (prefers-color-scheme: light) {
+    .snake canvas {
+        border: 1px solid black;
+    }
+}

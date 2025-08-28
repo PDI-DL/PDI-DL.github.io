@@ -1,14 +1,20 @@
 import { useEffect } from "react";
-import { useState } from "react";
 
-import Header from "../components/Header.jsx";
-import Footer from "../components/Footer.jsx";
+import Header from "../../components/Header.jsx";
 
-import "../style/components/Snake.css";
+import "../../style/pages/Snake.css";
 
 export function Snake(){
     useEffect(() => {
-        document.title = "JOGO DA COBRINHA | PDI";
+        document.title = "Jogo da Cobrinha 🐍 | PDI";
+
+        // disable header scroll
+        const prev = window.onscroll;
+        window.onscroll = null;
+        document.body.classList.add("no-scroll-hide");
+
+
+        // SNAKE
         var canvas = document.getElementById('game');
         var context = canvas.getContext('2d');
 
@@ -153,15 +159,20 @@ export function Snake(){
 
         // start the game
         requestAnimationFrame(loop);
+
+        // disable header scroll
+        return () => {
+          window.onscroll = prev;
+          document.body.classList.remove("no-scroll-hide");
+        };
     }, []);
 
     return (
         <>
             <Header />
-            <main>
+            <div className="snake">
                 <canvas width="400" height="400" id="game"></canvas>
-            </main>
-            {/* <Footer/> */}
+            </div>
         </>
     )
 }
