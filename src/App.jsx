@@ -8,19 +8,19 @@ import Calendar from "./pages/Calendar"
 import NotFound from "./pages/NotFound"
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/publications" element={<Publications/>}/>
-        <Route path="/team" element={<Team/>}/>
-        <Route path="/research" element={<Research/>}/>
-        <Route path="/calendar" element={<Calendar/>}/>
-        <Route path="*" element={<NotFound/>}/>
-      </Routes>
-    </Router>
-  )
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/home" element={<Home/>}/>
+                <Route path="/publications" element={<Publications/>}/>
+                <Route path="/team" element={<Team/>}/>
+                <Route path="/research" element={<Research/>}/>
+                <Route path="/calendar" element={<Calendar/>}/>
+                <Route path="*" element={<NotFound/>}/>
+            </Routes>
+        </Router>
+    )
 }
 
 export default App
