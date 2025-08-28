@@ -3,7 +3,7 @@
 :root{
     overflow-x: hidden;
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
+    color: var(--color-root);
     background-color: var(--bg-root);
 
     /* Spacing */
@@ -12,17 +12,22 @@
     /* Colors */
     --bg-root: rgb(36, 36, 36);
     --bg-root-light: rgb(255, 255, 255);
+    --color-root: rgba(255, 255, 255, 0.87);
     --color-root-light: rgb(33, 53, 71);
 
     --header: rgb(44, 44, 44);
+    --header-light: rgb(217, 217, 217); /* TEMPORARIO!!!!!!!! */
     --footer: rgb(0, 0, 0);
+    --footer-light: rgb(217, 217, 217); /* TEMPORARIO!!!!!!!! */
     --button: rgb(24, 24, 24);
-    --button-light: rgb(249, 249, 249);
+    --button-light: rgb(220, 220, 220);
 
-    --light-blue: rgb(0, 123, 255);
+    --blue-light: rgb(215, 225, 255);
     --dark-blue: rgb(29, 61, 83);
     --yellow: rgb(196, 173, 73);
+    --yellow-light: rgb(196, 173, 73);
     --red-hover: rgb(255, 153, 153);
+    --red-hover-light: rgb(255, 100, 100);
 }
 
 *{
@@ -190,10 +195,8 @@ footer{
 }
 
 #nautec{
-  width: clamp(50px, 75px, 175px);
+  width: clamp(75px, 100px, 200px);
 }
-
-
 
 /* Media Section */
 
@@ -202,11 +205,50 @@ footer{
     color: var(--color-root-light);
     background-color: var(--bg-root-light);
   }
+
   a:hover {
-    color: var(--light-blue);
+    color: var(--blue-light);
   }
+
   button {
     background-color: var(--button-light);
+  }
+
+  header {
+    background-color: var(--header-light);
+    color: red;
+  }
+
+  #github {
+    content: url("../assets/logos/logo_github-light.png");
+  }
+
+  #linkedin {
+    content: url("../assets/logos/logo_linkedin-light.png");
+  }
+
+  #logo a span {
+    color: black;
+  }
+
+  .internal_links li > a {
+    color: black;
+  }
+
+  .internal_links > li > a:hover {
+    color: var(--red-hover-light)
+  }
+
+  footer {
+    background-color: var(--footer-light);
+  }
+
+  .footerLogos {
+    border-inline: 1px solid black;
+  }
+
+  #nautec {
+    content: url("../assets/logos/logo_nautec-light.png");
   }
 }
 
@@ -288,6 +330,4 @@ footer{
   .activate:nth-child(2){
     opacity: 0;
   }
-
-
 }

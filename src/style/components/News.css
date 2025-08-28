@@ -66,6 +66,17 @@
   max-height: 1000px !important;
 }
 
+/* Media Section */
+@media (prefers-color-scheme: light) {
+  #head button {
+    background-color: var(--button-light);
+  }
+
+  .card {
+    background-color: var(--blue-light);
+  }
+}
+
 @media (max-width: 1040px){
   #head{
     justify-content: space-between;
