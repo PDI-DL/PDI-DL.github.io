@@ -6,6 +6,7 @@ import Team from "./pages/Team"
 import Research from "./pages/Research"
 import Calendar from "./pages/Calendar"
 import NotFound from "./pages/NotFound"
+import Snake from "./pages/Snake"
 
 function App() {
     return (
@@ -18,6 +19,8 @@ function App() {
                 <Route path="/research" element={<Research/>}/>
                 <Route path="/calendar" element={<Calendar/>}/>
                 <Route path="*" element={<NotFound/>}/>
+
+                <Route path="/snake" element={<Snake/>}/>
             </Routes>
         </Router>
     )
