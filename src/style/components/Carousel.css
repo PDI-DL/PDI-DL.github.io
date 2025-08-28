@@ -1,9 +1,9 @@
 .carousel-container {
-  padding: 50px
+    padding: 50px
 }
 
 .carousel-container img {
-  width: 100%;
+    width: 100%;
 }
 
 .slick-prev:before,
@@ -12,14 +12,14 @@
 }
 
 .slick-dots li button {
-  color: white;
+    color: white;
 }
 
 .slick-dots li button:before {
-  color: white;
+    color: white;
     font-size: 0.5rem;
 }
 
 .slick-dots li.slick-active button:before {
-  color: var(--dark-blue);
+    color: var(--dark-blue);
 }

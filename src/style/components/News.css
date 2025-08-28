@@ -1,29 +1,29 @@
 #head{
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 #head h1{
-  font-size: 2.5em;
-  font-weight: bold;
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
 #head button{
-  /* height: 70px; */
-  margin-left: 20px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  background-color: var(--button);
-  border: 1px solid white;
-  border-radius: 0.25rem;
-  padding: 0.3rem 0.5rem;
-  cursor: pointer;
-  transition: 0.1s ease-in-out;
+    /* height: 70px; */
+    margin-left: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: var(--button);
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
 }
 
 #head button:hover{
-  background-color: var(--yellow);
+    background-color: var(--yellow);
 }
 
 .news{
@@ -105,6 +105,17 @@
 
 .buttonHolder button:hover{
   background-color: var(--yellow);
+}
+
+/* Media Section */
+@media (prefers-color-scheme: light) {
+    #head button {
+        background-color: var(--button-light);
+    }
+
+    .card {
+        background-color: var(--blue-light);
+    }
 }
 
 @media (max-width: 1040px){

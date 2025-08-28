@@ -3,7 +3,7 @@
 :root{
     overflow-x: hidden;
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
+    color: var(--color-root);
     background-color: var(--bg-root);
 
     /* Spacing */
@@ -12,34 +12,39 @@
     /* Colors */
     --bg-root: rgb(36, 36, 36);
     --bg-root-light: rgb(255, 255, 255);
+    --color-root: rgba(255, 255, 255, 0.87);
     --color-root-light: rgb(33, 53, 71);
 
     --header: rgb(44, 44, 44);
+    --header-light: rgb(217, 217, 217); /* TEMPORARIO!!!!!!!! */
     --footer: rgb(0, 0, 0);
+    --footer-light: rgb(217, 217, 217); /* TEMPORARIO!!!!!!!! */
     --button: rgb(24, 24, 24);
-    --button-light: rgb(249, 249, 249);
+    --button-light: rgb(220, 220, 220);
 
-    --light-blue: rgb(0, 123, 255);
+    --blue-light: rgb(215, 225, 255);
     --dark-blue: rgb(29, 61, 83);
     --yellow: rgb(196, 173, 73);
+    --yellow-light: rgb(196, 173, 73);
     --red-hover: rgb(255, 153, 153);
+    --red-hover-light: rgb(255, 100, 100);
 }
 
 *{
-  margin: 0px;
-  padding: 0px;
-  font-family: "Courier New", Courier, monospace;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Courier New", Courier, monospace;
 }
 
 .container{
-  margin-inline: auto;
-  width: 100%;
-  max-width: 1500px;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1500px;
 }
 
 body{
-  padding-top: calc(var(--header-height) + 20px);
-  overflow-x: hidden;
+    padding-top: calc(var(--header-height) + 20px);
+    overflow-x: hidden;
 }
 
 /* Header Section */
@@ -57,11 +62,11 @@ header{
 }
 
 .show {
-  top: 0;
+    top: 0;
 }
 
 .dontShow{
-  top: calc(var(--header-height) * -1);
+    top: calc(var(--header-height) * -1);
 }
 
 nav{
@@ -128,86 +133,122 @@ nav{
 }
 
 #external_links a:not(:first-child){
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 #external_links a{
-  transition: .2s;
+    transition: .2s;
 }
 
 #external_links a:hover{
-  transform: scale(1.2)
+    transform: scale(1.2)
 }
 
 #hamburger{
-  display: none;
+    display: none;
 }
 
 /* Main Section */
 
 main {
-  max-width: 1200px;
-  margin: 0px auto;
-  /* padding: 25px; */
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 50px;
-  min-height: 75vh;
+    max-width: 1200px;
+    margin: 0px auto;
+    /* padding: 25px; */
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 50px;
+    min-height: 75vh;
 }
 
 /* Footer Section */
 
 footer{
-  padding: 50px;
-  min-height: 100px;
-  background-color: var(--footer);
+    padding: 50px;
+    min-height: 100px;
+    background-color: var(--footer);
 }
 
 .wrap{
-  display: flex;
-  justify-content: center;
-  align-items:baseline;
-  flex-flow: row wrap;
-  gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    flex-flow: row wrap;
+    gap: 50px;
 }
 
 .footerLogos{
-  display: flex;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  border-inline: 1px solid white;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-inline: 1px solid white;
 }
 
 .footerLogos h1{
-  width: 100%;
-  margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .footerLogos img{
-  width: clamp(25px, 50px, 150px);
+    width: clamp(25px, 50px, 150px);
 }
 
 #nautec{
-  width: clamp(50px, 75px, 175px);
+    width: clamp(75px, 100px, 200px);
 }
-
-
 
 /* Media Section */
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: var(--color-root-light);
-    background-color: var(--bg-root-light);
-  }
-  a:hover {
-    color: var(--light-blue);
-  }
-  button {
-    background-color: var(--button-light);
-  }
+    :root {
+        color: var(--color-root-light);
+        background-color: var(--bg-root-light);
+    }
+
+    a:hover {
+        color: var(--blue-light);
+    }
+
+    button {
+        background-color: var(--button-light);
+    }
+
+    header {
+        background-color: var(--header-light);
+    }
+
+    #github {
+        content: url("../assets/logos/logo_github-light.png");
+    }
+
+    #linkedin {
+        content: url("../assets/logos/logo_linkedin-light.png");
+    }
+
+    #logo a span {
+        color: black;
+    }
+
+    .internal_links li > a {
+        color: black;
+    }
+
+    .internal_links > li > a:hover {
+        color: var(--red-hover-light)
+    }
+
+    footer {
+        background-color: var(--footer-light);
+    }
+
+    .footerLogos {
+        border-inline: 1px solid black;
+    }
+
+    #nautec {
+        content: url("../assets/logos/logo_nautec-light.png");
+    }
 }
 
 @media (max-width: 930px){
@@ -216,74 +257,72 @@ footer{
     margin-left: 15px;
   }
 
-  .internal_links{
-    /* height: 100vh; */
-    position: absolute;
-    right: -40vw;
-    top: 100%;  
-    display: flex;
-    flex-flow: column wrap;
-    background-color: rgb(44, 44, 44);
-    transition: 0.3s ease-out;
-  }
+    .internal_links{
+        /* height: 100vh; */
+        position: absolute;
+        right: -40vw;
+        top: 100%;  
+        display: flex;
+        flex-flow: column wrap;
+        background-color: rgb(44, 44, 44);
+        transition: 0.3s ease-out;
+    }
 
-  .internal_links li{
-    margin: 0 !important;
-    padding-block: 10px;
-    border-top: 1px solid white;
-  }
+    .internal_links li{
+        margin: 0 !important;
+        padding-block: 10px;
+        border-top: 1px solid white;
+    }
 
-  .internal_links li:first-child{
-    border-top: none;
-  }
+    .internal_links li:first-child{
+        border-top: none;
+    }
 
-  .internal_links li a{
-    display: block;
-    text-align: center;
-    /* width: 100%; */
-    padding: 0.5rem 1rem;
-    width: 30vw;
-  }
+    .internal_links li a{
+        display: block;
+        text-align: center;
+        /* width: 100%; */
+        padding: 0.5rem 1rem;
+        width: 30vw;
+    }
 
-  .show{
-    right: 0;
-  }
+    .show{
+        right: 0;
+    }
 
-  #external_links{
-    margin-right: 15px;
-  }
+    #external_links{
+        margin-right: 15px;
+    }
 
-  #hamburger{
-    display: block;
-    margin-right: 15px;
-    height: 100%;
-    width: 35px;
-    cursor: pointer;
-  }
+    #hamburger{
+        display: block;
+        margin-right: 15px;
+        height: 100%;
+        width: 35px;
+        cursor: pointer;
+    }
 
-  .hamburgerLine{
-    background-color: white;
-    height: 3px;
-    width: 100%;
-    margin-bottom: 8px;
-    transition: 0.3s, opacity 0.15s;
-  }
+    .hamburgerLine{
+        background-color: white;
+        height: 3px;
+        width: 100%;
+        margin-bottom: 8px;
+        transition: 0.3s, opacity 0.15s;
+    }
 
-  .hamburgerLine:last-of-type{
-    margin-bottom: 0;
-  }
+    .hamburgerLine:last-of-type{
+        margin-bottom: 0;
+    }
 
-  .activate:first-child{
-    transform: translate(0, 11px) rotate(45deg);
-  }
+    .activate:first-child{
+        transform: translate(0, 11px) rotate(45deg);
+    }
 
-  .activate:last-child{
-    transform: translate(0, -11px) rotate(-45deg);
-  }
+    .activate:last-child{
+        transform: translate(0, -11px) rotate(-45deg);
+    }
 
-  .activate:nth-child(2){
-    opacity: 0;
-  }
-
-
+    .activate:nth-child(2){
+        opacity: 0;
+    }
 }
