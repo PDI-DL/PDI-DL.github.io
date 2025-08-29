@@ -166,6 +166,7 @@ footer{
     padding: 50px;
     min-height: 100px;
     background-color: var(--footer);
+    margin-top: var(--header-height);
 }
 
 .wrap{

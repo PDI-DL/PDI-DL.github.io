@@ -34,6 +34,9 @@
 }
 
 .card{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
   box-sizing: border-box;
   width: 32%;
   min-width: 320px;
@@ -80,6 +83,7 @@
 }
 
 .card .buttonHolder{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
