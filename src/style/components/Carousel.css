@@ -17,6 +17,6 @@
 
 /* dot ativo */
 .swiper-pagination-bullet-active {
-    background-color: var(--blue-dark);
+    background-color: var(--blue);
     opacity: 1;
 }

@@ -11,23 +11,15 @@
 
     /* Colors */
     --bg-root: rgb(36, 36, 36);
-    --bg-root-light: rgb(255, 255, 255);
     --color-root: rgba(255, 255, 255, 0.87);
-    --color-root-light: rgb(33, 53, 71);
 
     --header: rgb(44, 44, 44);
-    --header-light: rgb(217, 217, 217); /* TEMPORARIO!!!!!!!! */
     --footer: rgb(0, 0, 0);
-    --footer-light: rgb(217, 217, 217); /* TEMPORARIO!!!!!!!! */
     --button: rgb(24, 24, 24);
-    --button-light: rgb(220, 220, 220);
 
-    --blue-light: rgb(215, 225, 255);
-    --blue-dark: rgb(29, 61, 83);
+    --blue: rgb(29, 61, 83);
     --yellow: rgb(196, 173, 73);
-    --yellow-light: rgb(196, 173, 73);
     --red-hover: rgb(255, 153, 153);
-    --red-hover-light: rgb(255, 100, 100);
 }
 
 *{
@@ -48,7 +40,6 @@ body{
 }
 
 /* Header Section */
-
 header{
     position: fixed;
     z-index: 100;
@@ -149,7 +140,6 @@ nav{
 }
 
 /* Main Section */
-
 main {
     max-width: 1200px;
     margin: 0px auto;
@@ -161,7 +151,6 @@ main {
 }
 
 /* Footer Section */
-
 footer{
     padding: 50px;
     min-height: 100px;
@@ -199,25 +188,25 @@ footer{
 }
 
 /* Media Section */
-
 @media (prefers-color-scheme: light) {
     :root {
-        color: var(--color-root-light);
-        background-color: var(--bg-root-light);
+        color: var(--color-root);
+        background-color: var(--bg-root);
+
+        /* Colors */
+        --bg-root: rgb(255, 255, 255);
+        --color-root: rgb(33, 53, 71);
+
+        --header: rgb(217, 217, 217); /* TEMPORARIO!!!!!!!! */
+        --footer: rgb(217, 217, 217); /* TEMPORARIO!!!!!!!! */
+        --button: rgb(220, 220, 220);
+
+        --blue: rgb(215, 225, 255);
+        --yellow: rgb(196, 173, 73);
+        --red-hover: rgb(255, 100, 100);
     }
 
-    a:hover {
-        color: var(--blue-light);
-    }
-
-    button {
-        background-color: var(--button-light);
-    }
-
-    header {
-        background-color: var(--header-light);
-    }
-
+    /* Header Section */
     #github {
         content: url("../assets/logos/logo_github-light.png");
     }
@@ -234,14 +223,7 @@ footer{
         color: black;
     }
 
-    .internal_links > li > a:hover {
-        color: var(--red-hover-light)
-    }
-
-    footer {
-        background-color: var(--footer-light);
-    }
-
+    /* Footer Section */
     .footerLogos {
         border-inline: 1px solid black;
     }
@@ -252,10 +234,9 @@ footer{
 }
 
 @media (max-width: 930px){
-
-  #logo{
-    margin-left: 15px;
-  }
+    #logo{
+        margin-left: 15px;
+    }
 
     .internal_links{
         /* height: 100vh; */

@@ -2,3 +2,10 @@
     width: clamp(175px, 175px, 175px);
     margin-right: 2.5rem;
 }
+
+/* Media Section */
+@media (prefers-color-scheme: light) {
+    #nautec-marquee {
+        content: url("../../assets/logos/logo_nautec-light.png");
+    }
+}

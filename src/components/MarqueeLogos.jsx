@@ -19,7 +19,7 @@ export function MarqueeLogos() {
         >
             <img src={furgLogo} alt="Federal University of Rio Grande logo" />
             <img src={c3Logo} alt="Computation Sciences Center logo" />
-            <img src={nautecLogo} alt="Intelligent automation and robotics group" />
+            <img src={nautecLogo} id="nautec-marquee" alt="Intelligent automation and robotics group" />
             <img src={ufamLogo} alt="Federal University of Amazonas logo" />
             <img src={ufsmLogo} alt="Federal University of Santa Maria logo" />
         </Marquee>
