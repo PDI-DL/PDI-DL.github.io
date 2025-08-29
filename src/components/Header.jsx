@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import pdiLogo from "../assets/logos/logo_pdi.png";
 import githubLogo from "../assets/logos/logo_github-dark.png";
@@ -50,7 +50,7 @@ function Header(){
                     <Link to="#"><img src={githubLogo} id="github" alt="GitHub logo" /></Link>
                     <Link to="#"><img src={linkedinLogo} id="linkedin" alt="LinkedIn logo" /></Link>
                 </div>
-                <div id = "hamburger" onClick={toggleHamburger}>
+                <div id="hamburger" onClick={toggleHamburger}>
                     <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
                     <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
                     <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>

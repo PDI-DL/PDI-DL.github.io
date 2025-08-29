@@ -23,7 +23,7 @@
     --button-light: rgb(220, 220, 220);
 
     --blue-light: rgb(215, 225, 255);
-    --dark-blue: rgb(29, 61, 83);
+    --blue-dark: rgb(29, 61, 83);
     --yellow: rgb(196, 173, 73);
     --yellow-light: rgb(196, 173, 73);
     --red-hover: rgb(255, 153, 153);
@@ -151,13 +151,13 @@ nav{
 /* Main Section */
 
 main {
-    /* max-width: 1200px;
+    max-width: 1200px;
     margin: 0px auto;
     padding: 25px;
     display: flex;
     flex-flow: column nowrap;
     gap: 50px;
-    min-height: 75vh; */
+    min-height: 75vh;
 }
 
 /* Footer Section */

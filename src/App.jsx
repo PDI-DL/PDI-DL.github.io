@@ -5,8 +5,8 @@ import Publications from "./pages/Publications"
 import Team from "./pages/Team"
 import Research from "./pages/Research"
 import Calendar from "./pages/Calendar"
-import NotFound from "./pages/NotFound"
-import Snake from "./pages/Snake"
+import NotFound from "./pages/other/NotFound"
+import Snake from "./pages/other/Snake"
 
 function App() {
     return (
