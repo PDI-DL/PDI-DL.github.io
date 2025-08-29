@@ -1,17 +1,16 @@
-/* Universal Section */
-
+/* Root Section */
 :root{
     overflow-x: hidden;
     color-scheme: light dark;
-    color: var(--color-root);
-    background-color: var(--bg-root);
+    color: var(--main);
+    background-color: var(--bg);
 
     /* Spacing */
     --header-height: 60px;
 
     /* Colors */
-    --bg-root: rgb(36, 36, 36);
-    --color-root: rgba(255, 255, 255, 0.87);
+    --bg: rgb(36, 36, 36);
+    --main: rgba(255, 255, 255, 0.87);
 
     --header: rgb(44, 44, 44);
     --footer: rgb(0, 0, 0);
@@ -22,214 +21,43 @@
     --red-hover: rgb(255, 153, 153);
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: "Courier New", Courier, monospace;
 }
 
-.container{
-    margin-inline: auto;
-    width: 100%;
-    max-width: 1500px;
-}
-
-body{
+body {
     padding-top: calc(var(--header-height) + 20px);
     overflow-x: hidden;
 }
 
-/* Header Section */
-header{
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: var(--header-height);
-    background-color: var(--header);
-    opacity: 0.9;
-    transition: top 0.5s;
-}
-
-.show {
-    top: 0;
-}
-
-.dontShow{
-    top: calc(var(--header-height) * -1);
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50px;
-}
-
-#logo a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#logo a img{
-    width: 50px;
-}
-
-#logo a{
-    text-decoration: none;
-}
-
-#logo a span{
-    font-size: 1.4rem;
-    color: white;
-    margin-left: 10px;
-}
-
-.internal_links > li{
-    display: inline-block;
-}
-
-.internal_links li > a{
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-    transition: .2s
-}
-
-.internal_links > li > a:hover{
-    color: var(--red-hover);
-}
-
-.internal_links li:not(:first-child){
-    margin-left: 1.5rem;
-}
-
-#external_links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 50px;
-}
-
-#external_links img{
-    width: 30px;
-}
-
-#external_links a:not(:first-child){
-    margin-left: 20px;
-}
-
-#external_links a{
-    transition: .2s;
-}
-
-#external_links a:hover{
-    transform: scale(1.2)
-}
-
-#hamburger{
-    display: none;
-}
-
-/* Main Section */
 main {
-    max-width: 1200px;
-    margin: 0px auto;
-    padding: 25px;
+    width: clamp(320px, 90vw, 1500px);
+    min-height: 75vh;
+    margin-inline: auto;
     display: flex;
     flex-flow: column nowrap;
-    gap: 50px;
-    min-height: 75vh;
-}
-
-/* Footer Section */
-footer{
-    padding: 50px;
-    min-height: 100px;
-    background-color: var(--footer);
-}
-
-.wrap{
-    display: flex;
-    justify-content: center;
-    align-items:baseline;
-    flex-flow: row wrap;
-    gap: 50px;
-}
-
-.footerLogos{
-    display: flex;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    border-inline: 1px solid white;
-}
-
-.footerLogos h1{
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.footerLogos img{
-    width: clamp(25px, 50px, 150px);
-}
-
-#nautec{
-    width: clamp(75px, 100px, 200px);
+    gap: 35px;
 }
 
 /* Media Section */
 @media (prefers-color-scheme: light) {
     :root {
-        color: var(--color-root);
-        background-color: var(--bg-root);
+        color: var(--main);
+        background-color: var(--bg);
 
         /* Colors */
-        --bg-root: rgb(255, 255, 255);
-        --color-root: rgb(33, 53, 71);
+        --bg: rgb(255, 255, 255);
+        --main: rgb(33, 53, 71);
 
-        --header: rgb(217, 217, 217); /* TEMPORARIO!!!!!!!! */
-        --footer: rgb(217, 217, 217); /* TEMPORARIO!!!!!!!! */
+        --header: rgb(217, 217, 217);
+        --footer: rgb(217, 217, 217);
         --button: rgb(220, 220, 220);
 
         --blue: rgb(215, 225, 255);
         --yellow: rgb(196, 173, 73);
         --red-hover: rgb(255, 100, 100);
-    }
-
-    /* Header Section */
-    #github {
-        content: url("../assets/logos/logo_github-light.png");
-    }
-
-    #linkedin {
-        content: url("../assets/logos/logo_linkedin-light.png");
-    }
-
-    #logo a span {
-        color: black;
-    }
-
-    .internal_links li > a {
-        color: black;
-    }
-
-    /* Footer Section */
-    .footerLogos {
-        border-inline: 1px solid black;
-    }
-
-    #nautec {
-        content: url("../assets/logos/logo_nautec-light.png");
     }
 }
 

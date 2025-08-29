@@ -14,7 +14,7 @@ export function MarqueeLogos() {
             speed={30}
             autoFill={true}
             gradient="200px"
-            gradientColor={"var(--bg-root)"}
+            gradientColor={"var(--bg)"}
             className="marquee-logos"
         >
             <img src={furgLogo} alt="Federal University of Rio Grande logo" />

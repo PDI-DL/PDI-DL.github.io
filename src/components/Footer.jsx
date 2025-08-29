@@ -6,10 +6,12 @@ import furgLogo from "../assets/logos/logo_furg.png";
 import ufamLogo from "../assets/logos/logo_ufam.png"
 import ufsmLogo from "../assets/logos/logo_ufsm.png"
 
+import "../style/components/Footer.css";
+
 function Footer(){
     return(
         <footer>
-            <div className="container wrap">
+            <div className="wrap">
                 <div className="footer_info">
                     <span>Digital Image Processing and Machine Learning <b>Research Group</b> | {new Date().getFullYear()}</span>
                     <br/>

@@ -1,0 +1,119 @@
+header {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--header);
+    opacity: 0.9;
+    transition: top 0.5s;
+}
+
+.show {
+    top: 0;
+}
+
+.dontShow {
+    top: calc(var(--header-height) * -1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1500px;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo a img {
+    width: 50px;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+#logo a span {
+    font-size: 1.4rem;
+    color: white;
+    margin-left: 10px;
+}
+
+.internal_links > li {
+    display: inline-block;
+}
+
+.internal_links li > a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    transition: .2s
+}
+
+.internal_links > li > a:hover {
+    color: var(--red-hover);
+}
+
+.internal_links li:not(:first-child) {
+    margin-left: 1.5rem;
+}
+
+#external_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#external_links img {
+    width: 30px;
+}
+
+#external_links a:not(:first-child) {
+    margin-left: 20px;
+}
+
+#external_links a {
+    transition: .2s;
+}
+
+#external_links a:hover {
+    transform: scale(1.2)
+}
+
+#hamburger{
+    display: none;
+}
+
+@media (prefers-color-scheme: light) {
+    #github {
+        content: url("../assets/logos/logo_github-light.png");
+    }
+
+    #linkedin {
+        content: url("../assets/logos/logo_linkedin-light.png");
+    }
+
+    #logo a span {
+        color: black;
+    }
+
+    .internal_links li > a {
+        color: black;
+    }
+}

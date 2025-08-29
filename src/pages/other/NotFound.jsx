@@ -10,14 +10,14 @@ export function NotFound(){
         document.title = "Page Not Found | PDI";
     }, []);
     return (
-        <>
+        <div className="notfound-container">
             <Header/>
             <main>
                 <h1>ERROR 404</h1>
                 <h2>Page Not Found!</h2>
             </main>
             <Footer/>
-        </>
+        </div>
     );
 }
 
