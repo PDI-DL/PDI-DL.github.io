@@ -15,6 +15,23 @@
     background-color: rgb(212, 212, 212);
 }
 
+/* arrows */
+.swiper-button-prev,
+.swiper-button-next {
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin: 15px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /* dot ativo */
 .swiper-pagination-bullet-active {
     opacity: 1;
