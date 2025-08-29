@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import Header from "../../components/Header.jsx";
 
-import "../../style/pages/Snake.css";
+import "../../style/pages/other/Snake.css";
 
 export function Snake(){
     useEffect(() => {

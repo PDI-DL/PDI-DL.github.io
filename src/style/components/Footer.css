@@ -1,6 +1,6 @@
 footer {
-    padding: 50px;
     min-height: 100px;
+    padding: 50px;
     background-color: var(--footer);
 }
 
@@ -13,14 +13,14 @@ footer > div {
 .wrap {
     display: flex;
     justify-content: center;
-    align-items:baseline;
     flex-flow: row wrap;
+    align-items: baseline;
     gap: 50px;
 }
 
 .footerLogos {
-    display: flex;
     margin-top: 20px;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -30,6 +30,7 @@ footer > div {
 .footerLogos h1 {
     width: 100%;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .footerLogos img {

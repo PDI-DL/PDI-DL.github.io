@@ -1,13 +1,13 @@
 header {
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    align-items: center;
     width: 100%;
     height: var(--header-height);
-    background-color: var(--header);
-    opacity: 0.9;
+    position: fixed;
+    display: flex;
+    align-items: center;
     transition: top 0.5s;
+    opacity: 0.9;
+    z-index: 100;
+    background-color: var(--header);
 }
 
 .show {
@@ -19,19 +19,19 @@ header {
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-inline: auto;
     width: 100%;
     max-width: 1500px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #logo {
+    margin-left: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
 }
 
 #logo a {
@@ -49,9 +49,9 @@ nav {
 }
 
 #logo a span {
+    margin-left: 10px;
     font-size: 1.4rem;
     color: white;
-    margin-left: 10px;
 }
 
 .internal_links > li {

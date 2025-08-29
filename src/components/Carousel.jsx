@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import carouselPlaceholder1 from "../assets/other/fotasso.jpg";
-import carouselPlaceholder2 from "../assets/other/carousel-placeholder.png";
+import carouselPlaceholder2 from "../assets/other/pdi_banner.png";
 
 import "../style/components/Carousel.css";
 

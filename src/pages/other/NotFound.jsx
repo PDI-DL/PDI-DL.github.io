@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Header from "../../components/Header.jsx";
 import Footer from "../../components/Footer.jsx";
 
-import "../../style/pages/NotFound.css";
+import "../../style/pages/other/NotFound.css";
 
 export function NotFound(){
     useEffect(() => {
