@@ -5,6 +5,8 @@ import pdiLogo from "../assets/logos/logo_pdi.png";
 import githubLogo from "../assets/logos/logo_github-dark.png";
 import linkedinLogo from "../assets/logos/logo_linkedin-dark.png";
 
+import "../style/components/Header.css";
+
 function Header(){
 
     // Hamburger 
@@ -32,7 +34,7 @@ function Header(){
 
     return(
         <header className={scrollDirection === "show" ? "show" : "dontShow"}>
-            <nav className="container">
+            <nav>
                 <div id="logo">
                     <Link to="/">
                         <img src={pdiLogo} alt="the laboratory's logo" />

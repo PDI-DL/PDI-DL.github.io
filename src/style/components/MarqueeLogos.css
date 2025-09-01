@@ -1,0 +1,15 @@
+.marquee-logos {
+    background-color: var(--header);
+}
+
+.marquee-logos img {
+    width: clamp(135px, 135px, 135px);
+    padding: 20px 15px;    
+}
+
+/* Media Section */
+@media (prefers-color-scheme: light) {
+    #nautec-marquee {
+        content: url("../../assets/logos/logo_nautec-light.png");
+    }
+}

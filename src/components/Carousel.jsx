@@ -1,11 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import { EffectFade } from "swiper/modules";
+import { Navigation, Autoplay, EffectCube } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
+import 'swiper/css/effect-cube';
 
 import carouselPlaceholder1 from "../assets/other/fotasso.jpg";
-import carouselPlaceholder2 from "../assets/other/carousel-placeholder.png";
+import carouselPlaceholder2 from "../assets/other/pdi_banner.png";
 
 import "../style/components/Carousel.css";
 
@@ -18,9 +19,12 @@ function Carousel() {
     return (
         <div className="slider-container">
             <Swiper
-                modules={[Pagination, Autoplay, EffectFade]}
+                modules={[Navigation, Autoplay, EffectCube]}
+                navigation
+                effect="cube"
+                // fadeEffect={{ crossFade: true }}
                 loop={true}
-                pagination={{ clickable: true }}
+                slidesPerView={1}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
             >
                 {data.map((item) => (

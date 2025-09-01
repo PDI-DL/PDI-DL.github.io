@@ -35,7 +35,7 @@ function News(){
     }
 
     return(
-        <div className = "container">
+        <div>
             <div id="head">
                 <h1>Papers</h1>
                 <button onClick={toggleMaxHeight}> {hasMaxHeight ? 'Reduce articles' : 'Show full articles'} </button>

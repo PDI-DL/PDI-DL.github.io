@@ -1,0 +1,52 @@
+footer {
+    min-height: 100px;
+    padding: 50px;
+    background-color: var(--footer);
+}
+
+footer > div {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: baseline;
+    gap: 50px;
+}
+
+.footerLogos {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-inline: 1px solid white;
+}
+
+.footerLogos h1 {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footerLogos img {
+    width: clamp(25px, 50px, 150px);
+}
+
+#nautec {
+    width: clamp(75px, 100px, 200px);
+}
+
+@media (prefers-color-scheme: light) {
+    .footerLogos {
+        border-inline: 1px solid black;
+    }
+    
+    #nautec {
+        content: url("../assets/logos/logo_nautec-light.png");
+    }
+}

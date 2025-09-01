@@ -27,10 +27,10 @@
 }
 
 .news{
-  display: flex;
-  flex-flow: row wrap;
-  gap: 15px;
-  justify-content: space-between;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    justify-content: space-between;
 }
 
 .card{
@@ -48,38 +48,38 @@
 }
 
 .cardExpand{
-  width: 100% !important;
+    width: 100% !important;
 }
 
 .card h2{
-  font-size: 1.2rem;
-  text-align: left;
-  margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 0.8rem;
 }
 
 .card h3{
-  font-size: 1.1rem;
-  color: rgb(142, 142, 142);
-  margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: rgb(142, 142, 142);
+    margin-bottom: 0.5rem;
 }
 
 .card span{
-  text-align: justify;
-  text-indent: 1.5rem;
-  line-height: 1.5;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  line-clamp: 4; 
-  overflow: hidden;
-  transition: 1.2s ease-out;
-  margin-bottom: 1rem;
+    text-align: justify;
+    text-indent: 1.5rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4; 
+    overflow: hidden;
+    transition: 1.2s ease-out;
+    margin-bottom: 1rem;
 }
 
 .openNews{
-  max-height: 100% !important;
-  line-clamp: none !important;
-  -webkit-line-clamp: none !important;
+    max-height: 100% !important;
+    line-clamp: none !important;
+    -webkit-line-clamp: none !important;
 }
 
 .card .buttonHolder{
@@ -90,35 +90,35 @@
 }
 
 .buttonHolder span{
-  text-indent: 0;
-  padding: 0.5rem;
-  border-radius: 30px;
-  background-color: rgb(255, 255, 255);
-  color: black;
+    text-indent: 0;
+    padding: 0.5rem;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 .buttonHolder button{
-  display: inline-block;
-  background-color: var(--bg-root);
-  border: 1px solid white;
-  border-radius: 6px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.25rem 0.5rem;
+    display: inline-block;
+    background-color: var(--bg);
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
 }
 
 .buttonHolder button:hover{
-  background-color: var(--yellow);
+    background-color: var(--yellow);
 }
 
 /* Media Section */
 @media (prefers-color-scheme: light) {
     #head button {
-        background-color: var(--button-light);
+        background-color: var(--button);
     }
-
+    
     .card {
-        background-color: var(--blue-light);
+        background-color: var(--blue);
     }
 }
 
