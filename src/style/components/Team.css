@@ -1,0 +1,48 @@
+section{
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.profile{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+    width: 32%;
+    min-width: 350px;
+}
+
+.profile > img{
+    /* width: clamp(); */
+    width: 100px;
+    border-radius: 100%;
+}
+
+.info{
+    /* height: 100%; */
+    
+}
+
+.info > h2 {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.info > p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.infoLinks img{
+    width: 20px;
+}
+
+.infoLinks img:not(:last-child){
+    margin-left: 5px;
+}

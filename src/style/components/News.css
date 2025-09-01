@@ -122,7 +122,7 @@
     }
 }
 
-@media (max-width: 1040px){
+@media (max-width: 1090px){
   #head{
     justify-content: space-between;
   }
@@ -138,7 +138,7 @@
   }
 }
 
-@media (max-width: 750px){
+@media (max-width: 800px){
   .card{
     width: 100%;
   }

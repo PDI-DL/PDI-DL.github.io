@@ -2,6 +2,8 @@ import { useEffect } from "react";
 
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
+import Team_component from "../components/Team.jsx";
+
 
 export function Team(){
     useEffect(() => {
@@ -10,12 +12,12 @@ export function Team(){
     return (
         <>
             <Header/>
-            <main>
-                <h1>Team</h1>
+            <main className="container">
+                <Team_component/>
             </main>
             <Footer/>
         </>
     );
 }
 
-export default Team
+export default Team;
