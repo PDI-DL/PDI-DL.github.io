@@ -11,8 +11,8 @@ import "../style/components/Footer.css";
 function Footer(){
     return(
         <footer>
-            <div className="wrap">
-                <div className="footer_info">
+            <div className="wrap container">
+                <div className="footerInfo">
                     <span>Digital Image Processing and Machine Learning <b>Research Group</b> | {new Date().getFullYear()}</span>
                     <br/>
                     <br/>
@@ -23,11 +23,13 @@ function Footer(){
                     <span><b>Address</b> av. Itália street, 96203-900 | Rio Grande - RS - Brazil</span>
                 </div>
                 <div className="footerLogos">
-                    <h1>Institutions</h1>
-                    <Link to="#"><img src={c3Logo} alt="Computation Sciences Center logo" /></Link>
-                    <Link to="#"><img src={nautecLogo} id="nautec" alt="Intelligent automation and robotics group" /></Link>
-                    <Link to="#"><img src={furgLogo} alt="Federal University of Rio Grande logo" /></Link>
-                </div>
+                    <h1>-Institutions-</h1>
+                    <div className="Logos">
+                        <Link to="#"><img src={c3Logo} alt="Computation Sciences Center logo" /></Link>
+                        <Link to="#"><img src={nautecLogo} id="nautec" alt="Intelligent automation and robotics group" /></Link>
+                        <Link to="#"><img src={furgLogo} alt="Federal University of Rio Grande logo" /></Link>
+                    </div>
+                </div>          
             </div>
         </footer>
     )
