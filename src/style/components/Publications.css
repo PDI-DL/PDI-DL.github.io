@@ -30,7 +30,7 @@
     display: flex;
     flex-flow: row wrap;
     gap: 15px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .card{
@@ -47,23 +47,46 @@
   transition: max-height 10s ease-out;
 }
 
+.cardRead{
+    background-color: rgb(18, 37, 49) !important;
+}
+
 .cardExpand{
     width: 100% !important;
 }
 
 .card h2{
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: left;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; 
+    overflow: hidden;
+    line-height: 1.25;
+}
+
+.Noclamp{
+    -webkit-line-clamp: none !important;
+    line-clamp: none !important;
 }
 
 .card h3{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: rgb(142, 142, 142);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
-.card span{
+.card h3:first-of-type{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; 
+    overflow: hidden;
+}
+
+.card > span{
     text-align: justify;
     text-indent: 1.5rem;
     line-height: 1.5;
@@ -73,13 +96,24 @@
     line-clamp: 4; 
     overflow: hidden;
     transition: 1.2s ease-out;
-    margin-bottom: 1rem;
+    margin-block: 0.5rem 1rem;
 }
 
 .openNews{
     max-height: 100% !important;
     line-clamp: none !important;
     -webkit-line-clamp: none !important;
+}
+
+.yearTag{
+    background-color: white;
+    color: var(--bg);
+    font-weight: 500;
+    text-indent: 0; 
+    width: auto;
+    border-radius: 6px;
+    padding: 0.25rem 0.5rem;
+
 }
 
 .card .buttonHolder{
@@ -89,7 +123,7 @@
   align-items: baseline;
 }
 
-.buttonHolder span{
+.buttonHolder button span{
     text-indent: 0;
     padding: 0.5rem;
     border-radius: 30px;
@@ -122,7 +156,7 @@
     }
 }
 
-@media (max-width: 1090px){
+@media (max-width: 1260px){
   #head{
     justify-content: space-between;
   }
@@ -133,13 +167,14 @@
 }
 
 
-  .card span{
-    text-indent: 2rem;
+  .card > span{
+    text-indent: 1.5rem;
   }
 }
 
-@media (max-width: 800px){
+@media (max-width: 850px){
   .card{
     width: 100%;
   }
+
 }
