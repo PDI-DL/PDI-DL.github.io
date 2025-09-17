@@ -1,8 +1,29 @@
+.head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.head h1{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.teamSec{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.teamSec:not(:first-of-type){
+    /* margin-top: 30px */
+}
+
 section{
     display: flex;
-    gap: 1%;
+    gap: 15px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
+    margin-bottom: 30px;
 }
 
 
@@ -10,39 +31,64 @@ section{
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
-    gap: 8px;
+    gap: 10px;
     align-items: center;
     width: 32%;
     min-width: 350px;
 }
 
 .profile > img{
-    /* width: clamp(); */
     width: 100px;
+    
+    object-fit: cover;
     border-radius: 100%;
 }
 
 .info{
-    /* height: 100%; */
-    
+    margin-top: 10px;
 }
 
 .info > h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: left;
     margin-bottom: 5px;
 }
 
 .info > p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.2rem;
     margin-bottom: 10px;
 }
 
 .infoLinks img{
+    background-color: white;
+    padding: 2px;
+    border-radius: 100%;
     width: 20px;
+    transition: .25s;
 }
 
-.infoLinks img:not(:last-child){
-    margin-left: 5px;
+.infoLinks a:not(:first-child){
+    margin-left: 8px;
+}
+
+.infoLinks a:hover img{
+    transform: scale(1.25);
+}
+
+@media(max-width: 1200px) {
+    .profile{
+        width: 49%;
+    }
+}
+
+@media(max-width: 850px) {
+    section{
+        justify-content: center;
+        gap: 20px
+    }
+    .profile{
+        width: 100%;
+        max-width: 700px;
+    }
 }

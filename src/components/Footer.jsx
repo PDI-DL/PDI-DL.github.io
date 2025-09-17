@@ -21,9 +21,9 @@ function Footer(){
                 </div>
                 <div className="footerLogos">
                     <div className="Logos">
-                        <Link to="#"><img src={c3Logo} alt="Computation Sciences Center logo" /></Link>
-                        <Link to="#"><img src={nautecLogo} id="nautec" alt="Intelligent automation and robotics group" /></Link>
-                        <Link to="#"><img src={furgLogo} alt="Federal University of Rio Grande logo" /></Link>
+                        <Link to="https://br.linkedin.com/company/centro-de-ci%C3%AAncias-computacionais---c3-furg"><img src={c3Logo} alt="Computation Sciences Center logo" /></Link>
+                        <Link to="https://nautec.furg.br/en/"><img src={nautecLogo} id="nautec" alt="Intelligent automation and robotics group" /></Link>
+                        <Link to="https://www.furg.br/en/"><img src={furgLogo} alt="Federal University of Rio Grande logo" /></Link>
                     </div>
                 </div>          
             </div>

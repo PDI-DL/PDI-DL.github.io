@@ -49,7 +49,7 @@ function Header(){
                     <li><Link to="/calendar">Calendar</Link></li> */}
                 </ul>
                 <div id="external_links">
-                    <Link to="#"><img src={githubLogo} id="github" alt="GitHub logo" /></Link>
+                    <Link to="https://github.com/PDI-DL"><img src={githubLogo} id="github" alt="GitHub logo" /></Link>
                     <Link to="#"><img src={linkedinLogo} id="linkedin" alt="LinkedIn logo" /></Link>
                 </div>
                 <div id="hamburger" onClick={toggleHamburger}>
