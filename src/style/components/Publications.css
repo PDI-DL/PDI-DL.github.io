@@ -30,7 +30,7 @@
     display: flex;
     flex-flow: row wrap;
     gap: 15px;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .card{
@@ -76,6 +76,7 @@
 .card h3{
     width: 100%;
     font-size: 0.9rem;
+    line-height: 1.25;
     color: rgb(142, 142, 142);
     margin-bottom: 0.25rem;
 }

@@ -6,7 +6,7 @@
     margin-bottom: 15px
 }
 
-p{
-    /* color: lightpink; */
+.welcome-container > p{
+    text-indent: 1.5rem;
     
 }

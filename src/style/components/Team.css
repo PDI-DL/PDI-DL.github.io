@@ -20,7 +20,7 @@
 
 section{
     display: flex;
-    gap: 15px;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: left;
     margin-bottom: 30px;
@@ -33,7 +33,7 @@ section{
     justify-content: space-between;
     gap: 10px;
     align-items: center;
-    width: 32%;
+    width: 31%;
     min-width: 350px;
 }
 
@@ -76,13 +76,13 @@ section{
     transform: scale(1.25);
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 1235px) {
     .profile{
-        width: 49%;
+        width: 47%;
     }
 }
 
-@media(max-width: 850px) {
+@media(max-width: 885px) {
     section{
         justify-content: center;
         gap: 20px

@@ -9,11 +9,14 @@
     --header-height: 60px;
 
     /* Colors */
-    --bg: rgb(36, 36, 36);
+    /* --bg: rgb(36, 36, 36); */
+    --bg: rgb(5, 12, 17);
     --main: rgba(255, 255, 255, 0.87);
 
-    --header: rgb(44, 44, 44);
-    --footer: rgb(0, 0, 0);
+    /* --header: rgb(44, 44, 44); */
+    --header: rgba(0, 24, 43, 0.95);
+    /* --footer: rgb(0, 0, 0); */
+    --footer: rgb(0, 0, 0);;
     --button: rgb(24, 24, 24);
 
     --blue: rgb(29, 61, 83);
