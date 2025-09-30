@@ -60,6 +60,7 @@ nav {
 }
 
 .internal_links li > a {
+    font-size: 1.05rem;
     padding: 5px;
     text-decoration: none;
     color: white;
@@ -131,14 +132,13 @@ nav {
         top: 100%;  
         display: flex;
         flex-flow: column wrap;
-        background-color: rgb(44, 44, 44);
+        background-color: rgba(0, 16, 29, 0.9);
         transition: 0.3s ease-out;
     }
 
     .internal_links li{
         margin: 0 !important;
-        padding-block: 10px;
-        border-top: 1px solid white;
+        padding-block: 7px;
     }
 
     .internal_links li:first-child{
@@ -148,9 +148,9 @@ nav {
     .internal_links li a{
         display: block;
         text-align: center;
-        /* width: 100%; */
         padding: 0.5rem 1rem;
-        width: 30vw;
+        width: 20vw;
+        min-width: 120px;
     }
 
     .show{

@@ -16,17 +16,20 @@ function Header(){
         setHamburgerActive(!hamburgerActive);
     };
 
-    // Scroll on mobile
     const [scrollDirection, setScrollDirection] = useState('show');
+
+    const hamburger = document.getElementById("hamburger")
 
     var prevScroll = window.pageYOffset;
 
     window.onscroll = () => {
         var currentScroll = window.pageYOffset;
-        if (currentScroll > prevScroll){
+        if (currentScroll > prevScroll){ // Indo para baixo, não mostrar header
             setScrollDirection('dontShow')
+            if (hamburger.querySelector("div").classList.contains("activate")) // Se menu estiver aberto, fechar
+                hamburger.click()
         }
-        else{
+        else{ // Indo para cima, mostrar header
             setScrollDirection('show')
         }
         prevScroll = currentScroll;

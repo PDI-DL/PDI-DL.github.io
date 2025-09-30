@@ -14,7 +14,7 @@
     --main: rgba(255, 255, 255, 0.87);
 
     /* --header: rgb(44, 44, 44); */
-    --header: rgba(0, 24, 43, 0.95);
+    --header: rgba(0, 24, 43, 0.9);
     /* --footer: rgb(0, 0, 0); */
     --footer: rgb(0, 0, 0);;
     --button: rgb(24, 24, 24);
@@ -22,12 +22,72 @@
     --blue: rgb(29, 61, 83);
     --yellow: rgb(196, 173, 73);
     --red-hover: rgb(255, 153, 153);
+
+    --specialFont: "Outfit";
+    --specialFontBold: "Outfit Bold";
+    --contentFont: "Karla";
+    --contentFontBold: "Karla Bold";
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url('../assets/fonts/Outfit/Outfit-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Outfit Bold";
+    src: url('../assets/fonts/Outfit/Outfit-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url('../assets/fonts/Karla/Karla-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Karla Bold";
+    src: url('../assets/fonts/Karla/Karla-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "Titillium";
+    src: url('../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url('../assets/fonts/Work_Sans/WorkSans-Regular.ttf');
 }
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: var(--specialFont);
+
+}
+
+.work-sans{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.karla{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 body {

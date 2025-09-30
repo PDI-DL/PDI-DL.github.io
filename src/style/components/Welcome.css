@@ -7,6 +7,7 @@
 }
 
 .welcome-container > p{
+    font-family: var(--contentFont);
+    line-height: 1.5rem;
     text-indent: 1.5rem;
-    
 }

@@ -13,7 +13,7 @@ function Footer(){
         <footer>
             <div className="wrap container">
                 <div className="footerInfo">
-                    <span>Digital Image Processing and Machine Learning <b>Research Group</b> | {new Date().getFullYear()}</span>
+                    <span>Digital Image Processing and Machine Learning <b>Group</b> | {new Date().getFullYear()}</span>
                     <br/>
                     <span> Computer Science Center (<b>C3</b>) - Federal University of Rio Grande (<b>FURG</b>)</span>
                     <br />
