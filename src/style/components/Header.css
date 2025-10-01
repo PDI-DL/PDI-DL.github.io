@@ -128,7 +128,9 @@ nav {
     .internal_links{
         /* height: 100vh; */
         position: absolute;
-        right: -40vw;
+        /* right: -40vw; */
+        transform: translateX(100%);
+        right: 0;
         top: 100%;  
         display: flex;
         flex-flow: column wrap;
@@ -154,7 +156,13 @@ nav {
     }
 
     .show{
-        right: 0;
+        /* right: 0; */
+        transform: translateX(0);
+    }
+
+    .wraperHeader{
+        display: flex;
+        gap: 15px;
     }
 
     #external_links{

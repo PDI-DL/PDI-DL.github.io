@@ -51,14 +51,16 @@ function Header(){
                     {/* <li><Link to="/research">Research</Link></li>
                     <li><Link to="/calendar">Calendar</Link></li> */}
                 </ul>
-                <div id="external_links">
-                    <Link to="https://github.com/PDI-DL"><img src={githubLogo} id="github" alt="GitHub logo" /></Link>
-                    <Link to="#"><img src={linkedinLogo} id="linkedin" alt="LinkedIn logo" /></Link>
-                </div>
-                <div id="hamburger" onClick={toggleHamburger}>
-                    <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
-                    <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
-                    <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
+                <div className="wraperHeader">
+                    <div id="external_links">
+                        <Link to="https://github.com/PDI-DL"><img src={githubLogo} id="github" alt="GitHub logo" /></Link>
+                        <Link to="#"><img src={linkedinLogo} id="linkedin" alt="LinkedIn logo" /></Link>
+                    </div>
+                    <div id="hamburger" onClick={toggleHamburger}>
+                        <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
+                        <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
+                        <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
+                    </div>
                 </div>
             </nav>
         </header>
