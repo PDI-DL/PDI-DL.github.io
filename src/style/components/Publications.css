@@ -68,7 +68,7 @@
 
 .card h2{
     font-family: var(--specialFontBold);
-    font-size: 1.05rem;
+    font-size: 1.5rem;
     text-align: left;
     margin-bottom: 0.5rem;
     display: -webkit-box;
@@ -87,7 +87,7 @@
 
 .card h3{
     width: 100%;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     line-height: 1.25;
     color: rgb(142, 142, 142);
     margin-bottom: 0.25rem;
@@ -103,6 +103,7 @@
 
 .card > span{
     font-family: var(--contentFontBold);
+    font-size: 1.1rem;
     text-align: justify;
     text-indent: 1.5rem;
     line-height: 1.5;
@@ -188,6 +189,18 @@
 @media (max-width: 850px){
   .card{
     width: 100%;
+  }
+
+  .card h2{
+    font-size: 1.2rem;
+  }
+
+  .card h3{
+    font-size: 0.9rem;
+  }
+
+  .card span{
+    font-size: 1rem;
   }
 
 }
