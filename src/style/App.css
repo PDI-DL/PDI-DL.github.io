@@ -98,7 +98,7 @@ body {
 }
 
 main {
-    width: clamp(300px, 90vw, 1500px);
+    width: clamp(300px, 90vw, 1000px);
     min-height: 75vh;
     margin-inline: auto;
     display: flex;
@@ -107,12 +107,10 @@ main {
     min-height: 75vh;
 }
 
-.container{
-    width: clamp(300px, 90vw, 1500px);
+.container {
+    width: clamp(300px, 90vw, 1000px);
     margin-inline: auto;
 }
-
-
 
 /* Media Section */
 @media (prefers-color-scheme: light) {

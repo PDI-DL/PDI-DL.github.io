@@ -1,13 +1,15 @@
 .slider-container {
-    margin-top: -20px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    position: relative;
 }
 
-.slide-item {
+.slider-container img {
     width: 100%;
-    height: calc(100vh - var(--header-height));
-    margin: 0px auto;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .swiper-pagination-bullet {
@@ -15,7 +17,6 @@
     background-color: rgb(212, 212, 212);
 }
 
-/* arrows */
 .swiper-button-prev,
 .swiper-button-next {
     color: white;
@@ -30,10 +31,4 @@
 .swiper-button-next::after {
     font-size: 18px;
     font-weight: bold;
-}
-
-/* dot ativo */
-.swiper-pagination-bullet-active {
-    opacity: 1;
-    background-color: var(--blue);
 }

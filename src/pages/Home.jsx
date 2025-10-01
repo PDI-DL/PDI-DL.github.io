@@ -14,8 +14,8 @@ export function Home(){
     return (
         <>
             <Header/>
-            <Carousel/>
             <main>
+                <Carousel/>
                 <Welcome />
                 <MarqueeLogos />
                 <GoogleMap/>
