@@ -20,8 +20,10 @@
     --button: rgb(24, 24, 24);
 
     --blue: rgb(29, 61, 83);
+    --darkBlue-hover: rgb(47, 93, 124);
     --yellow: rgb(196, 173, 73);
     --red-hover: rgb(255, 153, 153);
+    --darkRed-hover: rgb(129, 59, 59);
 
     --specialFont: "Outfit";
     --specialFontBold: "Outfit Bold";

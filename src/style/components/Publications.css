@@ -1,5 +1,6 @@
 #head{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
@@ -22,9 +23,18 @@
     cursor: pointer;
     transition: 0.1s ease-in-out;
 }
+/* 
 
-#head button:hover{
-    background-color: var(--yellow);
+.button_blueHover{
+    background-color: var(--darkBlue-hover);
+} */
+
+.button_blueHover:hover{
+    background-color: var(--darkBlue-hover) !important;
+}
+
+.button_redHover:hover{
+    background-color: var(--darkRed-hover) !important;
 }
 
 .news{
@@ -39,22 +49,22 @@
   flex-flow: row wrap;
   align-items: center;
   box-sizing: border-box;
-  width: 32%;
+  /* width: 32%; */
   min-width: 320px;
   padding: 1rem 2rem;
-  background-color: var(--blue);
+  background-color: rgb(0, 23, 39);
   border: 1px solid white;
   border-radius: 10px;
   transition: max-height 10s ease-out;
 }
 
-.cardRead{
+/* .cardRead{
     background-color: rgb(18, 37, 49) !important;
-}
+} */
 
-.cardExpand{
+/* .cardExpand{
     width: 100% !important;
-}
+} */
 
 .card h2{
     font-family: var(--specialFontBold);
@@ -111,15 +121,15 @@
     -webkit-line-clamp: none !important;
 }
 
-.yearTag{
-    background-color: white;
+.cardTag{
+    background-color: rgb(231, 231, 231);
     color: var(--bg);
-    font-weight: 500;
+    font-weight: bold;
     text-indent: 0; 
     width: auto;
     border-radius: 6px;
     padding: 0.25rem 0.5rem;
-
+    cursor:default;
 }
 
 .card .buttonHolder{
@@ -163,12 +173,9 @@
 }
 
 @media (max-width: 1260px){
-  #head{
-    justify-content: space-between;
-  }
 
   .card{
-    width: 49%;
+    /* width: 49%; */
     padding: 1rem 2rem;
 }
 
