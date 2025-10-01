@@ -5,6 +5,7 @@ import Footer from "../components/Footer.jsx";
 import Welcome from "../components/Welcome.jsx";
 import Carousel from "../components/Carousel.jsx";
 import MarqueeLogos from "../components/MarqueeLogos.jsx";
+import GoogleMap from "../components/GoogleMap.jsx"
 
 export function Home(){
     useEffect(() => {
@@ -17,6 +18,7 @@ export function Home(){
             <main>
                 <Welcome />
                 <MarqueeLogos />
+                <GoogleMap/>
             </main>
             <Footer/>
         </>
