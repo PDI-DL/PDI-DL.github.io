@@ -1,6 +1,6 @@
 {
     "name": "site-pdi",
-    "homepage": "https://pdi-dl.github.io/PDI-DL.github.io/",
+    "homepage": "https://pdi-dl.github.io/",
     "private": true,
     "version": "0.0.0",
     "type": "module",
