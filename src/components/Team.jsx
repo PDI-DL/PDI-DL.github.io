@@ -169,7 +169,7 @@ export function Team_component(){
                         <p>Computer Vision, Digital Image Processing, Deep Learning,  ROS, Autonomous industrial robotics, Autonomous Navigation</p>
                         <div className="infoLinks">
                             <a href="https://github.com/GuilhermeMano" target="blank"><img src={githubIcon} alt="Github icon" /></a>
-                            <a href="https://www.linkedin.com/in/guilherme-mano-994351297"><img src={linkedinIcon} alt="LinkedIn icon" /></a>
+                            <a href="https://www.linkedin.com/in/guilherme-mano-994351297" target="blank"><img src={linkedinIcon} alt="LinkedIn icon" /></a>
                             <a href="mailto:guilhermemano65667@gmail.com"><img src={emailIcon} alt="Email icon" /></a>
                         </div>
                     </div>
@@ -177,12 +177,12 @@ export function Team_component(){
                 <div className="profile">
                     <img src={unknownPic} alt="Unset profile picture" />
                     <div className="info">
-                        <h2>Pessoa Fulano dos Santos</h2>
-                        <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
+                        <h2>Gabriel De Lima Anastacio</h2>
+                        <p>Computer Vision, Digital Image Processing, Deep Learning, Autonomous Navigation</p>
                         <div className="infoLinks">
-                            <a href="https://breno-xp.github.io/Site_PDI/"><img src={websiteIcon} alt="Personal website icon" /></a>
-                            <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
-                            <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
+                            <a href="https://github.com/Mendas07" target="blank"><img src={githubIcon} alt="Github icon" /></a>
+                            <a href="https://www.linkedin.com/in/gabriel-anastacio-5206831b8/"target="blank"><img src={linkedinIcon} alt="LinkedIn icon" /></a>
+                            <a href="mailto:mendonsairos@gmail.com"><img src={emailIcon} alt="Email icon" /></a>
                         </div>
                     </div>
                 </div>

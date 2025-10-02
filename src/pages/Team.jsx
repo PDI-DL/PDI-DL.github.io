@@ -12,7 +12,7 @@ export function Team(){
     return (
         <>
             <Header/>
-            <main className="container">
+            <main className="container mainTeam">
                 <Team_component/>
             </main>
             <Footer/>

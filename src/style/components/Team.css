@@ -1,3 +1,7 @@
+.mainTeam{
+    width: clamp(300px, 90vw, 1500px) !important;
+}
+
 .head{
     display: flex;
     align-items: center;

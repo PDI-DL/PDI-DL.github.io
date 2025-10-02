@@ -62,7 +62,7 @@ footer {
     }
 
     .footerInfo{
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 25px;
     }
 
@@ -99,7 +99,7 @@ footer {
 @media (max-width: 785px){
 
     .footerInfo{
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }
 
     .footerLogos h1{
@@ -110,7 +110,7 @@ footer {
 
 @media (max-width: 480px){
     .footerInfo{
-        font-size: 0.8rem;
+        font-size: 0.55rem;
     }
 
     .Logos{
@@ -118,7 +118,7 @@ footer {
     }
 
     .Logos img{
-        width: 80px;
+        width: 60px;
     }
 
     #nautec{

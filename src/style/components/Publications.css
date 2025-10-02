@@ -103,7 +103,7 @@
 
 .card > span{
     font-family: var(--contentFontBold);
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
     text-indent: 1.5rem;
     line-height: 1.5;
