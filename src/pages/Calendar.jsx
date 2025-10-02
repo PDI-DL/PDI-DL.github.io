@@ -3,6 +3,11 @@ import { useEffect } from "react";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 
+import CalendarGraphic from "../components/Calendar.jsx";
+import CalendarLine from "../components/CalendarLine.jsx";
+import CalendarTable from "../components/CalendarTable.jsx";
+
+
 export function Calendar(){
     useEffect(() => {
         document.title = "Calendar | PDI";
@@ -11,7 +16,9 @@ export function Calendar(){
         <>
             <Header/>
             <main>
-                <h1>Calendar</h1>
+                <CalendarGraphic/>
+                <CalendarLine/>
+                <CalendarTable/>
             </main>
             <Footer/>
         </>
