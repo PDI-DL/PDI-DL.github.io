@@ -14,13 +14,9 @@ footer {
     gap: 15px;
 }
 
-.footerInfo{
+.footerInfo {
     line-height: 1.8rem;
     font-size: 1rem;
-}
-
-.footerLogos{
-
 }
 
 .footerLogos h1 {
@@ -31,7 +27,6 @@ footer {
 }
 
 .Logos {
-    /* background-color: red; */
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -43,68 +38,64 @@ footer {
     width: 80px;
 }
 
-
 #nautec {
     width: 200px;
 }
 
+/* Media Section */
 @media (prefers-color-scheme: light) {
-    
-    
     #nautec {
         content: url("../assets/logos/logo_nautec-light.png");
     }
 }
 
-@media (max-width: 1180px){
-    footer{
+@media (max-width: 768px){
+    .footerInfo {
+        font-size: 0.75rem;
+    }
+
+    .footerLogos h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 600px){
+    footer {
         padding: 50px 20px;
     }
 
-    .footerInfo{
+    .footerInfo {
         font-size: 1rem;
         margin-bottom: 25px;
     }
 
-    .wrap{
+    .wrap {
         justify-content: center;
         gap: 0;
     }
 
-    .footerLogos{
+    .footerLogos {
         width: 100%;
         border-top: 1px solid white;
         padding-top: 25px;
     }
 
-    .footerLogos h1{
+    .footerLogos h1 {
         font-size: 2rem;
     }
 
-    .Logos{
+    .Logos {
         justify-content: center;
         gap: 50px;
     }
 
-    .Logos img{
+    .Logos img {
         width: 70px;
     }
 
-    #nautec{
+    #nautec {
         width: 200px;
-    }
-}
-
-
-@media (max-width: 785px){
-
-    .footerInfo{
-        font-size: 0.75rem;
-    }
-
-    .footerLogos h1{
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
     }
 }
 

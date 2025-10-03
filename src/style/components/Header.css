@@ -5,10 +5,9 @@ header {
     display: flex;
     align-items: center;
     transition: top 0.5s;
-    backdrop-filter: blur(5px);
     z-index: 100;
+    backdrop-filter: blur(5px);
     background-color: var(--header);
-    /* box-shadow: black 0 10px 30px; */
 }
 
 .show {
@@ -76,10 +75,10 @@ nav {
 }
 
 #external_links{
+    margin-right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 50px;
 }
 
 #external_links img {
@@ -102,6 +101,7 @@ nav {
     display: none;
 }
 
+/* Media Section */
 @media (prefers-color-scheme: light) {
     #github {
         content: url("../assets/logos/logo_github-light.png");
@@ -120,34 +120,42 @@ nav {
     }
 }
 
-@media (max-width: 930px){
-    #logo{
+@media (max-width: 768px) {
+    #logo {
+        margin-left: 25px;
+    }
+
+    #external_links {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 600px){
+    #logo {
         margin-left: 15px;
     }
 
-    .internal_links{
-        /* height: 100vh; */
-        position: absolute;
-        /* right: -40vw; */
-        transform: translateX(100%);
-        right: 0;
+    .internal_links {
         top: 100%;  
+        right: 0;
+        position: absolute;
         display: flex;
         flex-flow: column wrap;
-        background-color: rgba(0, 16, 29, 0.9);
         transition: 0.3s ease-out;
+        transform: translateX(100%);
+        background-color: rgba(0, 16, 29, 0.9);
     }
 
-    .internal_links li{
+    .internal_links li {
         margin: 0 !important;
         padding-block: 7px;
     }
 
-    .internal_links li:first-child{
+    .internal_links li:first-child {
         border-top: none;
     }
 
-    .internal_links li a{
+    .internal_links li a {
         display: block;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -155,21 +163,24 @@ nav {
         min-width: 120px;
     }
 
-    .show{
-        /* right: 0; */
+    .show {
         transform: translateX(0);
     }
 
-    .wraperHeader{
+    .wraperHeader {
         display: flex;
         gap: 15px;
     }
 
-    #external_links{
+    #external_links {
         margin-right: 15px;
     }
 
-    #hamburger{
+    #external_links a:not(:first-child) {
+        margin-left: 10px;
+    }
+
+    #hamburger {
         display: block;
         margin-right: 15px;
         height: 100%;
@@ -177,7 +188,7 @@ nav {
         cursor: pointer;
     }
 
-    .hamburgerLine{
+    .hamburgerLine {
         background-color: white;
         height: 3px;
         width: 100%;
@@ -185,19 +196,19 @@ nav {
         transition: 0.3s, opacity 0.15s;
     }
 
-    .hamburgerLine:last-of-type{
+    .hamburgerLine:last-of-type {
         margin-bottom: 0;
     }
 
-    .activate:first-child{
+    .activate:first-child {
         transform: translate(0, 11px) rotate(45deg);
     }
 
-    .activate:last-child{
+    .activate:last-child {
         transform: translate(0, -11px) rotate(-45deg);
     }
 
-    .activate:nth-child(2){
+    .activate:nth-child(2) {
         opacity: 0;
     }
 }

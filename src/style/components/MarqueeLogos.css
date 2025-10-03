@@ -18,7 +18,7 @@
     }
 }
 
-@media (max-width: 785px){
+@media (max-width: 768px) {
     :root {
         --gradient: 75px;
     }

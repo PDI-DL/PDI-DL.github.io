@@ -51,7 +51,7 @@ function News(){
     return(
         <div>
             <div id="head">
-                <h1>Papers</h1>
+                <h1>Publications</h1>
                 <button onClick={toggleMaxHeight} className={`${hasMaxHeight ? 'button_redHover' : 'button_blueHover'}`}> {hasMaxHeight ? 'Reduce articles' : 'Show full articles'} </button>
             </div>
             <div className="news">

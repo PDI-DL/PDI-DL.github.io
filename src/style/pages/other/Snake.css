@@ -12,7 +12,7 @@
     border: 1px solid white;
 }
 
-
+/* Media Section */
 @media (prefers-color-scheme: light) {
     .snake-container canvas {
         border: 1px solid black;

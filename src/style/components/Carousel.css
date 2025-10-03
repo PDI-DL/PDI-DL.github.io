@@ -12,9 +12,24 @@
     border-radius: 10px;
 }
 
+.swiper-horizontal > .swiper-pagination-bullets {
+    left: 50%;
+    transform: translateX(-50%);
+    /* display: block; */
+    width: auto;
+    /* margin: 0 auto; */
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 3.25px 7.25px;
+    border-radius: 15px;
+}
+
 .swiper-pagination-bullet {
-    opacity: 0.7;
-    background-color: rgb(212, 212, 212);
+    opacity: 0.35;
+    background-color: var(--yellow);
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
 }
 
 .swiper-button-prev,
