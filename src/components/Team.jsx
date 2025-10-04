@@ -27,7 +27,7 @@ export default function Team() {
                             <h2>Pessoa Fulano dos Santos</h2>
                             <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
                             <div className="infoLinks">
-                                <a href="https://breno-xp.github.io/Site_PDI/"><img src={websiteIcon} alt="Personal website icon" /></a>
+                                <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
                                 <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
                                 <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
                             </div>
@@ -73,7 +73,7 @@ export default function Team() {
                             <h2>Pessoa Fulano dos Santos</h2>
                             <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
                             <div className="infoLinks">
-                                <a href="https://breno-xp.github.io/Site_PDI/"><img src={websiteIcon} alt="Personal website icon" /></a>
+                                <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
                                 <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
                                 <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
                             </div>
@@ -85,7 +85,7 @@ export default function Team() {
                             <h2>Pessoa Fulano dos Santos</h2>
                             <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
                             <div className="infoLinks">
-                                <a href="https://breno-xp.github.io/Site_PDI/"><img src={websiteIcon} alt="Personal website icon" /></a>
+                                <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
                                 <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
                                 <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
                             </div>
@@ -97,7 +97,7 @@ export default function Team() {
                             <h2>Pessoa Fulano dos Santos</h2>
                             <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
                             <div className="infoLinks">
-                                <a href="https://breno-xp.github.io/Site_PDI/"><img src={websiteIcon} alt="Personal website icon" /></a>
+                                <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
                                 <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
                                 <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
                             </div>
@@ -109,7 +109,7 @@ export default function Team() {
                             <h2>Pessoa Fulano dos Santos</h2>
                             <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
                             <div className="infoLinks">
-                                <a href="https://breno-xp.github.io/Site_PDI/"><img src={websiteIcon} alt="Personal website icon" /></a>
+                                <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
                                 <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
                                 <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
                             </div>
@@ -161,7 +161,7 @@ export default function Team() {
                             <h2>Pessoa Fulano dos Santos</h2>
                             <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
                             <div className="infoLinks">
-                                <a href="https://breno-xp.github.io/Site_PDI/"><img src={websiteIcon} alt="Personal website icon" /></a>
+                                <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
                                 <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
                                 <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
                             </div>
@@ -176,7 +176,7 @@ export default function Team() {
                             <h2>Pessoa Fulano dos Santos</h2>
                             <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
                             <div className="infoLinks">
-                                <a href="https://breno-xp.github.io/Site_PDI/"><img src={websiteIcon} alt="Personal website icon" /></a>
+                                <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
                                 <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
                                 <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
                             </div>
@@ -188,7 +188,7 @@ export default function Team() {
                             <h2>Pessoa Fulano dos Santos</h2>
                             <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
                             <div className="infoLinks">
-                                <a href="https://breno-xp.github.io/Site_PDI/"><img src={websiteIcon} alt="Personal website icon" /></a>
+                                <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
                                 <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
                                 <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
                             </div>
@@ -200,7 +200,7 @@ export default function Team() {
                             <h2>Pessoa Fulano dos Santos</h2>
                             <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
                             <div className="infoLinks">
-                                <a href="https://breno-xp.github.io/Site_PDI/"><img src={websiteIcon} alt="Personal website icon" /></a>
+                                <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
                                 <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
                                 <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
                             </div>
@@ -212,7 +212,7 @@ export default function Team() {
                             <h2>Pessoa Fulano dos Santos</h2>
                             <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
                             <div className="infoLinks">
-                                <a href="https://breno-xp.github.io/Site_PDI/"><img src={websiteIcon} alt="Personal website icon" /></a>
+                                <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
                                 <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
                                 <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
                             </div>

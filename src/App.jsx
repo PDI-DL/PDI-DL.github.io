@@ -8,7 +8,7 @@ import Calendar from "./pages/Calendar"
 import NotFound from "./pages/other/NotFound"
 import Snake from "./pages/other/Snake"
 
-function App() {
+export default function App() {
     return (
         <Router>
             <Routes>
@@ -25,5 +25,3 @@ function App() {
         </Router>
     )
 }
-
-export default App
