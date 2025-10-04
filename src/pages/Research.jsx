@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 
-export function Research(){
+export default function Research() {
     useEffect(() => {
         document.title = "Research | PDI";
     }, []);
@@ -17,5 +17,3 @@ export function Research(){
         </>
     );
 }
-
-export default Research

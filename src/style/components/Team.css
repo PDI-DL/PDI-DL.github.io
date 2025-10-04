@@ -1,29 +1,29 @@
-.mainTeam{
+.mainTeam {
     width: clamp(300px, 90vw, 1500px) !important;
 }
 
-.head{
+.head {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.head h1{
+.head h1 {
     font-family: var(--specialFontBold);
     font-size: 2.5em;
     font-weight: bold;
 }
 
-.teamSec{
+.teamSec {
     text-align: left;
     margin-bottom: 10px;
 }
 
-.teamSec:not(:first-of-type){
-    /* margin-top: 30px */
-}
+/* .teamSec:not(:first-of-type) {
+    margin-top: 30px
+} */
 
-section{
+section {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
@@ -32,7 +32,7 @@ section{
 }
 
 
-.profile{
+.profile {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -40,13 +40,13 @@ section{
     min-width: 350px;
 }
 
-.profile > img{
+.profile > img {
     width: 100px;
     object-fit: cover;
     border-radius: 100%;
 }
 
-.info{
+.info {
     margin-top: 10px;
 }
 

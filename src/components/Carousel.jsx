@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import 'swiper/css/effect-fade';
+import "swiper/css/effect-fade";
 
 import carouselImage1 from "../assets/other/carousel/sibgrapi2025.jpg";
 import carouselImage2 from "../assets/other/carousel/fotasso.jpg";
@@ -10,7 +10,7 @@ import carouselImage3 from "../assets/other/carousel/pdi_banner.png";
 
 import "../style/components/Carousel.css";
 
-function Carousel() {
+export default function Carousel() {
     const data = [
         { id: 1, image: carouselImage1, alt: "SIBGRAPI 2025" },
         { id: 2, image: carouselImage2, alt: "Placeholder" },
@@ -37,5 +37,3 @@ function Carousel() {
         </div>
     )
 }
-
-export default Carousel;

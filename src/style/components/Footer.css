@@ -38,18 +38,12 @@ footer {
     width: 80px;
 }
 
-#nautec {
+.nautec-logo {
     width: 200px;
 }
 
 /* Media Section */
-@media (prefers-color-scheme: light) {
-    #nautec {
-        content: url("../assets/logos/logo_nautec-light.png");
-    }
-}
-
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .footerInfo {
         font-size: 0.75rem;
     }
@@ -60,7 +54,7 @@ footer {
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
     footer {
         padding: 50px 20px;
     }
@@ -99,7 +93,7 @@ footer {
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .footerInfo{
         font-size: 0.55rem;
     }

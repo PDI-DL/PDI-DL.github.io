@@ -5,7 +5,7 @@ import Footer from "../../components/Footer.jsx";
 
 import "../../style/pages/other/NotFound.css";
 
-export function NotFound(){
+export default function NotFound() {
     useEffect(() => {
         document.title = "Page Not Found | PDI";
     }, []);
@@ -20,5 +20,3 @@ export function NotFound(){
         </div>
     );
 }
-
-export default NotFound

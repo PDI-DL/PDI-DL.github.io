@@ -7,7 +7,7 @@ import Carousel from "../components/Carousel.jsx";
 import MarqueeLogos from "../components/MarqueeLogos.jsx";
 import GoogleMap from "../components/GoogleMap.jsx"
 
-export function Home(){
+export default function Home() {
     useEffect(() => {
         document.title = "Home | PDI";
     }, []);
@@ -24,5 +24,3 @@ export function Home(){
         </>
     );
 }
-
-export default Home

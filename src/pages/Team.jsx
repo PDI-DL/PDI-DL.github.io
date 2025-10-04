@@ -2,10 +2,9 @@ import { useEffect } from "react";
 
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
-import Team_component from "../components/Team.jsx";
+import TeamComponent from "../components/Team.jsx";
 
-
-export function Team(){
+export default function Team() {
     useEffect(() => {
         document.title = "Team | PDI";
     }, []);
@@ -13,11 +12,9 @@ export function Team(){
         <>
             <Header/>
             <main className="container mainTeam">
-                <Team_component/>
+                <TeamComponent/>
             </main>
             <Footer/>
         </>
     );
 }
-
-export default Team;

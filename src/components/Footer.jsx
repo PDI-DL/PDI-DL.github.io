@@ -3,13 +3,11 @@ import { Link } from "react-router-dom";
 import c3Logo from "../assets/logos/logo_c3.png";
 import nautecLogo from "../assets/logos/logo_nautec-dark.png";
 import furgLogo from "../assets/logos/logo_furg.png";
-import ufamLogo from "../assets/logos/logo_ufam.png"
-import ufsmLogo from "../assets/logos/logo_ufsm.png"
 
 import "../style/components/Footer.css";
 
-function Footer(){
-    return(
+export default function Footer() {
+    return (
         <footer>
             <div className="wrap container">
                 <div className="footerInfo">
@@ -22,7 +20,7 @@ function Footer(){
                 <div className="footerLogos">
                     <div className="Logos">
                         <Link to="https://br.linkedin.com/company/centro-de-ci%C3%AAncias-computacionais---c3-furg" target="blank"><img src={c3Logo} alt="Computation Sciences Center logo" /></Link>
-                        <Link to="https://nautec.furg.br/en/" target="blank"><img src={nautecLogo} id="nautec" alt="Intelligent automation and robotics group" /></Link>
+                        <Link to="https://nautec.furg.br/en/" target="blank"><img src={nautecLogo} className="nautec-logo" alt="Intelligent automation and robotics group" /></Link>
                         <Link to="https://www.furg.br/en/" target="blank"><img src={furgLogo} alt="Federal University of Rio Grande logo" /></Link>
                     </div>
                 </div>          
@@ -30,5 +28,3 @@ function Footer(){
         </footer>
     )
 }
-
-export default Footer

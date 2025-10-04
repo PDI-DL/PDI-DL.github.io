@@ -2,9 +2,9 @@ import { useEffect } from "react";
 
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
-import PublicationComponent from "../components/Publications.jsx";
+import PublicationsComponent from "../components/Publications.jsx";
 
-export function Publications(){
+export default function Publications() {
     useEffect(() => {
         document.title = "Publications | PDI";
     }, []);
@@ -12,11 +12,9 @@ export function Publications(){
         <>
             <Header/>
             <main>
-                <PublicationComponent/>
+                <PublicationsComponent/>
             </main>
             <Footer/>
         </>
     );
 }
-
-export default Publications

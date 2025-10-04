@@ -28,65 +28,71 @@
     --contentFontBold: "Karla Bold";
 }
 
+/* Fonts Section */
 @font-face {
     font-family: "Outfit";
-    src: url('../assets/fonts/Outfit/Outfit-Regular.ttf');
+    src: url("../assets/fonts/Outfit/Outfit-Regular.ttf");
 }
 
 @font-face {
     font-family: "Outfit Bold";
-    src: url('../assets/fonts/Outfit/Outfit-Bold.ttf');
+    src: url("../assets/fonts/Outfit/Outfit-Bold.ttf");
 }
 
 @font-face {
     font-family: "Karla";
-    src: url('../assets/fonts/Karla/Karla-Regular.ttf');
+    src: url("../assets/fonts/Karla/Karla-Regular.ttf");
 }
 
 @font-face {
     font-family: "Karla Bold";
-    src: url('../assets/fonts/Karla/Karla-SemiBold.ttf');
+    src: url("../assets/fonts/Karla/Karla-SemiBold.ttf");
 }
 
 @font-face {
     font-family: "Titillium";
-    src: url('../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+    src: url("../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf");
 }
 
 @font-face {
     font-family: "Work Sans";
-    src: url('../assets/fonts/Work_Sans/WorkSans-Regular.ttf');
+    src: url("../assets/fonts/Work_Sans/WorkSans-Regular.ttf");
 }
 
+/* .work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.titillium-web-regular {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.karla {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+} */
+
+/* General Section */
 * {
     margin: 0px;
     padding: 0px;
     font-family: var(--specialFont);
-
 }
 
-.work-sans{
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.titillium-web-regular {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.outfit {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.karla{
-  font-family: "Karla", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+h1 {
+    margin-bottom: 15px;
+    text-align: center !important;
 }
 
 body {
@@ -127,4 +133,8 @@ main {
         --yellow: rgb(196, 173, 73);
         --red-hover: rgb(255, 100, 100);
     }
+
+    /* Logos */
+    .nautec-logo { content: url("../assets/logos/logo_nautec-light.png"); }
+    .itec-logo { content: url("../../assets/logos/logo_itec-light.png"); }
 }

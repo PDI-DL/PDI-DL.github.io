@@ -7,8 +7,7 @@ import CalendarGraphic from "../components/Calendar.jsx";
 import CalendarLine from "../components/CalendarLine.jsx";
 import CalendarTable from "../components/CalendarTable.jsx";
 
-
-export function Calendar(){
+export default function Calendar() {
     useEffect(() => {
         document.title = "Calendar | PDI";
     }, []);
@@ -24,5 +23,3 @@ export function Calendar(){
         </>
     );
 }
-
-export default Calendar

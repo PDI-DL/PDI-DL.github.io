@@ -1,7 +1,3 @@
-.welcome-container h1 {
-    margin-bottom: 15px
-}
-
 .welcome-container > p {
     font-family: var(--contentFont);
     line-height: 1.5rem;

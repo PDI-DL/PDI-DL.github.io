@@ -1,6 +1,6 @@
 import "../style/components/Welcome.css";
 
-export function Welcome() {
+export default function Welcome() {
     return (
         <div className="welcome-container">
             <h1>Welcome</h1>
@@ -8,5 +8,3 @@ export function Welcome() {
         </div>
     )
 }
-
-export default Welcome;

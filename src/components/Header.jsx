@@ -8,8 +8,7 @@ import huggingfaceLogo from "../assets/logos/logo_huggingface.png";
 
 import "../style/components/Header.css";
 
-function Header(){
-
+export default function Header() {
     // Hamburger 
     const [hamburgerActive, setHamburgerActive] = useState(false);
 
@@ -36,7 +35,7 @@ function Header(){
         prevScroll = currentScroll;
     }
 
-    return(
+    return (
         <header className={scrollDirection === "show" ? "show" : "dontShow"}>
             <nav>
                 <div id="logo">
@@ -68,9 +67,6 @@ function Header(){
         </header>
     );
 }
-
-export default Header
-
 
 // var prevScroll = window.pageYOffset; // Gets how many pixels from top of the page
 

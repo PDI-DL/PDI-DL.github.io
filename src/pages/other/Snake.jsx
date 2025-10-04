@@ -4,7 +4,7 @@ import Header from "../../components/Header.jsx";
 
 import "../../style/pages/other/Snake.css";
 
-export function Snake(){
+export default function Snake() {
     useEffect(() => {
         document.title = "Jogo da Cobrinha 🐍 | PDI";
         document.documentElement.classList.add("snake"); // <html>
@@ -165,5 +165,3 @@ export function Snake(){
         </>
     )
 }
-
-export default Snake

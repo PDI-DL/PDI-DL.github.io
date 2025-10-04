@@ -12,12 +12,6 @@
 }
 
 /* Media Section */
-@media (prefers-color-scheme: light) {
-    #nautec-marquee {
-        content: url("../../assets/logos/logo_nautec-light.png");
-    }
-}
-
 @media (max-width: 768px) {
     :root {
         --gradient: 75px;

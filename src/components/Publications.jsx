@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "../style/components/Publications.css";
 
-function News(){
+export default function Publications() {
     const [hasMaxHeight, setHasMaxHeight] = useState(false);
 
     const toggleMaxHeight = () => {
@@ -19,7 +19,7 @@ function News(){
         const conference = card.querySelector("h3")
         const span = card.querySelector("span");
 
-        if(span.classList.contains("openNews")){
+        if (span.classList.contains("openNews")) {
             // news.removeChild(card);
             // news.append(card);
             title.classList.remove("Noclamp")
@@ -31,7 +31,7 @@ function News(){
             // card.classList.add("cardRead");
             e.target.innerText = "Expand";
         }
-        else{
+        else {
             // news.removeChild(card);
             // news.prepend(card);
             title.classList.add("Noclamp")
@@ -48,7 +48,7 @@ function News(){
         }
     }
 
-    return(
+    return (
         <div>
             <div id="head">
                 <h1>Publications</h1>
@@ -86,5 +86,3 @@ function News(){
 
     // {hasMaxHeight ? 'v' : '^'}
 }
-
-export default News;
