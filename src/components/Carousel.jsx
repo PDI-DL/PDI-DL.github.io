@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
@@ -17,6 +18,8 @@ export default function Carousel() {
         { id: 2, image: carouselImage3, alt: "Digital Image Processing and Deep Learning" },
     ]
 
+    const [activeIndex, setActiveIndex] = useState(0);
+
     return (
         <div className="slider-container">
             <Swiper
@@ -27,6 +30,7 @@ export default function Carousel() {
                 pagination={{ clickable: true }}
                 fadeEffect={{ crossFade: true }}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
+                onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             >
                 {data.map((item) => (
                     <SwiperSlide key={ item.id }>
@@ -34,6 +38,7 @@ export default function Carousel() {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <span className="slider-caption">{data[activeIndex].alt}</span>
         </div>
     )
 }
