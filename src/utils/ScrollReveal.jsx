@@ -17,13 +17,17 @@ export default function ScrollReveal() {
         }, { threshold: 0.1 }); // 10% visível ativa
 
         sections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
-                section.classList.add("show");
-            } else {
-                observer.observe(section);
-            }
+            observer.observe(section);
         });
+
+        // sections.forEach(section => {
+        //     const rect = section.getBoundingClientRect();
+        //     if (rect.top < window.innerHeight && rect.bottom > 0) {
+        //         section.classList.add("show");
+        //     } else {
+        //         observer.observe(section);
+        //     }
+        // });
 
         return () => observer.disconnect();
     }, []);
