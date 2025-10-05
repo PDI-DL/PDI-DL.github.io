@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import "../style/components/Publications.css";
+import ScrollReveal from "../utils/ScrollReveal";
 
 export default function Publications() {
     const [hasMaxHeight, setHasMaxHeight] = useState(false);
@@ -71,6 +72,7 @@ export default function Publications() {
         }
     ];
 
+    ScrollReveal();
     return (
         <div>
             <div className="head">
@@ -79,7 +81,7 @@ export default function Publications() {
                     {hasMaxHeight ? 'Reduce articles' : 'Show full articles'}
                 </button>
             </div>
-            <div className="publications">
+            <div className="publications scroll-reveal">
                 {articles.map(article => (
                     <div className="card" key={article.id}>
                         <div>

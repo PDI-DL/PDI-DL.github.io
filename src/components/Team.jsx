@@ -11,17 +11,19 @@ import tatiScheinPic from "../assets/team/phd/Tatiana-Tais-Schein.jpg"
 import guilhermeCostaPic from "../assets/team/undergraduate/Guilherme-Louro-Mano-Costa.jpg"
 
 import "../style/components/Team.css"
+import ScrollReveal from "../utils/ScrollReveal";
 
 export default function Team() {
+    ScrollReveal();
     return (
         <>
             <div>
                 <div className="head">
                     <h1>Team</h1>
                 </div>
-                <h2 className="teamSec"> Faculty </h2>
+                <h2 className="teamSec scroll-reveal">Faculty</h2>
                 <section>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={unknownPic} alt="Unset profile picture" />
                         <div className="info">
                             <h2>Pessoa Fulano dos Santos</h2>
@@ -34,9 +36,9 @@ export default function Team() {
                         </div>
                     </div>        
                 </section>
-                <h2 className="teamSec"> Postdocs </h2>
+                <h2 className="teamSec scroll-reveal">Postdocs</h2>
                 <section>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={stephanieBriaoPic} alt="Stephanie's profile picture" />
                         <div className="info">
                             <h2>Stephanie Loi Brião</h2>
@@ -50,9 +52,9 @@ export default function Team() {
                         </div>
                     </div>
                 </section>
-                <h2 className="teamSec">PhD students</h2>
+                <h2 className="teamSec scroll-reveal">PhD students</h2>
                 <section>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={tatiScheinPic} alt="Tatiana's profile picture" />
                         <div className="info">
                             <h2>Tatiana Taís Schein</h2>
@@ -65,9 +67,9 @@ export default function Team() {
                         </div>
                     </div>
                 </section>
-                <h2 className="teamSec">MSc students</h2>
+                <h2 className="teamSec scroll-reveal">MSc students</h2>
                 <section>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={unknownPic} alt="Unset profile picture" />
                         <div className="info">
                             <h2>Pessoa Fulano dos Santos</h2>
@@ -79,7 +81,7 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={unknownPic} alt="Unset profile picture" />
                         <div className="info">
                             <h2>Pessoa Fulano dos Santos</h2>
@@ -91,7 +93,7 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={unknownPic} alt="Unset profile picture" />
                         <div className="info">
                             <h2>Pessoa Fulano dos Santos</h2>
@@ -103,7 +105,7 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={unknownPic} alt="Unset profile picture" />
                         <div className="info">
                             <h2>Pessoa Fulano dos Santos</h2>
@@ -116,9 +118,9 @@ export default function Team() {
                         </div>
                     </div>        
                 </section>
-                <h2 className="teamSec">Undergraduate students</h2>
+                <h2 className="teamSec scroll-reveal">Undergraduate students</h2>
                 <section>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={unknownPic} alt="Unset profile picture" />
                         <div className="info">
                             <h2>Emanuel da Costa Silva</h2>
@@ -131,7 +133,7 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={guilhermeCostaPic} alt="Guilherme's profile picture" />
                         <div className="info">
                             <h2>Guilherme Louro Mano Costa</h2>
@@ -143,7 +145,7 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={unknownPic} alt="Unset profile picture" />
                         <div className="info">
                             <h2>Gabriel De Lima Anastacio</h2>
@@ -155,7 +157,7 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={unknownPic} alt="Unset profile picture" />
                         <div className="info">
                             <h2>Pessoa Fulano dos Santos</h2>
@@ -168,9 +170,9 @@ export default function Team() {
                         </div>
                     </div>
                 </section>
-                <h2 className="teamSec">Research associates and visitors</h2>                
+                <h2 className="teamSec scroll-reveal">Research associates and visitors</h2>                
                 <section>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={unknownPic} alt="Unset profile picture" />
                         <div className="info">
                             <h2>Pessoa Fulano dos Santos</h2>
@@ -182,7 +184,7 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={unknownPic} alt="Unset profile picture" />
                         <div className="info">
                             <h2>Pessoa Fulano dos Santos</h2>
@@ -194,7 +196,7 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={unknownPic} alt="Unset profile picture" />
                         <div className="info">
                             <h2>Pessoa Fulano dos Santos</h2>
@@ -206,7 +208,7 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                    <div className="profile">
+                    <div className="profile scroll-reveal">
                         <img src={unknownPic} alt="Unset profile picture" />
                         <div className="info">
                             <h2>Pessoa Fulano dos Santos</h2>

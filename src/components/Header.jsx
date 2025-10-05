@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import pdiLogo from "../assets/logos/logo_pdi.png";
@@ -9,31 +9,32 @@ import huggingfaceLogo from "../assets/logos/logo_huggingface.png";
 import "../style/components/Header.css";
 
 export default function Header() {
-    // Hamburger 
     const [hamburgerActive, setHamburgerActive] = useState(false);
-
+    const [scrollDirection, setScrollDirection] = useState("show");
+    
+    useEffect(() => {
+        // Hamburger 
+        const hamburger = document.getElementById("hamburger")
+        
+        var prevScroll = window.pageYOffset;
+        
+        window.onscroll = () => {
+            var currentScroll = window.pageYOffset;
+            if (currentScroll > prevScroll){ // Indo para baixo, não mostrar header
+                setScrollDirection("dontShow")
+                if (hamburger.querySelector("div").classList.contains("activate")) // Se menu estiver aberto, fechar
+                hamburger.click()
+            }
+            else{ // Indo para cima, mostrar header
+                setScrollDirection("show")
+            }
+            prevScroll = currentScroll;
+        }
+    }, []);
+    
     const toggleHamburger = () => {
         setHamburgerActive(!hamburgerActive);
     };
-
-    const [scrollDirection, setScrollDirection] = useState('show');
-
-    const hamburger = document.getElementById("hamburger")
-
-    var prevScroll = window.pageYOffset;
-
-    window.onscroll = () => {
-        var currentScroll = window.pageYOffset;
-        if (currentScroll > prevScroll){ // Indo para baixo, não mostrar header
-            setScrollDirection('dontShow')
-            if (hamburger.querySelector("div").classList.contains("activate")) // Se menu estiver aberto, fechar
-                hamburger.click()
-        }
-        else{ // Indo para cima, mostrar header
-            setScrollDirection('show')
-        }
-        prevScroll = currentScroll;
-    }
 
     return (
         <header className={scrollDirection === "show" ? "show" : "dontShow"}>

@@ -15,13 +15,13 @@ export default function Carousel() {
     const data = [
         { id: 1, image: carouselImage1, alt: "SIBGRAPI 2025" },
         { id: 2, image: carouselImage2, alt: "Placeholder" },
-        { id: 2, image: carouselImage3, alt: "Digital Image Processing and Deep Learning" },
+        { id: 3, image: carouselImage3, alt: "Digital Image Processing and Deep Learning" },
     ]
 
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
-        <div className="slider-container">
+        <div className="slider-container scroll-reveal">
             <Swiper
                 modules={[Pagination, Autoplay, EffectFade]}
                 loop={true}
