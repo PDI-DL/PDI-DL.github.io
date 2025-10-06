@@ -118,7 +118,7 @@ main {
 .scroll-reveal {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
+    transition: 0.7s ease;
 }
 
 .scroll-reveal.show {

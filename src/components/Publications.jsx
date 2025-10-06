@@ -54,7 +54,7 @@ export default function Publications() {
     };
 
     const articles = [
-        {
+        {   
             id: 1,
             title: "Sonar Image Datasets: A Comprehensive Survey of Resources, Challenges, and Applications",
             conference: "38th Conference on Graphics, Patterns and Images (SIBIGRAPI)",
