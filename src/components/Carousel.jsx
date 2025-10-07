@@ -12,10 +12,10 @@ import carouselImage3 from "../assets/other/carousel/pdi_banner.png";
 import "../style/components/Carousel.css";
 
 export default function Carousel() {
-    const data = [
-        { id: 1, image: carouselImage1, alt: "SIBGRAPI 2025" },
-        { id: 2, image: carouselImage2, alt: "Placeholder" },
-        { id: 3, image: carouselImage3, alt: "Digital Image Processing and Deep Learning" },
+    const images = [
+        { id: 0, image: carouselImage1, alt: "SIBGRAPI 2025" },
+        { id: 1, image: carouselImage2, alt: "Placeholder" },
+        { id: 2, image: carouselImage3, alt: "Digital Image Processing and Deep Learning" },
     ]
 
     const [activeIndex, setActiveIndex] = useState(0);
@@ -32,13 +32,13 @@ export default function Carousel() {
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             >
-                {data.map((item) => (
-                    <SwiperSlide key={ item.id }>
-                        <img src={ item.image } alt={ item.alt } />
+                {images.map((item) => (
+                    <SwiperSlide key={item.id}>
+                        <img src={item.image} alt={item.alt} />
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <span className="slider-caption">{data[activeIndex].alt}</span>
+            <span className="slider-caption">{images[activeIndex].alt}</span>
         </div>
     )
 }
