@@ -177,6 +177,10 @@
 }
 
 @media (max-width: 480px) {
+    .head button {
+        font-size: 0.7rem;
+    }
+    
     .card span {
         font-size: 0.85rem;
     }

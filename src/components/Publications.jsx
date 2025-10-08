@@ -32,6 +32,7 @@ export default function Publications() {
 
         if (span.classList.contains("open-news")) {
             span.style.maxHeight = "6em";
+            span.style.overflow = "hidden";
             e.target.innerText = "Expand";
             e.target.classList.remove("button-red-hover");
             e.target.classList.add("button-blue-hover");
@@ -43,7 +44,12 @@ export default function Publications() {
             }, { once: true });
 
         } else {
-            span.style.maxHeight = span.scrollHeight + "px";
+            if (window.matchMedia("(max-width: 480px)").matches) { // equivalente ao @media do CSS
+                span.style.maxHeight = "325px"; // conteúdo do paper no mobile fica travado em 325px e com scroll
+                span.style.overflow = "scroll";
+            } else {
+                span.style.maxHeight = span.scrollHeight + "px"; // em telas maiores, expande ao máximo
+            }
             span.classList.add("open-news");
             title.classList.add("no-clamp");
             conference.classList.add("no-clamp");
@@ -55,7 +61,6 @@ export default function Publications() {
 
     const articles = [
         {   
-            id: 0,
             title: "Sonar Image Datasets: A Comprehensive Survey of Resources, Challenges, and Applications",
             conference: "38th Conference on Graphics, Patterns and Images (SIBIGRAPI)",
             authors: "Larissa Gomes, Gustavo P. Almeida, Bryan Umbipierre, Marco Quiroz, Breno Xavier, Lucas Soares, Stephanie L. Brião, Felipe G. Oliveira, Paulo L. J. Drews-Jr",
@@ -63,7 +68,6 @@ export default function Publications() {
             content: "Research and usage of sonar images are relevant for advancing underwater exploration, autonomous navigation, and ecosystem monitoring. However, the progress depends on data availability. The scarcity of publicly available, well-annotated sonar image datasets creates a significant bottleneck for the development of robust machine learning models. This article presents a comprehensive and concise review of the current landscape of sonar image datasets, seeking not only to catalog existing resources but also to contextualize them, identify gaps, and provide a clear roadmap, serving as a base guide for researchers of any kind who wish to start or advance in the field of underwater acoustic data analysis. We mapped publicly accessible datasets across various sonar modalities, including Side Scan Sonar (SSS), Forward-Looking Sonar (FLS), Synthetic Aperture Sonar (SAS), Multibeam Echo Sounder (MBES), and Dual-Frequency Identification Sonar (DIDSON). An analysis was conducted on applications such as classification, detection, segmentation, and 3D reconstruction. This work focuses on state-of-the-art advancements, incorporating newly released datasets. The findings are synthesized into a master table and a chrono-logical timeline, offering a clear and accessible comparison of characteristics, sizes, and annotation details datasets."
         },
         {
-            id: 1,
             title: "AquaFeat: A Features-Based Image Enhancement Model for Underwater Object Detection",
             conference: "38th Conference on Graphics, Patterns and Images (SIBIGRAPI)",
             authors: "Emanuel Silva, Tatiana T. Schein, Stephanie Loi Brião, Guilherme L. M. Costa, Felipe Gomes Oliveira, Gustavo P. Almeida, Eduardo Lawson da Silva, Sam S. Devincenzi, Karina S. Machado, Paulo Drews-Jr",
@@ -82,8 +86,8 @@ export default function Publications() {
                 </button>
             </div>
             <div className="publications scroll-reveal">
-                {articles.map(article => (
-                    <div className="card" key={article.id}>
+                {articles.map((article, i) => (
+                    <div className="card" key={i}>
                         <div>
                             <h2>{article.title}</h2>
                         </div>
