@@ -1,4 +1,4 @@
-.mainTeam {
+.main-team {
     width: clamp(300px, 90vw, 1500px) !important;
 }
 
@@ -14,14 +14,10 @@
     font-weight: bold;
 }
 
-.teamSec {
+.team-sec {
     text-align: left;
     margin-bottom: 10px;
 }
-
-/* .teamSec:not(:first-of-type) {
-    margin-top: 30px
-} */
 
 section {
     display: flex;
@@ -30,7 +26,6 @@ section {
     justify-content: left;
     margin-bottom: 30px;
 }
-
 
 .profile {
     display: flex;
@@ -64,19 +59,21 @@ section {
     margin-bottom: 10px;
 }
 
-.infoLinks img {
+.info-links {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 7.5px;
+}
+
+.info-links img {
     background-color: white;
     padding: 2px;
     border-radius: 100%;
     width: 20px;
-    transition: .25s;
+    transition: 0.25s;
 }
 
-.infoLinks a:not(:first-child) {
-    margin-left: 8px;
-}
-
-.infoLinks a:hover img {
+.info-links a:hover img {
     transform: scale(1.25);
 }
 

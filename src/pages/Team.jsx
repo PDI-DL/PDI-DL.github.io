@@ -11,7 +11,7 @@ export default function Team() {
     return (
         <>
             <Header/>
-            <main className="container mainTeam">
+            <main className="container main-team">
                 <TeamComponent/>
             </main>
             <Footer/>
