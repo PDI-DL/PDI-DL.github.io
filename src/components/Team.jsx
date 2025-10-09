@@ -1,11 +1,9 @@
 // Excluir quando não houver mais placeholders
-
 import unknownPic from "../assets/other/profilePicture_placeholder.png"
 import websiteIcon from "../assets/team/icons/globe-grid.png"
 import linkedinIcon from "../assets/logos/logo_linkedin-dark.png"
 import academicIcon from "../assets/team/icons/graduation-hat.png" 
 
-import ScrollReveal from "../utils/ScrollReveal";
 import "../style/components/Team.css"
 
 export default function Team() {
@@ -112,7 +110,6 @@ export default function Team() {
         }
     }
 
-    ScrollReveal();
     return (
         <>
             <div>

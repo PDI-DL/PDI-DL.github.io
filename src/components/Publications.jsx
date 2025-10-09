@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import ScrollReveal from "../utils/ScrollReveal";
 import "../style/components/Publications.css";
 
 export default function Publications() {
@@ -76,7 +75,6 @@ export default function Publications() {
         }
     ];
 
-    ScrollReveal();
     return (
         <div>
             <div className="head">
