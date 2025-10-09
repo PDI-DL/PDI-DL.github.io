@@ -35,23 +35,13 @@ section {
     min-width: 350px;
 }
 
-.profile-picture {
-    width: 100px;
-    background-size: contain;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 100%;
-}
-
 .profile img {
     width: 100px;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
     border-radius: 100%;
 }
 
 .info {
-    max-width: 75%;
     margin-top: 10px;
 }
 
@@ -71,7 +61,7 @@ section {
 .info-links {
     display: flex;
     flex-flow: row wrap;
-    gap: 6.25px;
+    gap: 7.5px;
 }
 
 .info-links img {
@@ -90,10 +80,6 @@ section {
     .profile {
         width: 47%;
     }
-
-    .info {
-        max-width: 59%;
-    }
 }
 
 @media (max-width: 885px) {
@@ -101,6 +87,7 @@ section {
         justify-content: center;
         gap: 20px
     }
+
     .profile{
         width: 100%;
         max-width: 700px;

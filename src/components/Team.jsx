@@ -83,6 +83,15 @@ export default function Team() {
 
     ]
 
+    const sections = [
+        { title: "Faculty", members: teamFaculty },
+        { title: "Postdocs", members: teamPostdocs },
+        { title: "PhD students", members: teamPhd },
+        { title: "MSc students", members: teamMsc },
+        { title: "Undergraduate students", members: teamUndergraduate },
+        { title: "Research associates and visitors", members: teamAssociates }
+    ]
+
     function getImgPath(link){ // Com base no link retorna o nome e caminho para a imagem
         const options = [
             [".github.io", "./team/icons/globe-grid.png"], // para site pessoal, no futuro considerar algo como personalWebsite como flag
@@ -110,164 +119,48 @@ export default function Team() {
                 <div className="head">
                     <h1>Team</h1>
                 </div>
-                <h2 className="team-sec scroll-reveal">Faculty</h2>
-                {/* Retirar quando houver alguém listado */}
-                    <div className="profile scroll-reveal"> 
-                        <img src={unknownPic} alt="Unset profile picture" />
-                        <div className="info">
-                            <h2>Pessoa Fulano dos Santos</h2>
-                            <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
-                            <div className="info-links">
-                                <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
-                                <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
-                                <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
-                            </div>
-                        </div>
+                {sections.map((section, i) => (
+                    <div key={i}>
+                        <h2 className="team-sec scroll-reveal">{section.title}</h2>
+                        <section>
+                            {/* placeholder */}
+                            {section.members.length === 0 ? (
+                                <div className="profile scroll-reveal">
+                                    <img src={unknownPic} alt="Unset profile picture" />
+                                    <div className="info">
+                                        <h2>Pessoa Fulano dos Santos</h2>
+                                        <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
+                                        <div className="info-links">
+                                            <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
+                                            <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
+                                            <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            ) : (
+                                section.members.map((member, i) => (
+                                    <div className="profile scroll-reveal" key={i}>
+                                        <img src={member.profilePic} alt={`Picture of member: ${member.name}`} />
+                                        <div className="info">
+                                            <h2>{member.name}</h2>
+                                            <p>{member.specialties}</p>
+                                            <div className="info-links">
+                                                {member.links.map((link, i) => {
+                                                    const info = getImgPath(link);
+                                                    return (
+                                                        <a href={link} key={i}>
+                                                            <img src={info[1]} alt={`${info[0]} icon`} />
+                                                        </a>
+                                                    );
+                                                })}
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))
+                            )}
+                        </section>
                     </div>
-                <section>
-                    {teamFaculty.map((member, i) => (
-                        <div className="profile scroll-reveal" key={i}>
-                            <img src={member.profilePic} alt={`Picture of member: ${member.name}`} />
-                            <div className="info">
-                                <h2>{member.name}</h2>
-                                <p>{member.specialties}</p>
-                                <div className="info-links">
-                                    {member.links.map((link, i) => { 
-                                        var info = getImgPath(link);
-                                        return(<a href={link} key={i}><img src={info[1]} alt={`${info[0]} icon`}/></a>)
-                                    })}
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    ))}        
-                </section>
-                <h2 className="team-sec scroll-reveal">Postdocs</h2>
-                <section>
-                    {teamPostdocs.map((member, i) => (
-                        <div className="profile scroll-reveal" key={i}>
-                            <div className="profile-picture" style={{backgroundImage: `url(${member.profilePic})`}}>
-                                {/* <img src={member.profilePic} alt={`Picture of member: ${member.name}`} /> */}
-                            </div>
-                            <div className="info">
-                                <h2>{member.name}</h2>
-                                <p>{member.specialties}</p>
-                                <div className="info-links">
-                                    {member.links.map((link, i) => { 
-                                        var info = getImgPath(link);
-                                        return(<a href={link} key={i}><img src={info[1]} alt={`${info[0]} icon`}/></a>)
-                                    })}
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                    {teamPostdocs.map((member, i) => (
-                        <div className="profile scroll-reveal" key={i}>
-                            <img src={member.profilePic} alt={`Picture of member: ${member.name}`} />
-                            <div className="info">
-                                <h2>{member.name}</h2>
-                                <p>{member.specialties}</p>
-                                <div className="info-links">
-                                    {member.links.map((link, i) => { 
-                                        var info = getImgPath(link);
-                                        return(<a href={link} key={i}><img src={info[1]} alt={`${info[0]} icon`}/></a>)
-                                    })}
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </section>
-                <h2 className="team-sec scroll-reveal">PhD students</h2>
-                <section>
-                    {teamPhd.map((member, i) => (
-                        <div className="profile scroll-reveal" key={i}>
-                            <img src={member.profilePic} alt={`Picture of member: ${member.name}`} />
-                            <div className="info">
-                                <h2>{member.name}</h2>
-                                <p>{member.specialties}</p>
-                                <div className="info-links">
-                                    {member.links.map((link, i) => { 
-                                        var info = getImgPath(link);
-                                        return(<a href={link} key={i}><img src={info[1]} alt={`${info[0]} icon`}/></a>)
-                                    })}
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </section>
-                <h2 className="team-sec scroll-reveal">MSc students</h2>
-                <section>
-                    {teamMsc.map((member, i) => (
-                        <div className="profile scroll-reveal" key={i}>
-                            <img src={member.profilePic} alt={`Picture of member: ${member.name}`} />
-                            <div className="info">
-                                <h2>{member.name}</h2>
-                                <p>{member.specialties}</p>
-                                <div className="info-links">
-                                    {member.links.map((link, i) => { 
-                                        var info = getImgPath(link);
-                                        return(<a href={link} key={i}><img src={info[1]} alt={`${info[0]} icon`}/></a>)
-                                    })}
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    ))}        
-                </section>
-                <h2 className="team-sec scroll-reveal">Undergraduate students</h2>
-                <section>
-                    {teamUndergraduate.map((member, i) => (
-                        <div className="profile scroll-reveal" key={i}>
-                            <img src={member.profilePic} alt={`Picture of member: ${member.name}`} />
-                            <div className="info">
-                                <h2>{member.name}</h2>
-                                <p>{member.specialties}</p>
-                                <div className="info-links">
-                                    {member.links.map((link, i) => { 
-                                        var info = getImgPath(link);
-                                        return(<a href={link} key={i}><img src={info[1]} alt={`${info[0]} icon`}/></a>)
-                                    })}
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </section>
-                <h2 className="team-sec scroll-reveal">Research associates and visitors</h2>                
-                <section>
-                    {/* Retirar quando houver alguém listado */}
-                    <div className="profile scroll-reveal"> 
-                        <img src={unknownPic} alt="Unset profile picture" />
-                        <div className="info">
-                            <h2>Pessoa Fulano dos Santos</h2>
-                            <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
-                            <div className="info-links">
-                                <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
-                                <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
-                                <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    {teamAssociates.map((member, i) => (
-                        <div className="profile scroll-reveal" key={i}>
-                            <img src={member.profilePic} alt={`Picture of member: ${member.name}`} />
-                            <div className="info">
-                                <h2>{member.name}</h2>
-                                <p>{member.specialties}</p>
-                                <div className="info-links">
-                                    {member.links.map((link, i) => { 
-                                        var info = getImgPath(link);
-                                        return(<a href={link} key={i}><img src={info[1]} alt={`${info[0]} icon`}/></a>)
-                                    })}
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </section>
+                ))}
             </div>
         </>
     );
