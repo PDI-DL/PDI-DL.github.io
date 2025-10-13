@@ -76,6 +76,13 @@ section {
     transform: scale(1.25);
 }
 
+/* Media Section */
+@media (prefers-color-scheme: light) {
+    .profile img {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
 @media (max-width: 1235px) {
     .profile {
         width: 47%;

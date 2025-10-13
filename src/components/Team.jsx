@@ -1,9 +1,3 @@
-// Excluir quando não houver mais placeholders
-import unknownPic from "../assets/other/profilePicture_placeholder.png"
-import websiteIcon from "../assets/team/icons/globe-grid.png"
-import linkedinIcon from "../assets/logos/logo_linkedin-dark.png"
-import academicIcon from "../assets/team/icons/graduation-hat.png" 
-
 import "../style/components/Team.css"
 
 export default function Team() {
@@ -47,7 +41,7 @@ export default function Team() {
     const teamUndergraduate = [
         {
             name: "Emanuel da Costa Silva",
-            profilePic: "./team/members/profilePicture_placeholder.png",
+            profilePic: "./team/members/placeholder-profile.png",
             specialties: "Computer Vision, Deep Learning, Underwater Imagery, Autonomous Navigation, Computational Imaging, Digital Image Processing",
             links: ["https://emanuelcostas.github.io/", "mailto:silva2004@hotmail.com", "https://www.linkedin.com/in/emanuel-da-costa/", "https://github.com/EmanuelCostaS"]
         },
@@ -71,9 +65,15 @@ export default function Team() {
         },
         {
             name: "Gustavo Arthur Dutra",
-            profilePic: "./team/members/profilePicture_placeholder.png",
+            profilePic: "./team/members/placeholder-profile.png",
             specialties: "Computer Vision, Data Science, Deep Learning",
             links: ["https://linktr.ee/gustavodutraaa", "mailto:gustavoadutra.contato@gmail.com", "https://www.linkedin.com/in/gustavo-arthur-dutra/", "https://github.com/gustavoadutra", "https://huggingface.co/akiGustavo", "http://lattes.cnpq.br/2930295811656775"]
+        },
+        {
+            name: "André Luiz Ditzel Burger",
+            profilePic: "./team/members/Andre-Luiz-Ditzel-Burger.png",
+            specialties: "Computer Vision, Image Detection, Artificial Intelligence",
+            links: ["mailto:andreburger.furg@gmail.com", "https://www.linkedin.com/in/andré-luiz-ditzel-burger-306238203/", "https://github.com/andre12burger"]
         }
     ]
 
@@ -123,14 +123,14 @@ export default function Team() {
                             {/* placeholder */}
                             {section.members.length === 0 ? (
                                 <div className="profile scroll-reveal">
-                                    <img src={unknownPic} alt="Unset profile picture" />
+                                    <img src="/team/members/placeholder-profile.png" className="placeholder-profile" alt="Unset profile picture" />
                                     <div className="info">
                                         <h2>Pessoa Fulano dos Santos</h2>
                                         <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
                                         <div className="info-links">
-                                            <a href=""><img src={websiteIcon} alt="Personal website icon" /></a>
-                                            <a href=""><img src={linkedinIcon} alt="LinkedIn icon" /></a>
-                                            <a href=""><img src={academicIcon} alt="Scholar icon" /></a>
+                                            <a href=""><img src="/team/icons/globe-grid.png" alt="Personal website icon" /></a>
+                                            <a href=""><img src="/team/icons/linkedin-dark.png" alt="LinkedIn icon" /></a>
+                                            <a href=""><img src="/team/icons/graduation-hat.png" alt="Scholar icon" /></a>
                                         </div>
                                     </div>
                                 </div>

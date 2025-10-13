@@ -133,16 +133,18 @@ main {
         background-color: var(--bg);
 
         /* Colors */
-        --bg: whitesmoke;
+        --bg: white;
         --main: rgb(33, 53, 71);
 
-        --header: whitesmoke;
-        --footer: whitesmoke;
+        --header: rgba(245, 245, 245, 0.5);
+        --footer: rgba(245, 245, 245, 0.5);
         --button: rgb(220, 220, 220);
 
         --blue: rgb(215, 225, 255);
+        --darkBlue-hover: rgba(47, 93, 124, 0.15);
+        --red-hover: rgba(255, 100, 100, 0.85);
+        --darkRed-hover: rgba(129, 59, 59, 0.15);
         --yellow: rgb(196, 173, 73);
-        --red-hover: rgb(255, 100, 100);
     }
 
     /* Logos */

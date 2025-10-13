@@ -114,6 +114,10 @@ nav {
     .internal_links li > a {
         color: black;
     }
+
+    #external_links img {
+        opacity: 0.75;
+    }
 }
 
 @media (max-width: 768px) {

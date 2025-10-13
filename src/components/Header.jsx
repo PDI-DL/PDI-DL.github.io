@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import pdiLogo from "../assets/logos/logo_pdi.png";
 import githubLogo from "../assets/logos/logo_github-dark.png";
 import linkedinLogo from "../assets/logos/logo_linkedin-dark.png";
-import huggingfaceLogo from "../assets/logos/logo_huggingface-dark.png";
+import huggingfaceLogo from "../assets/logos/logo_huggingface.png";
 
 import "../style/components/Header.css";
 
@@ -56,7 +56,7 @@ export default function Header() {
                     <div id="external_links">
                         <Link to="https://github.com/PDI-DL" target="blank"><img src={githubLogo} className="github-logo" alt="GitHub logo" /></Link>
                         <Link to="#" target="blank"><img src={linkedinLogo} className="linkedin-logo" alt="LinkedIn logo" /></Link>
-                        <Link to="https://huggingface.co/PDI-DL" target="blank"><img src={huggingfaceLogo} id="huggingface" alt="Huggingface logo" /></Link>
+                        <Link to="https://huggingface.co/PDI-DL" target="blank"><img src={huggingfaceLogo} className="huggingface-logo" alt="Huggingface logo" /></Link>
                     </div>
                     <div id="hamburger" onClick={toggleHamburger}>
                         <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
