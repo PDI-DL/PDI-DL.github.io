@@ -12,6 +12,12 @@
 }
 
 /* Media Section */
+@media (prefers-color-scheme: light) {
+    .marquee-logos {
+        background-color: rgba(0, 0, 0, 0.015);
+    }
+}
+
 @media (max-width: 768px) {
     :root {
         --gradient: 75px;

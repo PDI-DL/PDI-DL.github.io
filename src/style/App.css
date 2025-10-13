@@ -133,11 +133,11 @@ main {
         background-color: var(--bg);
 
         /* Colors */
-        --bg: rgb(255, 255, 255);
+        --bg: whitesmoke;
         --main: rgb(33, 53, 71);
 
-        --header: rgb(217, 217, 217);
-        --footer: rgb(217, 217, 217);
+        --header: whitesmoke;
+        --footer: whitesmoke;
         --button: rgb(220, 220, 220);
 
         --blue: rgb(215, 225, 255);
@@ -146,6 +146,9 @@ main {
     }
 
     /* Logos */
+    .github-logo { content: url("../assets/logos/logo_github-light.png");}
+    .linkedin-logo { content: url("../assets/logos/logo_linkedin-light.png");}
+    .huggingface-logo { content: url("../assets/logos/logo_huggingface-light.png");}
     .nautec-logo { content: url("../assets/logos/logo_nautec-light.png"); }
     .itec-logo { content: url("../assets/logos/logo_itec-light.png"); }
     .bevlog-logo { content: url("../assets/logos/logo_bevlog-light.png"); }

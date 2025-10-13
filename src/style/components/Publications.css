@@ -146,13 +146,18 @@
 }
 
 /* Media Section */
-@media (prefers-color-scheme: light) {
-    #head button {
-        background-color: var(--button);
+@media (prefers-color-scheme: light) {    
+    .card,
+    .card-tag,
+    .head button,
+    .button-holder button {
+        color: var(--main);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        background-color: var(--header);
     }
-    
+
     .card {
-        background-color: var(--blue);
+        background-color: var(--header);
     }
 }
 

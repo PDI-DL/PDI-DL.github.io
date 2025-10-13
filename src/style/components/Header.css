@@ -103,12 +103,8 @@ nav {
 
 /* Media Section */
 @media (prefers-color-scheme: light) {
-    #github {
-        content: url("../assets/logos/logo_github-light.png");
-    }
-
-    #linkedin {
-        content: url("../assets/logos/logo_linkedin-light.png");
+    header {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     #logo a span {
