@@ -1,0 +1,137 @@
+{
+    "faculty": [],
+    "postdocs": [
+        {
+            "name": "Stephanie Loi Brião",
+            "profilePic": "./team/members/Stephanie-Loi-Briao.png",
+            "specialties": "Computer Vision, Digital Image Processing, Modeling, Control of Systems, Robotics",
+            "links": [
+                "mailto:stephanie.loi@furg.br",
+                "https://www.linkedin.com/in/stephanie-loi-bri%C3%A3o/",
+                "https://github.com/stephanielb/",
+                "https://huggingface.co/stephanielb/",
+                "http://lattes.cnpq.br/4926650234495195",
+                "https://orcid.org/my-orcid?orcid=0000-0001-9345-2038",
+                "https://scholar.google.com/citations?user=16VtTiQAAAAJ&hl=pt-BR",
+                "https://www.researchgate.net/profile/Stephanie-Loi-Briao"
+            ]
+        }
+    ],
+    "phd": [
+        {
+            "name": "Tatiana Taís Schein",
+            "profilePic": "./team/members/Tatiana-Tais-Schein.jpg",
+            "specialties": "Computer Vision, Image Processing, Artificial Intelligence",
+            "links": [
+                "mailto:tatischein@furg.br",
+                "https://www.linkedin.com/in/tatianaschein/",
+                "https://github.com/TatiSchein/"
+            ]
+        }
+    ],
+    "msc": [
+        {
+            "name": "Gustavo Pereira de Almeida",
+            "profilePic": "./team/members/Gustavo-Pereira-de-Almeida.png",
+            "specialties": "Computer Vision, Autonomous Navigation, Robotic Perception, Deep Learning ",
+            "links": [
+                "mailto:gustavo.pereira.furg@furg.br",
+                "https://www.linkedin.com/in/gustavo-pereira-de-almeida2146/",
+                "https://github.com/gusanagy",
+                "https://huggingface.co/Gusanagy"
+            ]
+        },
+        {
+            "name": "Eduardo Lawson da Silva",
+            "profilePic": "./team/members/Eduardo-Lawson.jpeg",
+            "specialties": "Computer Vision, Underwater images, Robot Perception, Deep Learning",
+            "links": [
+                "mailto:eduardolawson@furg.br",
+                "https://br.linkedin.com/in/eduardo-lawson-da-silva-32b8a4224?trk=people_directory",
+                "https://github.com/EduardoLawson1",
+                "https://huggingface.co/EduardoLawson1",
+                "http://lattes.cnpq.br/0984169677021329",
+                "https://scholar.google.com.br/citations?user=i1st8NMAAAAJ&hl=pt-BR&oi=ao",
+                "https://www.researchgate.net/profile/Eduardo-Lawson-Da-Silva"
+            ]
+        }
+    ],
+    "undergraduate": [
+        {
+            "name": "Emanuel da Costa Silva",
+            "profilePic": "./team/members/placeholder-profile.png",
+            "specialties": "Computer Vision, Deep Learning, Underwater Imagery, Autonomous Navigation, Computational Imaging, Digital Image Processing",
+            "links": [
+                "https://emanuelcostas.github.io/",
+                "mailto:silva2004@hotmail.com",
+                "https://www.linkedin.com/in/emanuel-da-costa/",
+                "https://github.com/EmanuelCostaS"
+            ]
+        },
+        {
+            "name": "Guilherme Louro Mano Costa",
+            "profilePic": "./team/members/Guilherme-Louro-Mano-Costa.jpg",
+            "specialties": "Computer Vision, Digital Image Processing, Deep Learning,  ROS, Autonomous industrial robotics, Autonomous Navigation.",
+            "links": [
+                "mailto:guilhermemano65667@gmail.com",
+                "https://www.linkedin.com/in/guilherme-mano-994351297",
+                "https://github.com/GuilhermeMano"
+            ]
+        },
+        {
+            "name": "Gabriel De Lima Anastacio",
+            "profilePic": "./team/members/Gabriel-Lima.png",
+            "specialties": "Computer Vision, Digital Image Processing, Deep Learning, Autonomous Navigation",
+            "links": [
+                "mailto:mendonsairos@gmail.com",
+                "https://www.linkedin.com/in/gabriel-anastacio-5206831b8/",
+                "https://github.com/Mendas07"
+            ]
+        },
+        {
+            "name": "Jorge Bernardo Melo Ferreira",
+            "profilePic": "./team/members/Jorge-Melo.jpg",
+            "specialties": "Computer Vision, Deep Learning",
+            "links": [
+                "mailto:jorgebernardo2210@gmail.com",
+                "https://www.linkedin.com/in/jorge-bernardo-melo-ferreira-338846360/",
+                "https://github.com/jorgemelo10",
+                "https://huggingface.co/jorgemelo10"
+            ]
+        },
+        {
+            "name": "Gustavo Arthur Dutra",
+            "profilePic": "./team/members/placeholder-profile.png",
+            "specialties": "Computer Vision, Data Science, Deep Learning",
+            "links": [
+                "https://linktr.ee/gustavodutraaa",
+                "mailto:gustavoadutra.contato@gmail.com",
+                "https://www.linkedin.com/in/gustavo-arthur-dutra/",
+                "https://github.com/gustavoadutra",
+                "https://huggingface.co/akiGustavo",
+                "http://lattes.cnpq.br/2930295811656775"
+            ]
+        },
+        {
+            "name": "André Luiz Ditzel Burger",
+            "profilePic": "./team/members/Andre-Luiz-Ditzel-Burger.png",
+            "specialties": "Computer Vision, Image Detection, Artificial Intelligence",
+            "links": [
+                "mailto:andreburger.furg@gmail.com",
+                "https://www.linkedin.com/in/andré-luiz-ditzel-burger-306238203/",
+                "https://github.com/andre12burger"
+            ]
+        },
+        {
+            "name": "Lucas Soares da Silva",
+            "profilePic": "./team/members/Lucas-Soares-da-Silva.jpg",
+            "specialties": "Data Science, Computer Vision, Deep Learning, Underwater images, Robotics, Robot Perception",
+            "links": [
+                "mailto:lucas.soares@furg.br",
+                "https://www.linkedin.com/in/lucas-soares-786751188/",
+                "https://github.com/florybal"
+            ]
+        }
+    ],
+    "associates": []
+}
