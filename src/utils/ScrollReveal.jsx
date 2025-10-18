@@ -7,18 +7,16 @@ export default function ScrollReveal() {
 
         const observer = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
+                const ratio = entry.intersectionRatio; // quanto do elemento está visível
+                if (ratio > 0.1) { // só considera visível se > 10%
                     entry.target.classList.add("show");
                     // obs.unobserve(entry.target); // deixa permanente após aparecer
-                } else {
+                } else if (ratio === 0) { // só remove se estiver totalmente invisível
                     entry.target.classList.remove("show");
                 }
             });
-        }, { threshold: 0 });
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
+        }, { threshold: Array.from({length: 101}, (_, i) => i / 100) });
+        sections.forEach(section => { observer.observe(section); });
 
         return () => observer.disconnect();
     }, []);
