@@ -43,7 +43,7 @@
         },
         {
             "name": "Eduardo Lawson da Silva",
-            "profilePic": "./team/members/Eduardo-Lawson.jpeg",
+            "profilePic": "./team/members/Eduardo-Lawson.jpg",
             "specialties": "Computer Vision, Underwater images, Robot Perception, Deep Learning",
             "links": [
                 "mailto:eduardolawson@furg.br",
@@ -59,7 +59,7 @@
     "undergraduate": [
         {
             "name": "Emanuel da Costa Silva",
-            "profilePic": "./team/members/placeholder-profile.png",
+            "profilePic": "./team/members/Emanuel-da-Costa-Silva.jpg",
             "specialties": "Computer Vision, Deep Learning, Underwater Imagery, Autonomous Navigation, Computational Imaging, Digital Image Processing",
             "links": [
                 "https://emanuelcostas.github.io/",
