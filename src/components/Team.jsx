@@ -1,8 +1,33 @@
+import { useEffect, useState } from "react";
+
 import TeamData from "../data/Team.json";
+
+import habemusSorriso from "../assets/other/habemus-sorriso.webp";
+import bellSound from "../assets/other/habemus-sorriso.mp3";
 
 import "../style/components/Team.css"
 
 export default function Team() {
+    const [isVisible, setIsVisible] = useState(false)
+    useEffect(() => {
+        let clicks = 0
+        let bell = new Audio(bellSound);
+        bell.volume = 0.25;
+        const clickCounter = () => {
+            clicks += 1;
+            if (clicks == 7) {
+                setIsVisible(true); // HABEMUS SORRISO!
+                bell.play()
+                setTimeout(() => setIsVisible(false), 600);
+                clicks = 0;
+            }
+        }
+        const sorriso = document.querySelector("img[src^='./team/members/Gabriel-Lima.png']");
+        const habemusSorriso = () => clickCounter();
+        sorriso.addEventListener("click", habemusSorriso);
+        return () => { sorriso.removeEventListener("click", habemusSorriso); };
+    }, []);
+
     const sections = [
         { title: "Faculty", members: TeamData.faculty },
         { title: "Postdocs", members: TeamData.postdocs },
@@ -80,6 +105,7 @@ export default function Team() {
                         </section>
                     </div>
                 ))}
+                <img src={habemusSorriso} className={`habemus-sorriso ${isVisible ? "show" : ""}`} alt="Habemus Sorriso" />
             </div>
         </>
     );
