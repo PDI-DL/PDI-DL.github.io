@@ -77,7 +77,7 @@ section {
 }
 
 .habemus-sorriso {
-    width: 475px;
+    width: 425px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -86,6 +86,7 @@ section {
     border-radius: 45%;
     transform: translate(-50%, -50%);
     transition: opacity 0.25s ease;
+    pointer-events: none;
 }
 
 .habemus-sorriso.show {
@@ -93,12 +94,6 @@ section {
 }
 
 /* Media Section */
-@media (prefers-color-scheme: light) {
-    .profile img {
-        border: 1px solid rgba(0, 0, 0, 0.1);
-    }
-}
-
 @media (max-width: 1235px) {
     .profile {
         width: 47%;
@@ -114,5 +109,15 @@ section {
     .profile{
         width: 100%;
         max-width: 700px;
+    }
+
+    .habemus-sorriso {
+        width: 275px;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .profile img {
+        border: 1px solid rgba(0, 0, 0, 0.1);
     }
 }

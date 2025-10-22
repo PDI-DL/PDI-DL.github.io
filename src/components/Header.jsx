@@ -21,7 +21,7 @@ export default function Header() {
         window.onscroll = () => {
             var currentScroll = window.pageYOffset;
             if (currentScroll > prevScroll){ // Indo para baixo, não mostrar header
-                setScrollDirection("dontShow")
+                setScrollDirection("dont-show")
                 if (hamburger.querySelector("div").classList.contains("activate")) // Se menu estiver aberto, fechar
                 hamburger.click()
             }
@@ -37,7 +37,7 @@ export default function Header() {
     };
 
     return (
-        <header className={scrollDirection === "show" ? "show" : "dontShow"}>
+        <header className={scrollDirection === "show" ? "show" : "dont-show"}>
             <nav>
                 <div id="logo">
                     <Link to="/">
@@ -45,23 +45,23 @@ export default function Header() {
                         <span>PDI+DL</span>
                     </Link>
                 </div>
-                <ul className = {hamburgerActive ? "internal_links show" : "internal_links"}>
+                <ul className = {hamburgerActive ? "internal-links show" : "internal-links"}>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/publications">Publications</Link></li>
                     <li><Link to="/team">Team</Link></li>
                     {/* <li><Link to="/research">Research</Link></li>
                     <li><Link to="/calendar">Calendar</Link></li> */}
                 </ul>
-                <div className="wraperHeader">
-                    <div id="external_links">
+                <div className="wraper-header">
+                    <div id="external-links">
                         <Link to="https://github.com/PDI-DL" target="blank"><img src={githubLogo} className="github-logo" alt="GitHub logo" /></Link>
                         <Link to="#" target="blank"><img src={linkedinLogo} className="linkedin-logo" alt="LinkedIn logo" /></Link>
                         <Link to="https://huggingface.co/PDI-DL" target="blank"><img src={huggingfaceLogo} className="huggingface-logo" alt="Huggingface logo" /></Link>
                     </div>
                     <div id="hamburger" onClick={toggleHamburger}>
-                        <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
-                        <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
-                        <div className={hamburgerActive ? "hamburgerLine activate" : "hamburgerLine"}></div>
+                        <div className={hamburgerActive ? "hamburger-line activate" : "hamburger-line"}></div>
+                        <div className={hamburgerActive ? "hamburger-line activate" : "hamburger-line"}></div>
+                        <div className={hamburgerActive ? "hamburger-line activate" : "hamburger-line"}></div>
                     </div>
                 </div>
             </nav>

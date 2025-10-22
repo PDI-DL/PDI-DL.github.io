@@ -146,21 +146,6 @@
 }
 
 /* Media Section */
-@media (prefers-color-scheme: light) {    
-    .card,
-    .card-tag,
-    .head button,
-    .button-holder button {
-        color: var(--main);
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        background-color: var(--header);
-    }
-
-    .card {
-        background-color: var(--header);
-    }
-}
-
 @media (max-width: 768px) {
     .card {
         padding: 1rem 2rem;
@@ -188,5 +173,20 @@
     
     .card span {
         font-size: 0.85rem;
+    }
+}
+
+@media (prefers-color-scheme: light) {    
+    .card,
+    .card-tag,
+    .head button,
+    .button-holder button {
+        color: var(--main);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        background-color: var(--header);
+    }
+
+    .card {
+        background-color: var(--header);
     }
 }

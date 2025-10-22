@@ -14,19 +14,19 @@ footer {
     gap: 15px;
 }
 
-.footerInfo {
-    line-height: 1.8rem;
+.footer-info {
     font-size: 1rem;
+    line-height: 1.8rem;
 }
 
-.footerLogos h1 {
+.footer-logos h1 {
     width: 100%;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     text-align: center;
 }
 
-.Logos {
+.logos {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -34,27 +34,22 @@ footer {
     gap: 15px;
 }
 
-.Logos img {
+.logos img {
     width: 80px;
 }
 
 .nautec-logo {
-    width: 200px;
+    width: 125px !important;
 }
 
 /* Media Section */
-@media (prefers-color-scheme: light) {
-    footer {
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-    }
-}
-
 @media (max-width: 768px) {
-    .footerInfo {
+    .footer-info {
+        padding: 10px;
         font-size: 0.75rem;
     }
 
-    .footerLogos h1 {
+    .footer-logos h1 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
@@ -65,54 +60,59 @@ footer {
         padding: 50px 20px;
     }
 
-    .footerInfo {
-        font-size: 1rem;
-        margin-bottom: 25px;
-    }
-
     .wrap {
         justify-content: center;
         gap: 0;
     }
 
-    .footerLogos {
+    .footer-info {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .footer-logos {
         width: 100%;
-        border-top: 1px solid white;
+        border-top: 0.5px solid white;
         padding-top: 25px;
     }
 
-    .footerLogos h1 {
+    .footer-logos h1 {
         font-size: 2rem;
     }
 
-    .Logos {
+    .logos {
         justify-content: center;
         gap: 50px;
     }
 
-    .Logos img {
+    .logos img {
         width: 70px;
-    }
-
-    #nautec {
-        width: 200px;
     }
 }
 
 @media (max-width: 480px) {
-    .footerInfo{
-        font-size: 0.55rem;
+    .footer-info {
+        padding: 20px;
+        font-size: 0.75rem;
     }
 
-    .Logos{
+    .logos {
         gap: 15px;
     }
 
-    .Logos img{
+    .logos img {
         width: 60px;
     }
+}
 
-    #nautec{
-        width: 150px;
-    } 
+@media (max-width: 600px) and (prefers-color-scheme: light) {
+    .footer-logos {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
 }

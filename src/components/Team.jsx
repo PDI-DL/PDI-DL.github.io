@@ -14,18 +14,17 @@ export default function Team() {
         let bell = new Audio(bellSound);
         bell.volume = 0.25;
         const clickCounter = () => {
-            clicks += 1;
+            clicks++;
             if (clicks == 7) {
                 setIsVisible(true); // HABEMUS SORRISO!
-                bell.play()
+                bell.play().catch(() => {});
                 setTimeout(() => setIsVisible(false), 600);
                 clicks = 0;
             }
         }
         const sorriso = document.querySelector("img[src^='./team/members/Gabriel-Lima.png']");
-        const habemusSorriso = () => clickCounter();
-        sorriso.addEventListener("click", habemusSorriso);
-        return () => { sorriso.removeEventListener("click", habemusSorriso); };
+        const clickSorriso = () => clickCounter(); sorriso.addEventListener("pointerdown", clickSorriso);
+        return () => { sorriso.removeEventListener("pointerdown", clickSorriso); }; // cleanup
     }, []);
 
     const sections = [
