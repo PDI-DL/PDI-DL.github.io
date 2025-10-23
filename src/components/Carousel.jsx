@@ -5,20 +5,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-import carouselImage1 from "../assets/other/carousel/sibgrapi2025.jpg";
-import carouselImage2 from "../assets/other/carousel/fotasso.jpg";
-import carouselImage3 from "../assets/other/carousel/pdi_banner.png";
-
 import "../style/components/Carousel.css";
 
 export default function Carousel() {
-    const images = [
-        { image: carouselImage1, alt: "SIBGRAPI 2025" },
-        { image: carouselImage2, alt: "Placeholder" },
-        { image: carouselImage3, alt: "Digital Image Processing and Deep Learning" },
-    ]
-
     const [activeIndex, setActiveIndex] = useState(0);
+    const images = [
+        { image: "./carousel/sibgrapi-2025.jpg", alt: "SIBGRAPI 2025" },
+        { image: "./carousel/pdi-banner.png", alt: "Digital Image Processing and Deep Learning" },
+    ]
 
     return (
         <div className="slider-container scroll-reveal">
