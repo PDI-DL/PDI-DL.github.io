@@ -18,7 +18,7 @@ export default function Footer() {
                     <br />
                     <span><b>Address</b> av. Itália street, 96203-900 | Rio Grande - RS - Brazil</span>
                     <div className="contact">
-                        <img src={mailIcon} className="mail-icon"></img>Entre em contato: <a href="mailto:">pdi@gmail.com</a>
+                        <img src={mailIcon} className="mail-icon"></img>Entre em contato: <a href="mailto:c3pdigroup@gmail.com">c3pdigroup@gmail.com</a>
                     </div>
                 </div>
                 <div className="footer-logos">
@@ -28,8 +28,8 @@ export default function Footer() {
                         <Link to="https://www.furg.br/en/" target="blank"><img src={furgLogo} alt="Federal University of Rio Grande logo" /></Link>
                     </div>
                 </div>  
-                <div className="devs">Desenvolvido por Breno de Paula e Juan Madeira</div>
             </div>
+            <div className="devs">Desenvolvido por Breno X. de Paula e Juan P. Madeira</div>
         </footer>
     )
 }

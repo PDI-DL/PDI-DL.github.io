@@ -19,13 +19,6 @@ footer {
     line-height: 1.8rem;
 }
 
-.footer-logos h1 {
-    width: 100%;
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
 .logos {
     display: flex;
     flex-wrap: nowrap;
@@ -35,7 +28,7 @@ footer {
 }
 
 .logos img {
-    width: 80px;
+    width: 75px;
 }
 
 .nautec-logo {
@@ -44,6 +37,7 @@ footer {
 
 .contact {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     gap: 5px;
     font-size: 1.1rem;
@@ -60,30 +54,31 @@ footer {
 
 .mail-icon {
     width: 20px;
+    opacity: 0.75;
 }
 
 .devs {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 0.65rem;
     opacity: 0.65;
+    text-align: center;
 }
 
 /* Media Section */
 @media (max-width: 768px) {
     .footer-info {
         padding: 10px;
-        font-size: 0.75rem;
+        font-size: 0.9rem;
     }
 
-    .footer-logos h1 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
+    .contact {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 600px) {
     footer {
-        padding: 50px 20px;
+        padding: 30px 20px 25px 20px;
     }
 
     .wrap {
@@ -93,17 +88,13 @@ footer {
 
     .footer-info {
         padding: 15px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .footer-logos {
         width: 100%;
         border-top: 0.5px solid white;
         padding-top: 25px;
-    }
-
-    .footer-logos h1 {
-        font-size: 2rem;
     }
 
     .logos {
@@ -114,12 +105,16 @@ footer {
     .logos img {
         width: 70px;
     }
+
+    .contact {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
     .footer-info {
         padding: 20px;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     .logos {
@@ -128,6 +123,10 @@ footer {
 
     .logos img {
         width: 60px;
+    }
+
+    .contact {
+        font-size: 0.8rem;
     }
 }
 
