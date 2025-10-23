@@ -2,8 +2,8 @@
     "faculty": [
         {
             "name": "Paulo Drews Jr.",
-            "profilePic": "./team/members/placeholder-profile.png",
-            "specialties": "Placeholder...",
+            "profilePic": "./team/members/placeholder.png",
+            "specialties": "",
             "links": [
                 "mailto:",
                 "https://www.linkedin.com/",
@@ -12,8 +12,8 @@
         },
         {
             "name": "Rodrigo da Silva Guerra",
-            "profilePic": "./team/members/placeholder-profile.png",
-            "specialties": "Placeholder...",
+            "profilePic": "./team/members/placeholder.png",
+            "specialties": "",
             "links": [
                 "mailto:",
                 "https://www.linkedin.com/",
@@ -22,8 +22,8 @@
         },
         {
             "name": "Rodrigo Andrade de Bem",
-            "profilePic": "./team/members/placeholder-profile.png",
-            "specialties": "Placeholder...",
+            "profilePic": "./team/members/placeholder.png",
+            "specialties": "",
             "links": [
                 "mailto:",
                 "https://www.linkedin.com/",
@@ -57,6 +57,16 @@
                 "mailto:tatischein@furg.br",
                 "https://www.linkedin.com/in/tatianaschein/",
                 "https://github.com/TatiSchein/"
+            ]
+        },
+        {
+            "name": "Larissa Gomes",
+            "profilePic": "./team/members/placeholder.png",
+            "specialties": "",
+            "links": [
+                "mailto:",
+                "https://www.linkedin.com/",
+                "https://github.com/"
             ]
         }
     ],
@@ -156,7 +166,7 @@
         },
         {
             "name": "Gustavo Arthur Dutra",
-            "profilePic": "./team/members/placeholder-profile.png",
+            "profilePic": "./team/members/placeholder.png",
             "specialties": "Computer Vision, Data Science, Deep Learning",
             "links": [
                 "https://linktr.ee/gustavodutraaa",
@@ -186,7 +196,69 @@
                 "https://www.linkedin.com/in/lucas-soares-786751188/",
                 "https://github.com/florybal"
             ]
+        },
+        {
+            "name": "Pedro Flores",
+            "profilePic": "./team/members/placeholder.png",
+            "specialties": "",
+            "links": [
+                "mailto:",
+                "https://www.linkedin.com/",
+                "https://github.com/"
+            ]
+        },
+        {
+            "name": "Lucas Costa",
+            "profilePic": "./team/members/placeholder.png",
+            "specialties": "",
+            "links": [
+                "mailto:",
+                "https://www.linkedin.com/",
+                "https://github.com/"
+            ]
+        },
+        {
+            "name": "Breno Xavier de Paula",
+            "profilePic": "./team/members/placeholder.png",
+            "specialties": "",
+            "links": [
+                "mailto:",
+                "https://www.linkedin.com/",
+                "https://github.com/"
+            ]
+        },
+        {
+            "name": "Juan Peres Madeira",
+            "profilePic": "./team/members/placeholder.png",
+            "specialties": "",
+            "links": [
+                "mailto:juan.madeira@furg.br",
+                "https://www.linkedin.com/in/juan-madeira/",
+                "https://github.com/juanmadeira"
+            ]
         }
+
     ],
-    "associates": []
+    "associates": [
+        {
+            "name": "Felipe",
+            "profilePic": "./team/members/placeholder.png",
+            "specialties": "",
+            "links": [
+                "mailto:",
+                "https://www.linkedin.com/",
+                "https://github.com/"
+            ]
+        },
+        {
+            "name": "Thiago",
+            "profilePic": "./team/members/placeholder.png",
+            "specialties": "",
+            "links": [
+                "mailto:",
+                "https://www.linkedin.com/",
+                "https://github.com/"
+            ]
+        }
+    ]
 }
