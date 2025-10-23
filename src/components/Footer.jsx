@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import c3Logo from "../assets/logos/logo_c3.png";
 import nautecLogo from "../assets/logos/logo_nautec-dark.png";
 import furgLogo from "../assets/logos/logo_furg.png";
+import mailIcon from "../assets/icons/mail-dark.png";
 
 import "../style/components/Footer.css";
 
@@ -16,6 +17,9 @@ export default function Footer() {
                     <span> Computer Science Center (<b>C3</b>) - Federal University of Rio Grande (<b>FURG</b>)</span>
                     <br />
                     <span><b>Address</b> av. Itália street, 96203-900 | Rio Grande - RS - Brazil</span>
+                    <div className="contact">
+                        <img src={mailIcon} className="mail-icon"></img>Entre em contato: <a href="mailto:">pdi@gmail.com</a>
+                    </div>
                 </div>
                 <div className="footer-logos">
                     <div className="logos">
@@ -23,7 +27,8 @@ export default function Footer() {
                         <Link to="https://nautec.furg.br/en/" target="blank"><img src={nautecLogo} className="nautec-logo" alt="Intelligent automation and robotics group" /></Link>
                         <Link to="https://www.furg.br/en/" target="blank"><img src={furgLogo} alt="Federal University of Rio Grande logo" /></Link>
                     </div>
-                </div>          
+                </div>  
+                <div className="devs">Desenvolvido por Breno de Paula e Juan Madeira</div>
             </div>
         </footer>
     )

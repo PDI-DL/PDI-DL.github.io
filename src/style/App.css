@@ -131,4 +131,7 @@ main {
     .nautec-logo { content: url("../assets/logos/logo_nautec-light.png"); }
     .itec-logo { content: url("../assets/logos/logo_itec-light.png"); }
     .bevlog-logo { content: url("../assets/logos/logo_bevlog-light.png"); }
+
+    /* Icons */
+    .mail-icon { content: url("../assets/icons/mail-light.png"); }
 }

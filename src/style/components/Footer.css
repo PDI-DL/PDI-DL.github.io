@@ -1,7 +1,7 @@
 footer {
     margin-top: 100px;
     min-height: 100px;
-    padding: 30px;
+    padding: 30px 30px 20px 30px;
     background-color: var(--footer);
 }
 
@@ -40,6 +40,32 @@ footer {
 
 .nautec-logo {
     width: 125px !important;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.contact a {
+    color: inherit;
+}
+
+.contact a:hover {
+    color: var(--red-hover);
+}
+
+.mail-icon {
+    width: 20px;
+}
+
+.devs {
+    margin-top: 10px;
+    font-size: 0.65rem;
+    opacity: 0.65;
 }
 
 /* Media Section */
