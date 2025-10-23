@@ -1,5 +1,36 @@
 {
-    "faculty": [],
+    "faculty": [
+        {
+            "name": "Paulo Drews Jr.",
+            "profilePic": "./team/members/placeholder-profile.png",
+            "specialties": "Placeholder...",
+            "links": [
+                "mailto:",
+                "https://www.linkedin.com/",
+                "https://github.com/"
+            ]
+        },
+        {
+            "name": "Rodrigo da Silva Guerra",
+            "profilePic": "./team/members/placeholder-profile.png",
+            "specialties": "Placeholder...",
+            "links": [
+                "mailto:",
+                "https://www.linkedin.com/",
+                "https://github.com/"
+            ]
+        },
+        {
+            "name": "Rodrigo Andrade de Bem",
+            "profilePic": "./team/members/placeholder-profile.png",
+            "specialties": "Placeholder...",
+            "links": [
+                "mailto:",
+                "https://www.linkedin.com/",
+                "https://github.com/"
+            ]
+        }
+    ],
     "postdocs": [
         {
             "name": "Stephanie Loi Brião",
@@ -20,7 +51,7 @@
     "phd": [
         {
             "name": "Tatiana Taís Schein",
-            "profilePic": "./team/members/Tatiana-Tais-Schein.jpg",
+            "profilePic": "./team/members/Tatiana-Tais-Schein.png",
             "specialties": "Computer Vision, Image Processing, Artificial Intelligence",
             "links": [
                 "mailto:tatischein@furg.br",
@@ -43,7 +74,7 @@
         },
         {
             "name": "Eduardo Lawson da Silva",
-            "profilePic": "./team/members/Eduardo-Lawson.jpg",
+            "profilePic": "./team/members/Eduardo-Lawson-da-Silva.png",
             "specialties": "Computer Vision, Underwater images, Robot Perception, Deep Learning",
             "links": [
                 "mailto:eduardolawson@furg.br",
@@ -54,12 +85,36 @@
                 "https://scholar.google.com.br/citations?user=i1st8NMAAAAJ&hl=pt-BR&oi=ao",
                 "https://www.researchgate.net/profile/Eduardo-Lawson-Da-Silva"
             ]
+        },
+        {
+            "name": "Lucas Benedetti Viana de Cordova",
+            "profilePic": "./team/members/Lucas-Benedetti-Viana-de-Cordova.png",
+            "specialties": "Computer Vision, Deep Learning for Visual Perception, Autonomous Navigation, Sensor Fusion",
+            "links": [
+                "mailto:contato.lucasbenedetti@gmail.com",
+                "https://www.linkedin.com/in/lucas-benedetti-1b4607230",
+                "https://github.com/benedettilucas",
+                "https://huggingface.co/benedettilucas",
+                "http://lattes.cnpq.br/6140333393324132",
+                "https://orcid.org/0009-0005-4093-8065",
+                "https://scholar.google.com/citations?user=1SjiaCkAAAAJ&hl=pt-BR"
+            ]
+        },
+        {
+            "name": "José Garcia Ramos",
+            "profilePic": "./team/members/Jose-Garcia-Ramos.png",
+            "specialties": "Image generation, Computer Vision, Image Processing, Artificial Intelligence",
+            "links": [
+                "mailto:jgarcia@furg.br",
+                "https://www.linkedin.com/in/jos%C3%A9-david-garc%C3%ADa-ramos-b17b88329/",
+                "https://github.com/Gardiy"
+            ]
         }
     ],
     "undergraduate": [
         {
             "name": "Emanuel da Costa Silva",
-            "profilePic": "./team/members/Emanuel-da-Costa-Silva.jpg",
+            "profilePic": "./team/members/Emanuel-da-Costa-Silva.png",
             "specialties": "Computer Vision, Deep Learning, Underwater Imagery, Autonomous Navigation, Computational Imaging, Digital Image Processing",
             "links": [
                 "https://emanuelcostas.github.io/",
@@ -70,7 +125,7 @@
         },
         {
             "name": "Guilherme Louro Mano Costa",
-            "profilePic": "./team/members/Guilherme-Louro-Mano-Costa.jpg",
+            "profilePic": "./team/members/Guilherme-Louro-Mano-Costa.png",
             "specialties": "Computer Vision, Digital Image Processing, Deep Learning,  ROS, Autonomous industrial robotics, Autonomous Navigation.",
             "links": [
                 "mailto:guilhermemano65667@gmail.com",
@@ -80,7 +135,7 @@
         },
         {
             "name": "Gabriel De Lima Anastacio",
-            "profilePic": "./team/members/Gabriel-Lima.png",
+            "profilePic": "./team/members/Gabriel-de-Lima-Anastacio.png",
             "specialties": "Computer Vision, Digital Image Processing, Deep Learning, Autonomous Navigation",
             "links": [
                 "mailto:mendonsairos@gmail.com",
@@ -90,7 +145,7 @@
         },
         {
             "name": "Jorge Bernardo Melo Ferreira",
-            "profilePic": "./team/members/Jorge-Melo.jpg",
+            "profilePic": "./team/members/Jorge-Bernardo-Melo-Ferreira.png",
             "specialties": "Computer Vision, Deep Learning",
             "links": [
                 "mailto:jorgebernardo2210@gmail.com",
@@ -124,7 +179,7 @@
         },
         {
             "name": "Lucas Soares da Silva",
-            "profilePic": "./team/members/Lucas-Soares-da-Silva.jpg",
+            "profilePic": "./team/members/Lucas-Soares-da-Silva.png",
             "specialties": "Data Science, Computer Vision, Deep Learning, Underwater images, Robotics, Robot Perception",
             "links": [
                 "mailto:lucas.soares@furg.br",

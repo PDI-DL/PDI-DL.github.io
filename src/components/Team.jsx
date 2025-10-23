@@ -22,7 +22,7 @@ export default function Team() {
                 clicks = 0;
             }
         }
-        const sorriso = document.querySelector("img[src^='./team/members/Gabriel-Lima.png']");
+        const sorriso = document.querySelector("img[src^='./team/members/Gabriel-de-Lima-Anastacio.png']");
         const clickSorriso = () => clickCounter(); sorriso.addEventListener("pointerdown", clickSorriso);
         return () => { sorriso.removeEventListener("pointerdown", clickSorriso); }; // cleanup
     }, []);
