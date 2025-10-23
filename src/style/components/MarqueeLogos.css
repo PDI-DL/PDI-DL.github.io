@@ -4,6 +4,7 @@
 
 .marquee-logos {
     background-color: var(--header);
+    box-shadow: inset 10px 0 10px rgba(255, 255, 255, 0.025);
 }
 
 .marquee-logos img {
@@ -24,6 +25,7 @@
 
 @media (prefers-color-scheme: light) {
     .marquee-logos {
-        background-color: rgba(0, 0, 0, 0.025);
+        background-color: rgba(0, 0, 0, 0.03);
+        box-shadow: inset 10px 0 10px rgba(0, 0, 0, 0.05);
     }
 }
