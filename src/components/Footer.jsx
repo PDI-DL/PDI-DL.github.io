@@ -14,11 +14,11 @@ export default function Footer() {
                 <div className="footer-info">
                     <span>Digital Image Processing and Machine Learning <b>Group</b> | {new Date().getFullYear()}</span>
                     <br/>
-                    <span> Computer Science Center (<b>C3</b>) - Federal University of Rio Grande (<b>FURG</b>)</span>
+                    <span>Computer Science Center (<b>C3</b>) - Federal University of Rio Grande (<b>FURG</b>)</span>
                     <br />
                     <span><b>Address</b> av. Itália street, 96203-900 | Rio Grande - RS - Brazil</span>
                     <div className="contact">
-                        <img src={mailIcon} className="mail-icon"></img>Entre em contato: <a href="mailto:c3pdigroup@gmail.com">c3pdigroup@gmail.com</a>
+                        <img src={mailIcon} className="mail-icon"></img>Contact Us: <a href="mailto:c3pdigroup@gmail.com">c3pdigroup@gmail.com</a>
                     </div>
                 </div>
                 <div className="footer-logos">
@@ -29,7 +29,7 @@ export default function Footer() {
                     </div>
                 </div>  
             </div>
-            <div className="devs">Desenvolvido por Breno X. de Paula e Juan P. Madeira</div>
+            <div className="devs">Developed by Breno X. de Paula and Juan P. Madeira</div>
         </footer>
     )
 }
