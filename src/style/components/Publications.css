@@ -105,18 +105,7 @@
     -webkit-line-clamp: unset !important;
 }
 
-.card-tag {
-    width: auto;
-    padding: 0.25rem 0.5rem;
-    text-indent: 0; 
-    cursor: default;
-    font-weight: bold;
-    border-radius: 6px;
-    color: var(--bg);
-    background-color: rgb(231, 231, 231);
-}
-
-.card .button-holder {
+.button-holder {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -143,6 +132,29 @@
 
 .button-holder button:hover {
     background-color: var(--yellow);
+}
+
+.button-holder .left {
+    display: flex;
+    gap: 5px
+}
+
+.card-tag {
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    text-indent: 0; 
+    font-weight: bold;
+    border-radius: 6px;
+    color: var(--bg);
+    background-color: rgb(231, 231, 231);
+}
+
+.card-tag .year {
+    cursor: default;
+} 
+
+.card-tag img {
+    width: 45px;
 }
 
 /* Media Section */

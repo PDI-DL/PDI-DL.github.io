@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import arxivLogo from "../assets/logos/logo_arxiv.png"
+
 import PublicationsData from "../data/Publications.json";
 
 import "../style/components/Publications.css";
@@ -78,10 +80,15 @@ export default function Publications() {
                         <h3>{article.authors}</h3>
                         <span className={hasMaxHeight ? 'open-news' : ""}>{article.content}</span>
                         <div className="button-holder">
-                            <span className="card-tag">{article.year}</span>
-                            <button onClick={toggleOpenNews} className="button-blue-hover">
-                                {hasMaxHeight ? "Close" : "Expand"}
-                            </button>
+                            <div className="left">
+                                <a href={article.paper} className="card-tag" target="_blank"><img src={arxivLogo} alt="Arxiv logo"></img></a>
+                                <span className="card-tag year">{article.year}</span>
+                            </div>
+                            <div className="right">
+                                <button onClick={toggleOpenNews} className="button-blue-hover">
+                                    {hasMaxHeight ? "Close" : "Expand"}
+                                </button>
+                            </div>
                         </div>
                     </div>
                 ))}
