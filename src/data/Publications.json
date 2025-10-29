@@ -1,7 +1,7 @@
 [
     {   
         "title": "Sonar Image Datasets: A Comprehensive Survey of Resources, Challenges, and Applications",
-        "conference": "38th Conference on Graphics, Patterns and Images (SIBIGRAPI)",
+        "conference": "38th Conference on Graphics, Patterns and Images (SIBGRAPI)",
         "authors": "Larissa Gomes, Gustavo P. Almeida, Bryan Umbipierre, Marco Quiroz, Breno Xavier, Lucas Soares, Stephanie L. Brião, Felipe G. Oliveira, Paulo L. J. Drews-Jr",
         "year": 2025,
         "paper": "https://arxiv.org/abs/2510.03353",
@@ -9,7 +9,7 @@
     },
     {
         "title": "AquaFeat: A Features-Based Image Enhancement Model for Underwater Object Detection",
-        "conference": "38th Conference on Graphics, Patterns and Images (SIBIGRAPI)",
+        "conference": "38th Conference on Graphics, Patterns and Images (SIBGRAPI)",
         "authors": "Emanuel Silva, Tatiana T. Schein, Stephanie Loi Brião, Guilherme L. M. Costa, Felipe Gomes Oliveira, Gustavo P. Almeida, Eduardo Lawson da Silva, Sam S. Devincenzi, Karina S. Machado, Paulo Drews-Jr",
         "year": 2025,
         "paper": "https://arxiv.org/abs/2508.12343",
