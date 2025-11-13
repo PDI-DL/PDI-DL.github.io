@@ -119,6 +119,16 @@
                 "https://www.linkedin.com/in/jos%C3%A9-david-garc%C3%ADa-ramos-b17b88329/",
                 "https://github.com/Gardiy"
             ]
+        },
+        {
+            "name": "Marco Antonio Quiroz Quispe",
+            "profilePic": "./team/members/Marco-Antonio-Quiroz-Quispe.png",
+            "specialties": "Simultaneous Localization and Mapping (SLAM), Computer Vision, Image Processing, Artificial Intelligence",
+            "links": [
+                "mailto:marcoqq45@gmail.com",
+                "https://www.linkedin.com/in/marco-quiroz-ing/",
+                "https://github.com/marco-quiroz/"
+            ]
         }
     ],
     "undergraduate": [
@@ -229,7 +239,7 @@
         },
         {
             "name": "Juan Peres Madeira",
-            "profilePic": "./team/members/placeholder.png",
+            "profilePic": "./team/members/Juan-Peres-Madeira.png",
             "specialties": "",
             "links": [
                 "mailto:juan.madeira@furg.br",
