@@ -2,8 +2,8 @@
     "faculty": [
         {
             "name": "Paulo Drews Jr.",
-            "profilePic": "./team/members/placeholder.png",
-            "specialties": "",
+            "profilePic": "./team/members/Paulo-Drews-Junior.png",
+            "specialties": "Robotics, Computer Vision, Digital Image Processing",
             "links": [
                 "mailto:",
                 "https://www.linkedin.com/",
@@ -12,8 +12,8 @@
         },
         {
             "name": "Rodrigo da Silva Guerra",
-            "profilePic": "./team/members/placeholder.png",
-            "specialties": "",
+            "profilePic": "./team/members/Rodrigo-da-Silva-Guerra.png",
+            "specialties": "Robotics, Computer Vision, Digital Image Processing",
             "links": [
                 "mailto:",
                 "https://www.linkedin.com/",
@@ -22,8 +22,8 @@
         },
         {
             "name": "Rodrigo Andrade de Bem",
-            "profilePic": "./team/members/placeholder.png",
-            "specialties": "",
+            "profilePic": "./team/members/Rodrigo-Andrade-de-Bem.png",
+            "specialties": "Robotics, Computer Vision, Digital Image Processing",
             "links": [
                 "mailto:",
                 "https://www.linkedin.com/",
@@ -61,8 +61,8 @@
         },
         {
             "name": "Larissa Gomes",
-            "profilePic": "./team/members/placeholder.png",
-            "specialties": "",
+            "profilePic": "./team/members/Larissa-Gomes.png",
+            "specialties": "Sonar images, Computer Vision, Deep Learning, Underwater images, Robotics, Robot Perception",
             "links": [
                 "mailto:",
                 "https://www.linkedin.com/",
@@ -176,7 +176,7 @@
         },
         {
             "name": "Gustavo Arthur Dutra",
-            "profilePic": "./team/members/placeholder.png",
+            "profilePic": "./team/members/Gustavo-Arthur-Dutra.png",
             "specialties": "Computer Vision, Data Science, Deep Learning",
             "links": [
                 "https://linktr.ee/gustavodutraaa",
@@ -229,8 +229,8 @@
         },
         {
             "name": "Breno Xavier de Paula",
-            "profilePic": "./team/members/placeholder.png",
-            "specialties": "",
+            "profilePic": "./team/members/Breno-Xavier-de-Paula.png",
+            "specialties": "Systems Development, Web Development, Computer Vision",
             "links": [
                 "mailto:brexp14@gmail.com",
                 "https://www.linkedin.com/in/breno-xavier-de-paula-42639935a",
@@ -257,21 +257,7 @@
                 "https://github.com/Lukasilvestre",
                 "http://lattes.cnpq.br/1835248140270463"
             ]
-        },
-        {
-            "name": "Gustavo Arthur Dutra",
-            "profilePic": "./team/members/Gustavo-Arthur-Dutra.png",
-            "specialties": "Computer Vision, Data Science, Deep Learning",
-            "links": [
-                "mailto:gustavoadutra.contato@gmail.com",
-                "https://www.linkedin.com/in/gustavo-arthur-dutra/",
-                "https://github.com/gustavoadutra",
-                "https://huggingface.co/akiGustavo",
-                "http://lattes.cnpq.br/2930295811656775",
-                "https://scholar.google.com/citations?hl=pt-BR&authuser=2&user=3yTmnIQAAAAJ"
-            ]
         }
-
     ],
     "associates": [
         {
