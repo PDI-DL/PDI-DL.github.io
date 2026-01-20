@@ -246,6 +246,30 @@
                 "https://www.linkedin.com/in/juan-madeira/",
                 "https://github.com/juanmadeira"
             ]
+        },
+        {
+            "name": "Lucas Silvestre de Jesus",
+            "profilePic": "./team/members/Lucas-Silvestre-de-Jesus.png",
+            "specialties": "Embedded AI, Edge Computing, JETSON, IoT, Computer Vision",
+            "links": [
+                "mailto:",
+                "http://www.linkedin.com/in/lucas-silvestre-de-jesus-4041aa22a",
+                "https://github.com/Lukasilvestre",
+                "http://lattes.cnpq.br/1835248140270463"
+            ]
+        },
+        {
+            "name": "Gustavo Arthur Dutra",
+            "profilePic": "./team/members/Gustavo-Arthur-Dutra.png",
+            "specialties": "Computer Vision, Data Science, Deep Learning",
+            "links": [
+                "mailto:gustavoadutra.contato@gmail.com",
+                "https://www.linkedin.com/in/gustavo-arthur-dutra/",
+                "https://github.com/gustavoadutra",
+                "https://huggingface.co/akiGustavo",
+                "http://lattes.cnpq.br/2930295811656775",
+                "https://scholar.google.com/citations?hl=pt-BR&authuser=2&user=3yTmnIQAAAAJ"
+            ]
         }
 
     ],
