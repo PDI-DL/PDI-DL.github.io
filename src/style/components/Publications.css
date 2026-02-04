@@ -142,6 +142,7 @@
 .card-tag {
     padding: 0.25rem 0.5rem;
     display: flex;
+    align-items: center;
     text-indent: 0; 
     font-weight: bold;
     border-radius: 6px;
@@ -155,6 +156,7 @@
 
 .card-tag img {
     width: 45px;
+    height: 18px;
 }
 
 /* Media Section */

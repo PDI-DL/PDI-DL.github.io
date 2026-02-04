@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import arxivLogo from "../assets/logos/logo_arxiv.png"
+import i3eLogo from "../assets/logos/logo_i3e.png"
 
 import PublicationsData from "../data/Publications.json";
 
@@ -62,6 +63,17 @@ export default function Publications() {
         }
     };
 
+    function getImgPath(link) {
+        const options = [
+            ["arxiv.org", arxivLogo],
+            ["ieee.org", i3eLogo],
+        ]
+        for (let i = 0; i < options.length; i++){
+            if (link.includes(options[i][0]))
+                return options[i];
+        }
+    }
+
     return (
         <div>
             <div className="head">
@@ -78,10 +90,17 @@ export default function Publications() {
                         </div>
                         <h3>{article.conference}</h3>
                         <h3>{article.authors}</h3>
-                        <span className={hasMaxHeight ? 'open-news' : ""}>{article.content}</span>
+                        <span className={hasMaxHeight ? 'open-news' : ""}>{article.abstract}</span>
                         <div className="button-holder">
                             <div className="left">
-                                <a href={article.paper} className="card-tag" target="_blank"><img src={arxivLogo} alt="Arxiv logo"></img></a>
+                                {article.paper.map((link, i) => {
+                                    const info = getImgPath(link);
+                                    return (
+                                        <a href={link} key={i} className="card-tag" target="_blank">
+                                            <img src={info[1]} alt={`${info[0]} icon`}></img>
+                                        </a>
+                                    );
+                                })}
                                 <span className="card-tag year">{article.year}</span>
                             </div>
                             <div className="right">
