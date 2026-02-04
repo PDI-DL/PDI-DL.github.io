@@ -66,41 +66,25 @@ export default function Team() {
                     <div key={i}>
                         <h2 className="team-sec scroll-reveal">{section.title}</h2>
                         <section>
-                            {/* placeholder */}
-                            {section.members.length === 0 ? (
-                                <div className="profile scroll-reveal">
-                                    <img src="/team/members/placeholder-profile.png" className="placeholder-profile" alt="Unset profile picture" />
+                            {(section.members.map((member, i) => (
+                                <div className="profile scroll-reveal" key={i}>
+                                    <img src={member.profilePic} alt={`Picture of member: ${member.name}`} />
                                     <div className="info">
-                                        <h2>Pessoa Fulano dos Santos</h2>
-                                        <p>Pequeno texto de apresentação profissional aqui, áreas que trabalha, etc...</p>
+                                        <h2>{member.name}</h2>
+                                        <p>{member.specialties}</p>
                                         <div className="info-links">
-                                            <a href=""><img src="/team/icons/globe-grid.png" alt="Personal website icon" /></a>
-                                            <a href=""><img src="/team/icons/linkedin-dark.png" alt="LinkedIn icon" /></a>
-                                            <a href=""><img src="/team/icons/graduation-hat.png" alt="Scholar icon" /></a>
+                                            {member.links.map((link, i) => {
+                                                const info = getImgPath(link);
+                                                return (
+                                                    <a href={link} key={i}>
+                                                        <img src={info[1]} alt={`${info[0]} icon`} />
+                                                    </a>
+                                                );
+                                            })}
                                         </div>
                                     </div>
                                 </div>
-                            ) : (
-                                section.members.map((member, i) => (
-                                    <div className="profile scroll-reveal" key={i}>
-                                        <img src={member.profilePic} alt={`Picture of member: ${member.name}`} />
-                                        <div className="info">
-                                            <h2>{member.name}</h2>
-                                            <p>{member.specialties}</p>
-                                            <div className="info-links">
-                                                {member.links.map((link, i) => {
-                                                    const info = getImgPath(link);
-                                                    return (
-                                                        <a href={link} key={i}>
-                                                            <img src={info[1]} alt={`${info[0]} icon`} />
-                                                        </a>
-                                                    );
-                                                })}
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))
-                            )}
+                            )))}
                         </section>
                     </div>
                 ))}
