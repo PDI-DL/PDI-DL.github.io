@@ -5,8 +5,9 @@
             "profilePic": "./team/members/Paulo-Drews-Junior.png",
             "specialties": "Robotics, Computer Vision, Digital Image Processing",
             "links": [
-                "mailto:",
-                "https://www.linkedin.com/",
+                "https://paulodrews.com/",
+                "mailto:paulodrews@furg.br",
+                "https://www.linkedin.com/in/paulo-drews-jr-29ba6125/",
                 "https://github.com/"
             ]
         },
@@ -15,9 +16,9 @@
             "profilePic": "./team/members/Rodrigo-da-Silva-Guerra.png",
             "specialties": "Robotics, Computer Vision, Digital Image Processing",
             "links": [
-                "mailto:",
-                "https://www.linkedin.com/",
-                "https://github.com/"
+                "https://rodrigoguerra.com/",
+                "mailto:rodrigo.guerra@furg.br",
+                "https://www.linkedin.com/in/tioguerra/"
             ]
         },
         {
@@ -25,9 +26,7 @@
             "profilePic": "./team/members/Rodrigo-Andrade-de-Bem.png",
             "specialties": "Robotics, Computer Vision, Digital Image Processing",
             "links": [
-                "mailto:",
-                "https://www.linkedin.com/",
-                "https://github.com/"
+                "mailto:rodrigobem@furg.br"
             ]
         }
     ],
@@ -60,13 +59,11 @@
             ]
         },
         {
-            "name": "Larissa Gomes",
+            "name": "Larissa e Silva Gomes",
             "profilePic": "./team/members/Larissa-Gomes.png",
             "specialties": "Sonar images, Computer Vision, Deep Learning, Underwater images, Robotics, Robot Perception",
             "links": [
-                "mailto:",
-                "https://www.linkedin.com/",
-                "https://github.com/"
+                "https://www.linkedin.com/in/larissaesilva/"
             ]
         }
     ],
@@ -208,26 +205,6 @@
             ]
         },
         {
-            "name": "Pedro Flores",
-            "profilePic": "./team/members/placeholder.png",
-            "specialties": "",
-            "links": [
-                "mailto:",
-                "https://www.linkedin.com/",
-                "https://github.com/"
-            ]
-        },
-        {
-            "name": "Lucas Costa",
-            "profilePic": "./team/members/placeholder.png",
-            "specialties": "",
-            "links": [
-                "mailto:",
-                "https://www.linkedin.com/",
-                "https://github.com/"
-            ]
-        },
-        {
             "name": "Breno Xavier de Paula",
             "profilePic": "./team/members/Breno-Xavier-de-Paula.png",
             "specialties": "Systems Development, Web Development, Computer Vision",
@@ -240,7 +217,7 @@
         {
             "name": "Juan Peres Madeira",
             "profilePic": "./team/members/Juan-Peres-Madeira.png",
-            "specialties": "",
+            "specialties": "Systems Development, Web Development, Computer Vision",
             "links": [
                 "mailto:juan.madeira@furg.br",
                 "https://www.linkedin.com/in/juan-madeira/",
@@ -257,6 +234,18 @@
                 "https://github.com/Lukasilvestre",
                 "http://lattes.cnpq.br/1835248140270463"
             ]
+        },
+                {
+            "name": "Pedro Flores",
+            "profilePic": "./team/members/placeholder.png",
+            "specialties": "",
+            "links": []
+        },
+        {
+            "name": "Lucas Costa",
+            "profilePic": "./team/members/placeholder.png",
+            "specialties": "",
+            "links": []
         }
     ],
     "associates": [
@@ -264,21 +253,13 @@
             "name": "Felipe",
             "profilePic": "./team/members/placeholder.png",
             "specialties": "",
-            "links": [
-                "mailto:",
-                "https://www.linkedin.com/",
-                "https://github.com/"
-            ]
+            "links": []
         },
         {
             "name": "Thiago",
             "profilePic": "./team/members/placeholder.png",
             "specialties": "",
-            "links": [
-                "mailto:",
-                "https://www.linkedin.com/",
-                "https://github.com/"
-            ]
+            "links": []
         }
     ]
 }
