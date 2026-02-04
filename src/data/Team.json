@@ -235,17 +235,24 @@
                 "http://lattes.cnpq.br/1835248140270463"
             ]
         },
-                {
-            "name": "Pedro Flores",
-            "profilePic": "./team/members/placeholder.png",
-            "specialties": "",
-            "links": []
+        {
+            "name": "Pedro Correia Flores",
+            "profilePic": "./team/members/Pedro-Correia-Flores.png",
+            "specialties": "Computer Vision, Image Enhancement, Visual Inspection, Artificial Intelligence",
+            "links": [
+                "mailto:pcorreiaflores@gmail.com",
+                "https://github.com/PedroCorreiaFlores" 
+            ]
         },
         {
-            "name": "Lucas Costa",
-            "profilePic": "./team/members/placeholder.png",
-            "specialties": "",
-            "links": []
+            "name": "Lucas Costa dos Santos",
+            "profilePic": "./team/members/Lucas-Costa-dos-Santos.png",
+            "specialties": "Computer Vision, Deep Learning, Robotics, Robot Perception",
+            "links": [
+                "mailto:lucas.lucascostadossantos@gmail.com",
+                "https://www.linkedin.com/in/lucas-santos-2959b13a7",
+                "https://github.com/LuscasSkywalka"
+            ]
         }
     ],
     "associates": [
