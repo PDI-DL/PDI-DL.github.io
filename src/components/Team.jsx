@@ -38,8 +38,7 @@ export default function Team() {
 
     function getImgPath(link){ // Com base no link retorna o nome e caminho para a imagem
         const options = [
-            [".github.io", "./team/icons/globe-grid.png"], // para site pessoal, no futuro considerar algo como personalWebsite como flag
-            ["linktr.ee", "./team/icons/globe-grid.png"],
+            ["github.io", "./team/icons/globe-grid.png"],
             ["linkedin", "./team/icons/linkedin-dark.png"],
             ["github", "./team/icons/github-light.png"],
             ["huggingface", "./team/icons/huggingface.png"],
@@ -51,9 +50,10 @@ export default function Team() {
         for (let i = 0; i < options.length; i++){
             if (link.includes("mailto"))
                 return ["email", "./team/icons/email.png"];
-            if (link.includes(options[i][0]))
+            else if (link.includes(options[i][0]))
                 return options[i];
         }
+        return ["website", "./team/icons/globe-grid.png"];
     }
 
     return (
