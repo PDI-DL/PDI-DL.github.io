@@ -10,7 +10,8 @@ import "../style/components/Carousel.css";
 export default function Carousel() {
     const [activeIndex, setActiveIndex] = useState(0);
     const images = [
-        { image: "./carousel/sibgrapi-2025.jpg", alt: "SIBGRAPI 2025" },
+        { image: "./carousel/icar-2025.jpg", alt: "22nd International Conference on Advanced Robotics (ICAR 2025)" },
+        { image: "./carousel/sibgrapi-2025.jpg", alt: "38th Conference on Graphics, Patterns and Images (SIBGRAPI 2025)" },
         { image: "./carousel/pdi-banner.png", alt: "Digital Image Processing and Deep Learning" },
     ]
 
