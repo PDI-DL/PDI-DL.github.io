@@ -1,0 +1,22 @@
+[
+    {
+        "image": "./carousel/icar-2025.jpg",
+        "alt": "22nd International Conference on Advanced Robotics (ICAR 2025)"
+    },
+    {
+        "image": "./carousel/sibgrapi-2025.jpg", 
+        "alt": "38th Conference on Graphics, Patterns and Images (SIBGRAPI 2025)"
+    },
+    {
+        "image": "./carousel/sejafurg-2026-01.jpg",
+        "alt": "Laboratory exhibition for the external community (Seja FURG 2026)"
+    },
+    {
+        "image": "./carousel/sejafurg-2026-02.jpg",
+        "alt": "Laboratory exhibition for the external community (Seja FURG 2026)"
+    },
+    {
+        "image": "./carousel/sejafurg-2026-03.jpg",
+        "alt": "Laboratory exhibition for the external community (Seja FURG 2026)"
+    }
+]

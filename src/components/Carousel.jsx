@@ -5,16 +5,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
+import CarouselData from "../data/Carousel.json";
+
 import "../style/components/Carousel.css";
 
 export default function Carousel() {
     const [activeIndex, setActiveIndex] = useState(0);
-    const images = [
-        { image: "./carousel/icar-2025.jpg", alt: "22nd International Conference on Advanced Robotics (ICAR 2025)" },
-        { image: "./carousel/sibgrapi-2025.jpg", alt: "38th Conference on Graphics, Patterns and Images (SIBGRAPI 2025)" },
-        { image: "./carousel/pdi-banner.png", alt: "Digital Image Processing and Deep Learning" },
-    ]
-
+    const images = CarouselData
     return (
         <div className="slider-container scroll-reveal">
             <Swiper
